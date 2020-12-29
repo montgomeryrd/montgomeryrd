@@ -2,28 +2,21 @@ import { useState } from 'react';
 import './styles.css';
 
 const MenuBurger = () => {
-    const [toggle, setToggle] = useState(true);
+    const [toggle, setToggle] = useState(false);
 
     return (
         <div id="menu-container">
-            { toggle ? (
-                <div id="menu-burger" onClick={() => setToggle(!toggle)}>
-                    <div id="burger">
-                        <div className="brgr-line"></div>
-                        <div className="brgr-line"></div>
-                        <div className="brgr-line"></div>
+                <div id="menu-burger">
+                    <div id={toggle ? "close" : "burger"} onClick={() => setToggle(!toggle)}>
+                        <div className="brgr-line" id="bg-line-1"></div>
+                        <div className="brgr-line" id="bg-line-2"></div>
+                        <div className="brgr-line" id="bg-line-3"></div>
                     </div>
         
-                    <div className="line-shadow" id="sh-line-1"></div>
-                    <div className="line-shadow" id="sh-line-2"></div>
-                    <div className="line-shadow" id="sh-line-3"></div>
+                    <div className="line-shadow" id={toggle ? "sh-line-close-1" : "sh-line-1"}></div>
+                    <div className="line-shadow" id={toggle ? "sh-line-close-2" : "sh-line-2"}></div>
+                    <div className="line-shadow" id={toggle ? "sh-line-close-3" : "sh-line-3"}></div>
                 </div>
-            ) : (
-                <div id="menu-close" onClick={() => setToggle(!toggle)}>
-                    <div id="x-back"></div>
-                    <div id="x-forward"></div>
-                </div>
-            )}
         </div>
     )
 }
