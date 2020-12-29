@@ -1,18 +1,12 @@
-import React from 'react';
-import Dashboard from './components/dashboard/Dashboard';
-import Profile from './components/profile/Profile';
-import Projects from './components/projects/Projects';
+import MenuBurger from './components/MenuBurger/MenuBurger';
+import './styles.css';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <Dashboard />
-        <Profile />
-        <Projects />
-      </div>
-    );
-  }
+function App() {
+	return (
+		<div className="app">
+			<MenuBurger />
+		</div>
+	);
 }
 
 export default App;
