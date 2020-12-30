@@ -1,0 +1,53 @@
+.contact-links-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: -100px;
+    left: 20px;
+}
+.banner {
+    padding: 70px;
+    margin-right: 3px;
+}
+#github {
+    background-color: #343434;
+    height: 180px;
+    z-index: 10;
+}
+#linkedin {
+    background-color: #1F618D;
+    height: 150px;
+    z-index: 10;
+}
+#twitter {
+    position: relative;
+    background-color: #0076C6;
+    height: 120px;
+}
+.banner-tip {
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    transform: rotate(45deg);
+}
+#github-color {
+    margin: -50px 0 0 20px;
+    background-color: #343434;
+}
+#linkedin-color {
+    margin: -50px 0 0 21px;
+    background-color: #1F618D;
+}
+#twitter-color {
+    margin: -49px 0 0 20px;
+    background-color: #0076C6;
+}
+img {
+    position: absolute;
+    margin: 140px 0 0 20px;
+    z-index: 10;
+}
+a:hover, #github:hover, #linkedin:hover, #twitter:hover {
+    margin-top: 40px;   
+    transition-duration: .7s; 
+}
