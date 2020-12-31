@@ -1,0 +1,40 @@
+@keyframes zoom {
+    0% { right: 30px; }
+    10% { right: 10px; }
+    20% { right: 25px; }
+    50% { right: 10px; }
+    60% { right: 8px; }
+    90% { right: 10px; }
+    100% { right: 30px; }
+}
+.arrow-container {
+    position: absolute;
+    width: 70px;
+    height: 80px;
+    top: 50%;
+    right: 30px;
+    z-index: 1;
+}
+.arrow {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 80px;
+}
+.arrow-one {
+    position: absolute;
+    top: 48%;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+}
+.arrow-container:hover {
+    animation: zoom 2s infinite;
+    
+    /* transition: 1s; */
+}

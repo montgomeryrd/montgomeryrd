@@ -13,7 +13,7 @@ const ContactLinks = () => {
                 <div className="banner-tip" id="github-color"></div> 
             </a>
         
-            <a href="www.linkedin.com/in/montgomeryrd" target="_blank" rel="noopener noreferrer" alt="linkedin montgomeryrd">
+            <a href="https://linkedin.com/in/montgomeryrd" target="_blank" rel="noopener noreferrer" alt="linkedin montgomeryrd">
                 <img src={linkedIn} width="100px" alt="LinkedIn"></img>
                 <div className="banner" id="linkedin"></div>
                 <div className="banner-tip" id="linkedin-color"></div>

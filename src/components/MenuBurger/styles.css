@@ -18,8 +18,7 @@
     height: 10px;
     margin: 15px;
     border-radius: 2mm;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
+    transition: .5s;
 }
 .line-shadow {
     background-color: #134160;
@@ -31,21 +30,18 @@
 #sh-line-1 {
     position: absolute;
     box-shadow: 0px 0px 5px #134160;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
+    transition: .3s;
 }
 #sh-line-2 {
     position: absolute;
     box-shadow: 0px 0px 5px #134160;
     margin-top: 100px;
-    -webkit-transition: .6s;
-    -moz-transition: .6s;
+    transition: .6s;
 }
 #sh-line-3 {
     box-shadow: 0px 0px 5px #134160;
     margin-top: 100px;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
+    transition: 1s;
 }
 #burger {
     position: absolute;
@@ -78,43 +74,37 @@
     padding: 10px;
     z-index: 10;
     transform: rotate(45deg);
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
+    transition: 1s;
 }
 #close #bg-line-2 {
     position: absolute;
     padding: 10px;
     z-index: 10;
     transform: rotate(135deg);
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
+    transition: 1s;
 }
 #close #bg-line-3 {
     position: absolute;
     margin-top: 80px;
     z-index: 10;
     padding-left: 20px;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
+    transition: 1s;
 }
 #sh-line-close-1 {
     position: absolute;
     padding-left: 20px;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
+    transition: 1s;
 }
 #sh-line-close-2 {
     position: absolute;
     padding: 6px;
     transform: rotate(45deg);
     margin: 30px 0 0 55px;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
+    transition: 1s;
 }
 #sh-line-close-3 {
     padding: 6px;
     transform: rotate(135deg);
     margin: 30px 0 0 55px;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
+    transition: 1s;
 }

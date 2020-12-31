@@ -11,17 +11,20 @@
 }
 #github {
     background-color: #343434;
+    border-left: 2px solid #494949;
     height: 180px;
     z-index: 10;
 }
 #linkedin {
     background-color: #1F618D;
+    border-left: 2px solid #256fa0;
     height: 150px;
     z-index: 10;
 }
 #twitter {
     position: relative;
     background-color: #0076C6;
+    border-left: 2px solid #0091f1;
     height: 120px;
 }
 .banner-tip {
@@ -31,16 +34,19 @@
     transform: rotate(45deg);
 }
 #github-color {
-    margin: -50px 0 0 20px;
+    margin: -51px 0 0 21px;
     background-color: #343434;
+    border-bottom: 2px solid #494949;
 }
 #linkedin-color {
     margin: -50px 0 0 21px;
     background-color: #1F618D;
+    border-bottom: 2px solid #256fa0;
 }
 #twitter-color {
-    margin: -49px 0 0 20px;
+    margin: -50px 0 0 21px;
     background-color: #0076C6;
+    border-bottom: 2px solid #0091f1;
 }
 img {
     position: absolute;
@@ -49,5 +55,5 @@ img {
 }
 a:hover, #github:hover, #linkedin:hover, #twitter:hover {
     margin-top: 40px;   
-    transition-duration: .7s; 
+    transition: .7s ease-in-out;
 }
