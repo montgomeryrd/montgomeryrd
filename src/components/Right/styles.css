@@ -14,7 +14,7 @@
     100% { opacity: 1; }
 }
 
-.arrow-container {
+.front-arrow-container {
     -webkit-animation: appear 350ms forwards;
     -webkit-animation-delay: 3.6s;
     animation: appear 350ms forwards;
@@ -27,7 +27,7 @@
     z-index: 1;
     opacity: 0;
 }
-.arrow {
+.front-arrow {
     cursor: pointer;
     position: relative;
     display: flex;
@@ -35,7 +35,7 @@
     justify-content: space-evenly;
     height: 80px;
 }
-.arrow-one {
+.front-arrow-one {
     position: absolute;
     top: 25%;
     right: 40px;
@@ -45,6 +45,17 @@
     border-right: 2px solid #fff;
     transform: rotate(45deg);
 }
-.arrow:hover {
+.front-about-arrow {
+    opacity: 0;
+    margin: 22px 0 0 -110px;
+    font-style: italic;
+    color: #fff;
+    transition: 1s;
+}
+.front-arrow:hover {
     animation: indicate 2.5s infinite;
+}
+.front-arrow:hover .front-about-arrow {
+    opacity: 1;
+    transition: 1s;
 }

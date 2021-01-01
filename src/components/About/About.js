@@ -1,24 +1,14 @@
 import MenuBurger from '../MenuBurger/MenuBurger';
+import Left from '../Left/Left';
+import Right from '../Right/Right';
 import './styles.css';
 
-const About = () => {
+const About = ({ page, setPage }) => {
     return (
         <div>
-            <MenuBurger />
-            <div className="about-banner">
-                <div className="a-1"></div>
-                <div className="a-2"></div>
-                <div className="a-3"></div>
-                <div className="b-1"></div>
-                <div className="b-2"></div>
-                <div className="b-3"></div>
-                <div className="o-1"></div>
-                <div className="u-1"></div>
-                <div className="u-2"></div>
-                <div className="u-3"></div>
-                <div className="t-1"></div>
-                <div className="t-2"></div>
-            </div>
+            <MenuBurger page={page} setPage={setPage} />
+            <Left name={'front'} setPage={setPage} />
+            <Right name={'works'} setPage={setPage} />
         </div>
     )
 }

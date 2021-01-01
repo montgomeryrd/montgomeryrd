@@ -1,10 +1,12 @@
 import './styles.css';
 
-const Right = () => {
+const Right = ({ name, page, setPage }) => {
+    
     return (
-        <div className="arrow-container">
-            <div className="arrow">
-                <div className="arrow-one"></div>
+        <div className={`${page}-arrow-container`}>
+            <div className={`${page}-arrow`} onClick={() => setTimeout(() => setPage(name), 2000)}>
+                <div className={`${page}-${name}-arrow`}>{name}</div>
+                <div className={`${page}-arrow-one`}></div>
             </div>
         </div>
     )

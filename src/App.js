@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import FrontPage from './components/FrontPage/FrontPage';
 import About from './components/About/About';
 import Works from './components/Works/Works';
@@ -8,9 +8,8 @@ import './styles.css';
 
 function App() {
 	const [page, setPage] = useState('front');
-	useEffect(() => {}, [page]);
 
-	function location(page) {
+	function locate(page) {
 		switch(page) {
 			case 'front':
 				return <FrontPage page={page} setPage={setPage} />
@@ -27,7 +26,7 @@ function App() {
 	
 	return (
 		<div className="App">
-			{location(page)}
+			{locate(page)}
 		</div>
 	);
 }

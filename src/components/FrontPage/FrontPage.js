@@ -8,7 +8,7 @@ const FrontPage = ({ page, setPage }) => {
         <div>
             <ContactLinks />
             <MenuBurger page={page} setPage={setPage} />
-            <Right />
+            <Right name={'about'} page={page} setPage={setPage} />
         </div>
     )
 }

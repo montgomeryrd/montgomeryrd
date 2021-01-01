@@ -5,15 +5,36 @@
     100% { top: -100px; }
 }
 .contact-links-container {
-    -webkit-animation: drop-banners 350ms forwards;
-    -webkit-animation-delay: 1.5s;
-    animation: drop-banners 350ms forwards;
-    animation-delay: 1.5s;
     position: absolute;
     display: flex;
     flex-direction: row;
-    top: -500px;
     left: 20px;
+}
+#github-banner {
+    position: absolute;
+    -webkit-animation: drop-banners 350ms forwards;
+    -webkit-animation-delay: 1.4s;
+    animation: drop-banners 350ms forwards;
+    animation-delay: 1.4s;
+    top: -500px;
+}
+#linkedin-banner {
+    position: absolute;
+    -webkit-animation: drop-banners 350ms forwards;
+    -webkit-animation-delay: 1.2s;
+    animation: drop-banners 350ms forwards;
+    animation-delay: 1.2s;
+    top: -500px;
+    left: 150px;
+}
+#twitter-banner {
+    position: absolute;
+    -webkit-animation: drop-banners 350ms forwards;
+    -webkit-animation-delay: 1s;
+    animation: drop-banners 350ms forwards;
+    animation-delay: 1s;
+    top: -500px;
+    left: 300px;
 }
 .banner {
     padding: 70px;

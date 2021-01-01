@@ -144,16 +144,20 @@ p {
     transition: 1.5s;
 }
 .hide {
-    display: none;
-    transition-delay: 2s;
-    transition: 1.5s;
-}
-.show {
-    display: block;
+    opacity: 0;
     margin-top: 85px;
     font-family: 'Amatic SC', cursive;
     font-size: 4em;
     text-align: center;
+    transition: 1.5s;
+}
+.show {
+    opacity: 1;
+    margin-top: 85px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 4em;
+    text-align: center;
+    transition: 1.5s;
     box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.3);
 }
 .open-link-1:hover, .open-link-2:hover, .open-link-3:hover {
