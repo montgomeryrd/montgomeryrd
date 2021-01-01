@@ -5,14 +5,26 @@
    65% { transform: rotate(-5deg); }
   100% { transform: rotate(0deg); }
 }
+
+@-webkit-keyframes appear {
+    100% { opacity: 1; }
+}
+@keyframes appear {
+    100% { opacity: 1; }
+}
   
-#menu-burger {
+#front-menu-burger {
     position: absolute;
     cursor: pointer;
     right: 0;
     padding: 50px;
+    opacity: 0;
+    -webkit-animation: appear 2s forwards;
+    -webkit-animation-delay: 1.5s;
+    animation: appear 2s forwards;
+    animation-delay: 1.5s;
 }
-.brgr-line {
+.front-brgr-line {
     background-color: #fff;
     width: 70px;
     height: 10px;
@@ -20,89 +32,89 @@
     border-radius: 2mm;
     transition: .5s;
 }
-.line-shadow {
+.front-line-shadow {
     background-color: #134160;
     width: 70px;
     height: 10px;
     margin: 100px 0 0 15px;
     border-radius: 2mm;
 }
-#sh-line-1 {
+#front-sh-line-1 {
     position: absolute;
     box-shadow: 0px 0px 5px #134160;
     transition: .3s;
 }
-#sh-line-2 {
+#front-sh-line-2 {
     position: absolute;
     box-shadow: 0px 0px 5px #134160;
     margin-top: 100px;
     transition: .6s;
 }
-#sh-line-3 {
+#front-sh-line-3 {
     box-shadow: 0px 0px 5px #134160;
     margin-top: 100px;
     transition: 1s;
 }
-#burger {
+#front-burger {
     position: absolute;
     z-index: 10;
 }
-#burger:hover {
+#front-burger:hover {
     display: inline-block;
     animation: wiggle 1s;
     transition-duration: 1s;
 }
-#burger:hover ~ #sh-line-1 {
+#front-burger:hover ~ #front-sh-line-1 {
     width: 60px;
     margin: 54px 0 0 50px;
     transition-delay: 800ms;
     transition-duration: 800ms;
 }
-#burger:hover ~ #sh-line-2 {
+#front-burger:hover ~ #front-sh-line-2 {
     width: 65px;
     margin: 76px 0 0 40px;
     transition-delay: 800ms;
     transition-duration: 800ms;
 }
-#burger:hover ~ #sh-line-3 {
+#front-burger:hover ~ #front-sh-line-3 {
     margin: 100px 0 0 30px;
     transition-delay: 800ms;
     transition-duration: 800ms;
 }
-#close #bg-line-1 {
+#front-close #front-bg-line-1 {
     position: absolute;
     padding: 10px;
     z-index: 10;
     transform: rotate(45deg);
     transition: 1s;
 }
-#close #bg-line-2 {
+#front-close #front-bg-line-2 {
     position: absolute;
     padding: 10px;
     z-index: 10;
     transform: rotate(135deg);
     transition: 1s;
 }
-#close #bg-line-3 {
+#front-close #front-bg-line-3 {
     position: absolute;
     margin-top: 80px;
     z-index: 10;
     padding-left: 20px;
     transition: 1s;
 }
-#sh-line-close-1 {
+#front-sh-line-close-1 {
     position: absolute;
     padding-left: 20px;
     transition: 1s;
 }
-#sh-line-close-2 {
+#front-sh-line-close-2 {
     position: absolute;
     padding: 6px;
     transform: rotate(45deg);
     margin: 30px 0 0 55px;
     transition: 1s;
 }
-#sh-line-close-3 {
+#front-sh-line-close-3 {
     padding: 6px;
     transform: rotate(135deg);
     margin: 30px 0 0 55px;

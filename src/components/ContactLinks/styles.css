@@ -1,9 +1,40 @@
+@-webkit-keyframes drop-banners {
+    100% { top: -100px; }
+}
+@keyframes drop-banners {
+    100% { top: -100px; }
+}
 .contact-links-container {
     position: absolute;
     display: flex;
     flex-direction: row;
-    top: -100px;
     left: 20px;
+}
+#github-banner {
+    position: absolute;
+    -webkit-animation: drop-banners 350ms forwards;
+    -webkit-animation-delay: 1.4s;
+    animation: drop-banners 350ms forwards;
+    animation-delay: 1.4s;
+    top: -500px;
+}
+#linkedin-banner {
+    position: absolute;
+    -webkit-animation: drop-banners 350ms forwards;
+    -webkit-animation-delay: 1.2s;
+    animation: drop-banners 350ms forwards;
+    animation-delay: 1.2s;
+    top: -500px;
+    left: 150px;
+}
+#twitter-banner {
+    position: absolute;
+    -webkit-animation: drop-banners 350ms forwards;
+    -webkit-animation-delay: 1s;
+    animation: drop-banners 350ms forwards;
+    animation-delay: 1s;
+    top: -500px;
+    left: 300px;
 }
 .banner {
     padding: 70px;
@@ -53,7 +84,7 @@ img {
     margin: 140px 0 0 20px;
     z-index: 10;
 }
-a:hover, #github:hover, #linkedin:hover, #twitter:hover {
+a:hover {
     margin-top: 40px;   
     transition: .7s ease-in-out;
 }
