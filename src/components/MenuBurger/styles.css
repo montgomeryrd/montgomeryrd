@@ -5,12 +5,24 @@
    65% { transform: rotate(-5deg); }
   100% { transform: rotate(0deg); }
 }
+
+@-webkit-keyframes appear {
+    100% { opacity: 1; }
+}
+@keyframes appear {
+    100% { opacity: 1; }
+}
   
 #menu-burger {
     position: absolute;
     cursor: pointer;
     right: 0;
     padding: 50px;
+    opacity: 0;
+    -webkit-animation: appear 2s forwards;
+    -webkit-animation-delay: 1.5s;
+    animation: appear 2s forwards;
+    animation-delay: 1.5s;
 }
 .brgr-line {
     background-color: #fff;

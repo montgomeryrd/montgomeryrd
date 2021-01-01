@@ -1,8 +1,18 @@
+@-webkit-keyframes drop-banners {
+    100% { top: -100px; }
+}
+@keyframes drop-banners {
+    100% { top: -100px; }
+}
 .contact-links-container {
+    -webkit-animation: drop-banners 350ms forwards;
+    -webkit-animation-delay: 1.5s;
+    animation: drop-banners 350ms forwards;
+    animation-delay: 1.5s;
     position: absolute;
     display: flex;
     flex-direction: row;
-    top: -100px;
+    top: -500px;
     left: 20px;
 }
 .banner {
@@ -53,7 +63,7 @@ img {
     margin: 140px 0 0 20px;
     z-index: 10;
 }
-a:hover, #github:hover, #linkedin:hover, #twitter:hover {
+a:hover {
     margin-top: 40px;   
     transition: .7s ease-in-out;
 }
