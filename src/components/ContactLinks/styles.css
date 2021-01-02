@@ -79,12 +79,12 @@
     background-color: #0076C6;
     border-bottom: 2px solid #0091f1;
 }
-img {
+.contact-links-container img {
     position: absolute;
     margin: 140px 0 0 20px;
     z-index: 10;
 }
-a:hover {
+#github-banner:hover, #linkedin-banner:hover, #twitter-banner:hover {
     margin-top: 40px;   
     transition: .7s ease-in-out;
 }

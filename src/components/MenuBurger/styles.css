@@ -162,13 +162,13 @@
 #about-close #about-bg-line-1 {
     position: absolute;
     padding: 5px;
-    transform: rotate(45deg);
+    transform: rotate(610deg);
     transition: 1s;
 }
 #about-close #about-bg-line-2 {
     position: absolute;
     width: 110px;
-    transform: rotate(135deg);
+    transform: rotate(855deg);
     transition: 1s;
 }
 #about-close #about-bg-line-3 {
@@ -176,4 +176,7 @@
     margin-top: 80px;
     background-color: #1F618D;
     padding-left: 15px;
+    transform: rotate(360deg);
+    transition: .5s;
 }
+/* Portfolio Page Burger */

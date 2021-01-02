@@ -3,7 +3,7 @@ import Left from '../Left/Left';
 import Right from '../Right/Right';
 import './styles.css';
 
-const Works = ({ page, setPage }) => {
+const Portfolio = ({ page, setPage }) => {
     return (
         <div>
             <MenuBurger page={page} setPage={setPage} />
@@ -13,4 +13,4 @@ const Works = ({ page, setPage }) => {
     )
 }
 
-export default Works;
+export default Portfolio;
