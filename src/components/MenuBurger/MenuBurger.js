@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import MainFrontPage from '../FrontPage/MainFrontPage/MainFrontPage';
 import MainAboutPage from '../About/MainAboutPage/MainAboutPage';
-import MainWorksPage from '../Works/MainWorksPage/MainWorksPage';
+import MainPortfolioPage from '../Portfolio/MainPortfolioPage/MainPortfolioPage';
 import MainContactPage from '../Contact/MainContactPage/MainContactPage';
 
 import './styles.css';
@@ -15,8 +15,8 @@ const MenuBurger = ({ page, setPage }) => {
 				return <MainFrontPage page={page} setPage={setPage} toggle={toggle} />
 			case 'about':
 				return <MainAboutPage page={page} setPage={setPage} />
-			case 'works':
-				return <MainWorksPage page={page} setPage={setPage} />
+			case 'portfolio':
+				return <MainPortfolioPage page={page} setPage={setPage} />
 			case 'contact':
 				return <MainContactPage page={page} setPage={setPage} />
 			default:

@@ -1,4 +1,4 @@
-/* @keyframes indicate-left {
+@keyframes indicate-left {
     0% { left: 0; }
     50% { left: -20px; }
     65% { left: 0; }
@@ -14,7 +14,7 @@
     100% { opacity: 1; }
 }
 
-.arrow-container-left {
+.left-arrow-container {
     -webkit-animation: appear 350ms forwards;
     -webkit-animation-delay: 3.6s;
     animation: appear 350ms forwards;
@@ -27,7 +27,7 @@
     z-index: 1;
     opacity: 0;
 }
-.arrow-left {
+.left-arrow {
     cursor: pointer;
     position: relative;
     display: flex;
@@ -35,27 +35,52 @@
     justify-content: space-evenly;
     height: 80px;
 }
-.arrow-left-one {
+.left-arrow-one {
     position: absolute;
     top: 25%;
-    right: 40px;
+    left: 40px;
     width: 40px;
     height: 40px;
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;
     transform: rotate(45deg);
 }
-.works {
+.left-arrow:hover {
+    animation: indicate-left 2.5s infinite;
+}
+/* About Page Styles */
+.front-left-arrow {
     opacity: 0;
-    margin: 22px 0 0 -110px;
+    margin: 22px 0 0 110px;
     font-style: italic;
     color: #fff;
     transition: 1s;
 }
-.arrow-left:hover {
-    animation: indicate-left 2.5s infinite;
-}
-.arrow-left:hover .works {
+.left-arrow:hover .front-left-arrow {
     opacity: 1;
     transition: 1s;
-} */
+}
+/* Works Page Styles */
+.about-left-arrow {
+    opacity: 0;
+    margin: 22px 0 0 110px;
+    font-style: italic;
+    color: #fff;
+    transition: 1s;
+}
+.left-arrow:hover .about-left-arrow {
+    opacity: 1;
+    transition: 1s;
+}
+/* Contact Page Styles */
+.portfolio-left-arrow {
+    opacity: 0;
+    margin: 22px 0 0 110px;
+    font-style: italic;
+    color: #fff;
+    transition: 1s;
+}
+.left-arrow:hover .portfolio-left-arrow {
+    opacity: 1;
+    transition: 1s;
+}
