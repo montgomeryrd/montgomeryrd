@@ -8,7 +8,7 @@ const About = ({ page, setPage }) => {
         <div>
             <MenuBurger page={page} setPage={setPage} />
             <Left name={'front'} setPage={setPage} />
-            <Right name={'works'} setPage={setPage} />
+            <Right name={'portfolio'} setPage={setPage} />
         </div>
     )
 }

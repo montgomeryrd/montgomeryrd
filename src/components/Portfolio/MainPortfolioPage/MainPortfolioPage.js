@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MainWorksPage = () => {
+const MainPortfolioPage = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const MainWorksPage = () => {
     )
 }
 
-export default MainWorksPage
+export default MainPortfolioPage;
