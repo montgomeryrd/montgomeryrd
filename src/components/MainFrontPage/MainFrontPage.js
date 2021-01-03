@@ -19,13 +19,13 @@ const MainFrontPage = ({ toggle, setToggle, page, setPage }) => {
                 </div>
 
                 <div className="links">
-                    <div className={toggle ? "links open-link-1" : "links link-1"}>
+                    <div className={toggle ? "links open-link-1" : "links link-1"} onClick={() => reset('contact')}>
                         <h2 className={toggle ? "show" : "hide"} onClick={() => reset('contact')}>CONTACT</h2>
                     </div>
-                    <div className={toggle ? "links open-link-2" : "links link-2"}>
+                    <div className={toggle ? "links open-link-2" : "links link-2"} onClick={() => reset('about')}>
                         <h2 className={toggle ? "show" : "hide"} onClick={() => reset('about')}>ABOUT</h2>
                     </div>
-                    <div className={toggle ? "links open-link-3" : "links link-3"}>
+                    <div className={toggle ? "links open-link-3" : "links link-3"} onClick={() => reset('portfolio')}>
                         <h2 className={toggle ? "show" : "hide"} onClick={() => reset('portfolio')}>WORKS</h2>
                     </div>
                 </div>

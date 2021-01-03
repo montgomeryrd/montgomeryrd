@@ -36,6 +36,15 @@
     top: -500px;
     left: 300px;
 }
+#codewars-banner {
+    position: absolute;
+    -webkit-animation: drop-banners 350ms forwards;
+    -webkit-animation-delay: 1s;
+    animation: drop-banners 350ms forwards;
+    animation-delay: .8s;
+    top: -500px;
+    left: 450px;
+}
 .banner {
     padding: 70px;
     margin-right: 3px;
@@ -58,6 +67,12 @@
     border-left: 2px solid #0091f1;
     height: 120px;
 }
+#codewars {
+    position: relative;
+    background-color: #474747;
+    border-left: 2px solid #646464;
+    height: 100px;
+}
 .banner-tip {
     position: absolute;
     width: 99px;
@@ -79,12 +94,26 @@
     background-color: #0076C6;
     border-bottom: 2px solid #0091f1;
 }
+#codewars-color {
+    margin: -50px 0 0 21px;
+    background-color: #474747;
+    border-bottom: 2px solid #646464;
+}
+#hide-name {
+    position: absolute;
+    margin-top: -2px;
+    margin-left: 23px;
+    z-index: 100;
+    height: 21px;
+    width: 92px;
+    background-color: #474747;
+}
 .contact-links-container img {
     position: absolute;
     margin: 140px 0 0 20px;
     z-index: 10;
 }
-#github-banner:hover, #linkedin-banner:hover, #twitter-banner:hover {
+#github-banner:hover, #linkedin-banner:hover, #twitter-banner:hover, #codewars-banner:hover {
     margin-top: 40px;   
     transition: .7s ease-in-out;
 }

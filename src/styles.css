@@ -7,4 +7,5 @@ html, body {
 	line-height: 1.8em;
 	color: #666;
 	background-color: #002B46;
+	overflow: hidden;
 }

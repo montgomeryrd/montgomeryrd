@@ -30,6 +30,8 @@ function MenuBurger({ page, setPage }) {
                     <div className="brgr-line" id="brgr-line-1"></div>
                     <div className="brgr-filling"></div>
                     <div className="brgr-line" id="brgr-line-2"></div>
+                    <div className="brgr-line" id="brgr-x-1"></div>
+                    <div className="brgr-line" id="brgr-x-2"></div>
                     <div className="brgr-filling"></div>
                     <div className="brgr-line" id="brgr-line-3"></div>
                 </div>
