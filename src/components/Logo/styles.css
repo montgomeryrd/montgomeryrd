@@ -1,0 +1,22 @@
+#logo {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 50px;
+    font-family: 'Fredericka the Great', cursive;
+    color: #fff;
+    font-size: 2em;
+    transition: 1s;
+}
+#about-logo:hover {
+    color : #343434;
+    transition: .5s;
+}
+#portfolio-logo:hover {
+    color : #1F618D;
+    transition: .5s;
+}
+#contact-logo:hover {
+    color : #0076C6;
+    transition: .5s;
+}

@@ -18,7 +18,7 @@
     text-align: center;
     top: 10%;
 }
-.main-portfolio-container h1 {
+#portfolio-head {
     font-family: 'Raleway', sans-serif;
     color: #fff;
 }
@@ -40,7 +40,7 @@
     z-index: 10;
     width: 100%;
     padding: 15px 0;
-    background-color: rgba(3, 14, 167, 0.5);
+    background-color: rgba(0, 43, 70, .5);
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: 1.4em;
@@ -57,7 +57,7 @@
     z-index: 10;
     width: 100%;
     padding: 15px 0;
-    background-color: rgba(0, 6, 88, 0.5);
+    background-color: rgba(0, 43, 70, .5);
     color: #fff;
     font-size: .9em;
     margin-bottom: -110px;
