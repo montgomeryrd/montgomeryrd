@@ -1,6 +1,7 @@
+import gitHub from '../../assets/github-logo.png';
 import linkedIn from '../../assets/linkedin-logo.png';
 import twitter from '../../assets/twitter-logo.png';
-import gitHub from '../../assets/github-logo.png';
+import codewars from '../../assets/codewars-logo.png';
 
 import './styles.css';
 
@@ -23,6 +24,12 @@ const ContactLinks = () => {
                 <img src={twitter} width="100px" alt="Twitter"></img>                
                 <div className="banner" id="twitter"></div>
                 <div className="banner-tip" id="twitter-color"></div>
+            </a>
+            <a id="codewars-banner" href="https://www.codewars.com/users/montgomeryrd" target="_blank" rel="noopener noreferrer" alt="codewars montgomeryrd">
+                <img src={codewars} width="100px" alt="Codewars"></img>                
+                <div className="banner" id="codewars"></div>
+                <div id="hide-name"></div>
+                <div className="banner-tip" id="codewars-color"></div>
             </a>
         </div>
     )
