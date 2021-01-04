@@ -1,3 +1,11 @@
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    60% { transform: rotate(10deg); }
+    70% { transform: rotate(-10deg); }
+    80% { transform: rotate(10deg); }
+    90% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
 #logo {
     position: absolute;
     cursor: pointer;
@@ -8,15 +16,7 @@
     font-size: 2em;
     transition: 1s;
 }
-#about-logo:hover {
-    color : #343434;
-    transition: .5s;
-}
-#portfolio-logo:hover {
-    color : #1F618D;
-    transition: .5s;
-}
-#contact-logo:hover {
-    color : #0076C6;
-    transition: .5s;
+#logo:hover {
+    animation: wiggle 1s forwards;
+    /* transition: .5s; */
 }
