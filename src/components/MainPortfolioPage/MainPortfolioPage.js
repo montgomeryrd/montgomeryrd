@@ -1,59 +1,21 @@
 import Logo from '../Logo/Logo';
+import Preview from './Preview/Preview';
 
 import tessioPreview from '../../assets/previews/tessio-preview.png';
 import './styles.css';
 
 const MainPortfolioPage = ({ page, setPage }) => {
     return (
-        <div>
+        <div className={page}>
             <Logo page={page} setPage={setPage} />
-            <div className="main-portfolio-container">
+            <main className="main-portfolio-container">
                 <h1 id="portfolio-head">recent projects</h1>
                 <div className="project-container">
-                    <div className="project-view">
-                        <h2>Tessio Mock Site</h2>
-                        <a href="http://montgomeryrd.github.io/tessio/" target="_blank" rel="noopener noreferrer" alt="Link to Tessio Website">
-                            <img src={tessioPreview} width="400px" alt="Tessio Website" />
-                        </a>
-                        <div className="blah-bar">Mock restaurant website using React and styled with a parallax effect.</div>
-                    </div>
-                    <div className="project-view">
-                        <h2>Tessio Mock Site</h2>
-                        <a href="http://montgomeryrd.github.io/tessio/" target="_blank" rel="noopener noreferrer" alt="Link to Tessio Website">
-                            <img src={tessioPreview} width="400px" alt="Tessio Website" />
-                        </a>
-                        <div className="blah-bar">Produced a mock restaurant website using React and styled with a parallax effect.</div>
-                    </div>
-                    <div className="project-view">
-                        <h2>Tessio Mock Site</h2>
-                        <a href="http://montgomeryrd.github.io/tessio/" target="_blank" rel="noopener noreferrer" alt="Link to Tessio Website">
-                            <img src={tessioPreview} width="400px" alt="Tessio Website" />
-                        </a>
-                        <div className="blah-bar">Produced a mock restaurant website using React and styled with a parallax effect.</div>
-                    </div>
-                    <div className="project-view">
-                        <h2>Tessio Mock Site</h2>
-                        <a href="http://montgomeryrd.github.io/tessio/" target="_blank" rel="noopener noreferrer" alt="Link to Tessio Website">
-                            <img src={tessioPreview} width="400px" alt="Tessio Website" />
-                        </a>
-                        <div className="blah-bar">Mock restaurant website using React and styled with a parallax effect.</div>
-                    </div>
-                    <div className="project-view">
-                        <h2>Tessio Mock Site</h2>
-                        <a href="http://montgomeryrd.github.io/tessio/" target="_blank" rel="noopener noreferrer" alt="Link to Tessio Website">
-                            <img src={tessioPreview} width="400px" alt="Tessio Website" />
-                        </a>
-                        <div className="blah-bar">Produced a mock restaurant website using React and styled with a parallax effect.</div>
-                    </div>
-                    <div className="project-view">
-                        <h2>Tessio Mock Site</h2>
-                        <a href="http://montgomeryrd.github.io/tessio/" target="_blank" rel="noopener noreferrer" alt="Link to Tessio Website">
-                            <img src={tessioPreview} width="400px" alt="Tessio Website" />
-                        </a>
-                        <div className="blah-bar">Produced a mock restaurant website using React and styled with a parallax effect.</div>
-                    </div>
-                </div>
-            </div>
+                    <Preview project={'tessio'} website={'http://montgomeryrd.github.io/tessio/'} img={tessioPreview} text={'Made with React, a mock restaurant website using a parallax effect'} />
+                    <Preview project={'tessio'} website={'http://montgomeryrd.github.io/tessio/'} img={tessioPreview} text={'Made with React, a mock restaurant website using a parallax effect'} />
+                    <Preview project={'tessio'} website={'http://montgomeryrd.github.io/tessio/'} img={tessioPreview} text={'Made with React, a mock restaurant website using a parallax effect'} />
+                </div> 
+            </main>
         </div>
     )
 }
