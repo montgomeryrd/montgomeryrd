@@ -7,7 +7,7 @@ import './styles.css';
 
 const ContactLinks = () => {
     return (
-        <div className="contact-links-container">
+        <header className="contact-links-container">
             <a id="github-banner" href="https://github.com/montgomeryrd" target="_blank" rel="noopener noreferrer" alt="github montgomeryrd">
                 <img src={gitHub} width="100px" alt="GitHub"></img>
                 <div className="banner" id="github"></div>
@@ -31,7 +31,7 @@ const ContactLinks = () => {
                 <div id="hide-name"></div>
                 <div className="banner-tip" id="codewars-color"></div>
             </a>
-        </div>
+        </header>
     )
 }
 

@@ -1,0 +1,87 @@
+#portfolio-head {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 2000px;
+}
+.project-view {
+    position: relative;
+    background: #fff;
+    height: 530px;
+}
+#tessio-view h2 {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    color: #002B46;
+    font-family: 'Raleway', sans-serif;
+    top: -25px;
+    font-size: 2.4em;
+    opacity: 0;
+    transition: .5s;
+}
+#tessio-bar {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    padding: 15px 0;
+    color: #343434;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6em;
+    top: -10px;
+    opacity: 0;
+    transition: .5s;
+}
+#tessio-view img {
+    width: 600px;
+    transition: .5s;
+}
+#tessio-link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+#tessio-view button {
+    position: absolute;
+    cursor: pointer;
+    padding: 15px;
+    border: 5px solid #1F618D;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    z-index: 10;
+    width: 200px;
+    bottom: 15px;
+    color: black;
+    opacity: 0;
+    transition: .5s;
+}
+#tessio-view:hover img {
+    opacity: 0;
+    transition: .5s;
+}
+#tessio-view:hover h2 {
+    top: 30px;
+    opacity: 1;
+    transition: .5s;
+}
+#tessio-view:hover #tessio-bar {
+    opacity: 1;
+    top: 110px;
+    transition: .5s;
+}
+#tessio-view:hover button {
+    opacity: 1;
+    bottom: 100px;
+    transition: .5s;
+}
+#tessio-view button:hover {
+    background-color: #1F618D;
+    color: #fff;
+}

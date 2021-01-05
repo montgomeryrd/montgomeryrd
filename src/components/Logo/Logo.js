@@ -2,9 +2,9 @@ import './styles.css';
 
 function Logo({ page, setPage }) {
     return (
-        <div id="logo">
-            <h1 id={`${page}-logo`} onClick={() => setPage('front')}>Rm</h1>
-        </div>
+        <header id="logo">
+            <h1 onClick={() => setPage('front')}>Rm</h1>
+        </header>
     );
 }
 
