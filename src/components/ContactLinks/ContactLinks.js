@@ -6,26 +6,27 @@ import codewars from '../../assets/codewars-logo.png';
 import './styles.css';
 
 const ContactLinks = () => {
+
     return (
         <header className="contact-links-container">
-            <a id="github-banner" href="https://github.com/montgomeryrd" target="_blank" rel="noopener noreferrer" alt="github montgomeryrd">
+            <a className="github-banner" href="https://github.com/montgomeryrd" target="_blank" rel="noopener noreferrer" alt="github montgomeryrd">
                 <img src={gitHub} width="100px" alt="GitHub"></img>
                 <div className="banner" id="github"></div>
                 <div className="banner-tip" id="github-color"></div> 
             </a>
         
-            <a id="linkedin-banner" href="https://linkedin.com/in/montgomeryrd" target="_blank" rel="noopener noreferrer" alt="linkedin montgomeryrd">
+            <a className="linkedin-banner" href="https://linkedin.com/in/montgomeryrd" target="_blank" rel="noopener noreferrer" alt="linkedin montgomeryrd">
                 <img src={linkedIn} width="100px" alt="LinkedIn"></img>
                 <div className="banner" id="linkedin"></div>
                 <div className="banner-tip" id="linkedin-color"></div>
             </a>
 
-            <a id="twitter-banner" href="https://twitter.com/richard04755318" target="_blank" rel="noopener noreferrer" alt="twitter richard.montgomery.dev">
+            <a className="twitter-banner" href="https://twitter.com/richard04755318" target="_blank" rel="noopener noreferrer" alt="twitter richard.montgomery.dev">
                 <img src={twitter} width="100px" alt="Twitter"></img>                
                 <div className="banner" id="twitter"></div>
                 <div className="banner-tip" id="twitter-color"></div>
             </a>
-            <a id="codewars-banner" href="https://www.codewars.com/users/montgomeryrd" target="_blank" rel="noopener noreferrer" alt="codewars montgomeryrd">
+            <a className="codewars-banner" href="https://www.codewars.com/users/montgomeryrd" target="_blank" rel="noopener noreferrer" alt="codewars montgomeryrd">
                 <img src={codewars} width="100px" alt="Codewars"></img>                
                 <div className="banner" id="codewars"></div>
                 <div id="hide-name"></div>

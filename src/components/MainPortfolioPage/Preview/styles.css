@@ -12,42 +12,48 @@
 }
 .project-view {
     position: relative;
-    background: #fff;
+    background: #002B46;
     height: 530px;
 }
-#tessio-view h2 {
+.project-title {
     position: absolute;
     z-index: 10;
     width: 100%;
-    color: #002B46;
+    color: #32adff;
     font-family: 'Raleway', sans-serif;
     top: -25px;
     font-size: 2.4em;
     opacity: 0;
-    transition: .5s;
 }
-#tessio-bar {
+.project-text {
     position: absolute;
     z-index: 10;
     width: 100%;
     padding: 15px 0;
-    color: #343434;
+    color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: 1.6em;
     top: -10px;
     opacity: 0;
-    transition: .5s;
 }
-#tessio-view img {
+.project-description {
+    position: absolute;
+    top: 40%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    margin: 0 5px;
+    opacity: 0;
+}
+.project-view img {
     width: 600px;
     transition: .5s;
 }
-#tessio-link {
+.project-link {
     display: flex;
     justify-content: center;
     text-decoration: none;
 }
-#tessio-view button {
+.project-view button {
     position: absolute;
     cursor: pointer;
     padding: 15px;
@@ -62,26 +68,81 @@
     opacity: 0;
     transition: .5s;
 }
-#tessio-view:hover img {
+.project-view:hover img {
     opacity: 0;
     transition: .5s;
 }
-#tessio-view:hover h2 {
+.project-view:hover h2 {
     top: 30px;
     opacity: 1;
     transition: .5s;
 }
-#tessio-view:hover #tessio-bar {
+.project-view:hover .project-text {
     opacity: 1;
     top: 110px;
     transition: .5s;
 }
-#tessio-view:hover button {
+.project-view:hover .project-description {
+    opacity: 1;
+    transition: 1s;
+    transition-delay: .5s;
+}
+.project-view:hover button {
     opacity: 1;
     bottom: 100px;
     transition: .5s;
 }
-#tessio-view button:hover {
+.project-view button:hover {
     background-color: #1F618D;
     color: #fff;
+}
+/* about and contact nav */
+@keyframes fall-in {
+    0% {transform: rotate(15deg);}
+    95% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+}
+.portfolio-nav-close #portfolio-about {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 1.6em;
+    top: 65px;
+    right: -1000px;
+    transition: 1s;
+}
+.portfolio-nav-open #portfolio-about {
+    position: absolute;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 1.6em;
+    top: 65px;
+    right: 300px;
+    animation: fall-in 1s forwards;
+    transition: 1s;
+}
+.portfolio-nav-close #portfolio-contact {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 1em;
+    top: 65px;
+    right: -1000px;
+    transition: 1s;
+}
+.portfolio-nav-open #portfolio-contact {
+    position: absolute;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 1.6em;
+    top: 65px;
+    right: 150px;
+    animation: fall-in 1.5s forwards;
+    transition: 1.5s;
+}
+#portfolio-about:hover, #portfolio-contact:hover {
+    color: #32adff;
+    transition: .5s;
 }
