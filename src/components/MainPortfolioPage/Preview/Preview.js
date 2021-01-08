@@ -1,20 +1,19 @@
 import './styles.css'
 
-function Preview({ num, project, website, img, text }) {
+function Preview({ page, section, project, website, img, text, description }) {
 
     return (
-        <div id={`section-${num}`}>
-            <section className="project-view" id={`${project}-view`}>
-                <h2>{project}</h2>
-                <p className="blah-bar" id={`${project}-bar`}>{text}</p>
-                <img src={img} alt={project} />
-                <a id={`${project}-link`} href={website} target="_blank" rel="noopener noreferrer" alt={`link to ${project}`}>
-                    <button>
-                        website
-                    </button>
-                </a>
-            </section>
-        </div>
+        <section className="project-view" id={page === 'portfolio' ? `portfolio-${section}` : section}>
+            <h2 className="project-title">{project}</h2>
+            <p className="project-text">{text}</p>
+            <p className="project-description">{description}</p>
+            <img src={img} alt={project} />
+            <a className="project-link" href={website} target="_blank" rel="noopener noreferrer" alt={`link to ${project}`}>
+                <button>
+                    website
+                </button>
+            </a>
+        </section>
     )
 }
 

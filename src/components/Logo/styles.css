@@ -1,22 +1,26 @@
-@keyframes wiggle {
-    0% { transform: rotate(0deg); }
-    60% { transform: rotate(10deg); }
-    70% { transform: rotate(-10deg); }
-    80% { transform: rotate(10deg); }
-    90% { transform: rotate(-10deg); }
-    100% { transform: rotate(0deg); }
+@keyframes logo-in {
+    0% {
+        transform: rotate(-15deg);
+    }
+    95% {
+        transform: rotate(5deg);
+    }
+    100% { 
+        transform: rotate(0deg);
+        left: 50px;
+    }
 }
 #logo {
     position: absolute;
     cursor: pointer;
-    top: 0;
-    left: 50px;
+    top: 50px;
+    left: -200px;
+    animation: logo-in 750ms forwards;
     font-family: 'Fredericka the Great', cursive;
     color: #fff;
-    font-size: 2em;
+    font-size: 3.5em;
     transition: 1s;
 }
-#logo:hover {
-    animation: wiggle 1s forwards;
-    /* transition: .5s; */
+#second-letter {
+    color: #32adff;
 }

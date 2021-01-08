@@ -4,13 +4,14 @@
 @keyframes drop-banners {
     100% { top: -100px; }
 }
+
 .contact-links-container {
     position: absolute;
     display: flex;
     flex-direction: row;
     left: 20px;
 }
-#github-banner {
+.github-banner {
     position: absolute;
     -webkit-animation: drop-banners 350ms forwards;
     -webkit-animation-delay: 1.4s;
@@ -18,7 +19,7 @@
     animation-delay: 1.4s;
     top: -500px;
 }
-#linkedin-banner {
+.linkedin-banner {
     position: absolute;
     -webkit-animation: drop-banners 350ms forwards;
     -webkit-animation-delay: 1.2s;
@@ -27,7 +28,7 @@
     top: -500px;
     left: 150px;
 }
-#twitter-banner {
+.twitter-banner {
     position: absolute;
     -webkit-animation: drop-banners 350ms forwards;
     -webkit-animation-delay: 1s;
@@ -36,7 +37,7 @@
     top: -500px;
     left: 300px;
 }
-#codewars-banner {
+.codewars-banner {
     position: absolute;
     -webkit-animation: drop-banners 350ms forwards;
     -webkit-animation-delay: 1s;
@@ -113,7 +114,7 @@
     margin: 140px 0 0 20px;
     z-index: 10;
 }
-#github-banner:hover, #linkedin-banner:hover, #twitter-banner:hover, #codewars-banner:hover {
+.github-banner:hover, .linkedin-banner:hover, .twitter-banner:hover, .codewars-banner:hover {
     margin-top: 40px;   
     transition: .7s ease-in-out;
 }
