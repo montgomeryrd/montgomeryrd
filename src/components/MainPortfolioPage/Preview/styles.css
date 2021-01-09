@@ -1,6 +1,25 @@
+@keyframes row-1 {
+    100% { bottom: 0; }
+}
+@keyframes fade-in {
+    100% { opacity: 1; }
+}
+#section-1 {
+    bottom: -2000px;
+    animation: row-1 300ms forwards;
+    animation-delay: .7s;
+}
+#section-2 {
+    bottom: -2000px;
+    animation: row-1 600ms forwards;
+    animation-delay: .7s;
+}
 #portfolio-head {
     font-family: 'Raleway', sans-serif;
     color: #fff;
+    opacity: 0; 
+    animation: fade-in 1s forwards;
+    animation-delay: 2s;
 }
 .project-container {
     display: flex;
@@ -19,8 +38,8 @@
     position: absolute;
     z-index: 10;
     width: 100%;
-    color: #32adff;
     font-family: 'Raleway', sans-serif;
+    color: #32adff;
     top: -25px;
     font-size: 2.4em;
     opacity: 0;
@@ -30,8 +49,8 @@
     z-index: 10;
     width: 100%;
     padding: 15px 0;
-    color: #fff;
     font-family: 'Raleway', sans-serif;
+    color: #fff;
     font-size: 1.6em;
     top: -10px;
     opacity: 0;
@@ -40,6 +59,7 @@
     position: absolute;
     top: 40%;
     font-family: 'Raleway', sans-serif;
+    color: #fff;
     font-size: 1.2em;
     margin: 0 5px;
     opacity: 0;

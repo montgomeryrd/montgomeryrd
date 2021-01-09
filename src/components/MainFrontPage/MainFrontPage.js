@@ -14,8 +14,8 @@ const MainFrontPage = ({ toggle, setToggle, page, setPage }) => {
             <main className={page}>
                 <h1 className={toggle ? "name open-name" : "name"}>RICHARD MONTGOMERY</h1>
                 <section className={toggle ? "main open-main" : "main"}>
-                    <h3>WEB DEVELOPER</h3>
-                    <p>bio</p>
+                    <h3>Hello,</h3>
+                    <p>I am a web developer living on the Kitsap Penninsula in Washington State. I enjoy building functional web applications using interactive, responsive design.</p>
                 </section>
 
                 <div className="links">

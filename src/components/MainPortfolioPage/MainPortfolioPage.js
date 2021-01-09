@@ -24,22 +24,20 @@ const MainPortfolioPage = ({ page, setPage, toggle, setToggle }) => {
                 <h1 id="portfolio-head">recent projects</h1>
                 <div className="project-container">
                     <Preview 
-                        page={page}
                         section={"section-1"} 
                         project={"tessio"} 
                         website={'http://montgomeryrd.github.io/tessio/'} 
                         img={tessioPreview} 
                         text={'Made with React'} 
-                        description={'A mock website for a Silverdale pizza and bar restaurant using a parallax effect and responsive design.'}
+                        description={'A mock-up website for a Silverdale pizza, beer, and whiskey restaurant using a parallax effect and responsive design.'}
                     />
                     <Preview 
-                        page={page}
                         section={"section-2"} 
                         project={"kirk's app"} 
                         website={'http://montgomeryrd.github.io/tessio-app/'} 
                         img={kirksPreview} 
                         text={'Made with React'} 
-                        description={'A simple shopping app for a previous employer to upgrade his supply run experience using mobile-first design and localStorage.'} />
+                        description={'A basic shopping app for a previous employer to upgrade his supply-run experience using mobile-first design and localStorage.'} />
                     {/* <Preview section={"section-3"} project={'tessio'} website={'http://montgomeryrd.github.io/tessio/'} img={tessioPreview} text={'Made with React, a mock restaurant website using a parallax effect'} />
                     <Preview section={"section-4"} project={'tessio'} website={'http://montgomeryrd.github.io/tessio/'} img={tessioPreview} text={'Made with React, a mock restaurant website using a parallax effect'} />
                     <Preview section={"section-5"} project={'tessio'} website={'http://montgomeryrd.github.io/tessio/'} img={tessioPreview} text={'Made with React, a mock restaurant website using a parallax effect'} />
