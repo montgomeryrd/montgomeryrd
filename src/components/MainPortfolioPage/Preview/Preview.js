@@ -1,9 +1,9 @@
 import './styles.css'
 
-function Preview({ page, section, project, website, img, text, description }) {
+function Preview({ section, project, website, img, text, description }) {
 
     return (
-        <section className="project-view" id={page === 'portfolio' ? `portfolio-${section}` : section}>
+        <section className="project-view" id={section}>
             <h2 className="project-title">{project}</h2>
             <p className="project-text">{text}</p>
             <p className="project-description">{description}</p>

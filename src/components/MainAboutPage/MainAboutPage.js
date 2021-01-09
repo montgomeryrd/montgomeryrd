@@ -1,9 +1,9 @@
 import Logo from '../Logo/Logo';
 
-function MainAboutPage({ page, setPage }) {
+function MainAboutPage({ setPage, setToggle }) {
     return (
         <div>
-            <Logo page={page} setPage={setPage} />
+            <Logo setPage={setPage} setToggle={setToggle} />
         </div>
     );
 }
