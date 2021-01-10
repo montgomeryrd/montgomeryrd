@@ -1,7 +1,7 @@
-import gitHub from '../../assets/github-logo.png';
-import linkedIn from '../../assets/linkedin-logo.png';
-import twitter from '../../assets/twitter-logo.png';
-import codewars from '../../assets/codewars-logo.png';
+import gitHub from '../../assets/banner/github-logo.png';
+import linkedIn from '../../assets/banner/linkedin-logo.png';
+import twitter from '../../assets/banner/twitter-logo.png';
+import codewars from '../../assets/banner/codewars-logo.png';
 
 import './styles.css';
 

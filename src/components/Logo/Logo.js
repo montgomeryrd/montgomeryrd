@@ -9,7 +9,7 @@ function Logo({ setPage, setToggle }) {
 
     return (
         <header id="logo" onClick={() => reset('front')}>
-            <span id="first-letter">R</span><span id="second-letter">m</span>
+            <span id="first-letter">R</span><span id="second-letter">monty.</span>
         </header>
     )
 }
