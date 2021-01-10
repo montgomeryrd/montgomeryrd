@@ -16,6 +16,7 @@ const MainPortfolioPage = ({ page, setPage, toggle, setToggle }) => {
     return (
         <div className={page}>
             <Logo setPage={setPage} setToggle={setToggle} />
+            <div className="block"></div>
             <nav className={toggle ? "portfolio-nav-open" : "portfolio-nav-close"}>
                 <span id="portfolio-about" onClick={() => reset('about')}>about</span>
                 <span id="portfolio-contact" onClick={() => reset('contact')}>contact</span>
