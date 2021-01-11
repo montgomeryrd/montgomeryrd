@@ -12,6 +12,12 @@
     left: 22%;
     font-family: 'Raleway', sans-serif;
     color: #0091f1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .name {
     position: absolute;
@@ -19,9 +25,14 @@
     left: 25%;
     font-size: 4em;
     color: #fff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .highlight:hover, .main-fade-1:hover {
-    cursor: pointer;
     color: #0091f1;
     border: 1px solid #0091f1;
     text-shadow: 0px 15px 20px rgba(0, 28, 121, 0.4);
@@ -185,6 +196,12 @@
     top: 48%;
     left: 25%;
     width: 900px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 @keyframes fade-in {
     100% { opacity: 1; }
@@ -218,6 +235,12 @@
     color: #001624;
     transition: .7s;
     cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 @keyframes lets-go {
     100% { color : #0091f1; }

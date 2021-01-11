@@ -1,5 +1,14 @@
 #logo {
     z-index: 30;
+    animation-delay: 2.5s;
+}
+#about-main {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1600px;
+    height: 100vh;
 }
 @keyframes movein {
     100% { left: 0; }
@@ -11,11 +20,17 @@
     position: absolute;
     opacity: 0;
     animation: appear 1s forwards;
-    animation-delay: 2s;
+    animation-delay: 3.3s;
     top: 20px;
     left: 20px;
     z-index: 10;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 #selfie {
     position: absolute;
@@ -24,10 +39,16 @@
     left: 20px;
     display: flex;
     flex-direction: column;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .fractured {
     position: absolute;
-    left: -730px;
+    left: -800px;
     transition: 1s;
 }
 #me1 {
@@ -57,4 +78,30 @@
 #me7 {
     animation: movein .8s forwards;
     animation-delay: 1s;
+}
+.background-name {
+    position: absolute;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 9em;
+    color: #46464631;
+    opacity: 0;
+    animation: appear 2s forwards;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#passion {
+    top: 0;
+    right: 200px;
+}
+#skills {
+    top: 250px;
+    right: 100px;
+}
+#growth {
+    top: 500px;
+    right: 150px;
 }

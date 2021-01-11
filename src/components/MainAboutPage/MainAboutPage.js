@@ -26,9 +26,17 @@ function MainAboutPage({ setPage, setToggle }) {
                 <img id="me6" className="fractured" src={me6} width="700px" alt="Selfie" />
                 <img id="me7" className="fractured" src={me7} width="700px" alt="Selfie" />
             </aside>
-            <section>
-                
-            </section>
+            <main id="about-main">
+                <section>
+                    <h4 id="passion" className="background-name">passion</h4>
+                </section>
+                <section>
+                    <h4 id="skills" className="background-name">skills</h4>
+                </section>
+                <section>
+                    <h4 id="growth" className="background-name">growth</h4>
+                </section>
+            </main>
         </div>
     );
 }

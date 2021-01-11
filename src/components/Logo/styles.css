@@ -10,11 +10,16 @@
     top: 50px;
     left: -400px;
     animation: logo-in 750ms forwards;
-    animation-delay: 1s;
     font-family: 'Fredericka the Great', cursive;
     color: #fff;
     font-size: 3.5em;
     transition: 1s;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 #second-letter {
     color: #32adff;
