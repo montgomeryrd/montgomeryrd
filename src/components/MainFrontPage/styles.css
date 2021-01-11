@@ -31,9 +31,6 @@
 @keyframes pull-up {
     100% { top: 50%; opacity: 1; }
 }
-@keyframes change-color {
-    100% { color: #0091f1; border: 1px solid #0091f1; }
-}
 #l-1 {
     position: absolute;
     animation: pull-up .4s forwards;

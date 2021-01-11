@@ -1,82 +1,60 @@
-@keyframes slice-out {
-    0% { margin-left: 0; }
-    100% { margin-left: -800px; }
+#logo {
+    z-index: 30;
+}
+@keyframes movein {
+    100% { left: 0; }
+}
+@keyframes appear {
+    100% { opacity: 1; }
 }
 #me {
-    width: 700px;
-    margin: 10px 0 0 10px;
-    /* box-shadow: 3px 3px 5px 6px #00070c83; */
-}
-#img-revealer {
     position: absolute;
+    opacity: 0;
+    animation: appear 1s forwards;
+    animation-delay: 2s;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+#selfie {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    left: 20px;
     display: flex;
     flex-direction: column;
-    top: 0;
-    width: 720px;
-    height: 960px;
 }
-#section-1 {
-    animation: slice-out .7s forwards;
-    background-color: #001624;
-    height: 30px;
+.fractured {
+    position: absolute;
+    left: -730px;
+    transition: 1s;
 }
-#section-2 {
-    background-color: #001624;
-    height: 50px;
+#me1 {
+    animation: movein .7s forwards;
+    animation-delay: 1.95s;
 }
-#section-3 {
-    background-color: #001624;
-    height: 80px;
+#me2 {
+    animation: movein .2s forwards;
+    animation-delay: 1.6s;
 }
-#section-4 {
-    background-color: #001624;
-    height: 20px;
+#me3 {
+    animation: movein .4s forwards;
+    animation-delay: .7s;
 }
-#section-5 {
-    background-color: #001624;
-    height: 100px;
+#me4 {
+    animation: movein .5s forwards;
+    animation-delay: 1.2s;
 }
-#section-6 {
-    background-color: #001624;
-    height: 60px;
+#me5 {
+    animation: movein .3s forwards;
+    animation-delay: 1.8s;
 }
-#section-7 {
-    background-color: #001624;
-    height: 30px;
+#me6 {
+    animation: movein .1s forwards;
+    animation-delay: 1.5s;
 }
-#section-8 {
-    background-color: #001624;
-    height: 70px;
-}
-#section-9 {
-    background-color: #001624;
-    height: 80px;
-}
-#section-10 {
-    background-color: #001624;
-    height: 20px;
-}
-#section-11 {
-    background-color: #001624;
-    height: 60px;
-}
-#section-12 {
-    background-color: #001624;
-    height: 90px;
-}
-#section-13 {
-    background-color: #001624;
-    height: 80px;
-}
-#section-14 {
-    background-color: #001624;
-    height: 70px;
-}
-#section-15 {
-    background-color: #001624;
-    height: 50px;
-}
-#section-16 {
-    background-color: #001624;
-    height: 60px;
+#me7 {
+    animation: movein .8s forwards;
+    animation-delay: 1s;
 }

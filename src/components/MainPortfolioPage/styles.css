@@ -4,12 +4,3 @@
     text-align: center;
     top: 10%;
 }
-.block {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: #002B46;
-    width: 130px;
-    height: 150px;
-    z-index: 10;
-}
