@@ -28,19 +28,22 @@ function MainAboutPage({ setPage, setToggle }) {
             </aside>
             <div className="about-main-container">
                 <main className="about-main">
+                    <h4 id="passion" className="background-name">passion</h4>
                     <section id="passion-section" className="summaries">
-                        <h4 id="passion" className="background-name">passion</h4>
-                        It's taken me a lot of time to put my thumb on what it is I feel passionate about. In my free time, I've enjoyed drawing, acrylic painting, playing guitar, even building personal computers over the years, but when I started coding, I realized what it is about my hobbies that I feel passion towards. It's creating. It's problem solving. It's design. All aspects I've discovered within building websites and web applications.
+                        It's taken me time to put my thumb on what it is I feel passionate about. In my free time, I've enjoyed drawing, acrylic painting, playing guitar, even building personal computers over the years, but when I started coding, I realized what it is about my hobbies that I feel passion towards. It's creating. It's problem solving. It's design. All aspects I've discovered within building websites and web applications.
                     </section>
+                    <h4 id="skills" className="background-name">skills</h4>
                     <section id="skills-section" className="summaries">
-                        <h4 id="skills" className="background-name">skills</h4>
                         I'm looking to become a junior developer while expanding my skills in full stack javascript. I have a firm knowledge of HTML, CSS, JavaScript, and have experience working with various frameworks and libraries. I feel most proficient with React.
                     </section>
+                    <h4 id="growth" className="background-name">growth</h4>
                     <section id="growth-section" className="summaries">
-                        <h4 id="growth" className="background-name">growth</h4>
                         I believe your best investment is in yourself and the second best investment is in the people around you (and your third best is TSLA).
                     </section>
                 </main>
+                <button id="about-page-button" onClick={() => setPage('portfolio')}>
+                    Next
+                </button>
             </div>
         </div>
     );
