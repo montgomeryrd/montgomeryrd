@@ -1,17 +1,15 @@
 #logo {
+    left: -3000px;
     z-index: 30;
     animation-delay: 2.5s;
 }
-#about-main {
+.about-container {
     position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
     width: 1600px;
     height: 100vh;
-}
-@keyframes movein {
-    100% { left: 0; }
 }
 @keyframes appear {
     100% { opacity: 1; }
@@ -21,7 +19,7 @@
     opacity: 0;
     animation: appear 1s forwards;
     animation-delay: 3.3s;
-    top: 20px;
+    top: 120px;
     left: 20px;
     z-index: 10;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
@@ -35,7 +33,7 @@
 #selfie {
     position: absolute;
     cursor: pointer;
-    top: 20px;
+    top: 120px;
     left: 20px;
     display: flex;
     flex-direction: column;
@@ -48,39 +46,44 @@
 }
 .fractured {
     position: absolute;
-    left: -800px;
+    left: -3000px;
     transition: 1s;
 }
+@keyframes moveinleft {
+    100% { left: 0; }
+}
 #me1 {
-    animation: movein .7s forwards;
+    animation: moveinleft .7s forwards;
     animation-delay: 1.95s;
 }
 #me2 {
-    animation: movein .2s forwards;
+    animation: moveinleft .2s forwards;
     animation-delay: 1.6s;
 }
 #me3 {
-    animation: movein .4s forwards;
+    animation: moveinleft .4s forwards;
     animation-delay: .7s;
 }
 #me4 {
-    animation: movein .5s forwards;
+    animation: moveinleft .5s forwards;
     animation-delay: 1.2s;
 }
 #me5 {
-    animation: movein .3s forwards;
+    animation: moveinleft .3s forwards;
     animation-delay: 1.8s;
 }
 #me6 {
-    animation: movein .1s forwards;
+    animation: moveinleft .1s forwards;
     animation-delay: 1.5s;
 }
 #me7 {
-    animation: movein .8s forwards;
+    animation: moveinleft .8s forwards;
     animation-delay: 1s;
 }
+.about-main-container {
+    position: relative;
+}
 .background-name {
-    position: absolute;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 9em;
     color: #46464631;
@@ -93,15 +96,95 @@
     -ms-user-select: none;
     user-select: none;
 }
+.summaries {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: #777777;
+    left: 3000px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@keyframes moveinright1 {
+    30% { left: 840px; color: #777777; }
+    100% { left: 840px; color: #fff; }
+}
 #passion {
-    top: 0;
-    right: 200px;
+    position: absolute;
+    top: -90px;
+    left: 770px;
+    opacity: 0;
+    animation: appear 4s forwards;
+}
+#passion-section {
+    width: 700px;
+    top: 200px;
+    animation: moveinright1 6s forwards;
+    animation-delay: 1.8s;
+}
+@keyframes moveinright2 {
+    30% { left: 990px; color: #777777; }
+    100% { left: 990px; color: #fff; }
 }
 #skills {
-    top: 250px;
-    right: 100px;
+    position: absolute;
+    top: 300px;
+    left: 890px;
+    opacity: 0;
+    animation: appear 5s forwards;
+}
+#skills-section {
+    width: 500px;
+    top: 580px;
+    animation: moveinright2 6s forwards;
+    animation-delay: 2.6s;
+}
+@keyframes moveinright3 {
+    30% { left: 770px; color: #777777; }
+    100% { left: 770px; color: #fff; }
 }
 #growth {
-    top: 500px;
-    right: 150px;
+    position: absolute;
+    top: 630px;
+    left: 890px;
+    opacity: 0;
+    animation: appear 6s forwards;
+}
+#growth-section {
+    width: 500px;
+    top: 920px;
+    animation: moveinright3 6s forwards;
+    animation-delay: 2.2s;
+}
+#about-page-button {
+    position: absolute;
+    top: 1000px;
+    left: 1400px;
+    font-size: 3em;
+    padding: 10px 20px;
+    opacity: 0;
+    animation: fade-in 1s forwards;
+    animation-delay: 5s;
+    border: 5px solid #0091f1;
+    background: #fff;
+    color: #001624;
+    transition: .7s;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#about-page-button:hover {
+    background: #001624;
+    box-shadow: 0px 15px 20px rgba(0, 28, 121, 0.4);
+    border: 7px solid #0091f1;
+    color: #fff;
+    transition: .7s;
 }

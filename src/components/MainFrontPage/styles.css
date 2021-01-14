@@ -1,10 +1,16 @@
 .front {
     position: absolute;
+    top: 50px;
     left: 0;
     right: 0;
     margin: 0 auto;
     width: 1600px;
     height: 100vh;
+}
+@media(max-width: 1600px) {
+    .front {
+        width: 100vw;
+    }
 }
 .hi {
     position: absolute;
