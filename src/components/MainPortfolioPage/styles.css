@@ -4,3 +4,31 @@
     text-align: center;
     top: 10%;
 }
+#portfolio-page-button {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 3em;
+    padding: 10px 20px;
+    opacity: 0;
+    animation: fade-in 1s forwards;
+    animation-delay: 5s;
+    border: 5px solid #0091f1;
+    background: #fff;
+    color: #001624;
+    transition: .7s;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#portfolio-page-button:hover {
+    background: #001624;
+    box-shadow: 0px 15px 20px rgba(0, 28, 121, 0.4);
+    border: 5px solid #0091f1;
+    color: #fff;
+    transition: .7s;
+}

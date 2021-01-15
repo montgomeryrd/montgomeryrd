@@ -44,6 +44,9 @@ const MainPortfolioPage = ({ page, setPage, toggle, setToggle }) => {
                     <Preview section={"section-6"} project={'tessio'} website={'http://montgomeryrd.github.io/tessio/'} img={tessioPreview} text={'Made with React, a mock restaurant website using a parallax effect'} /> */}
                 </div> 
             </main>
+            <button id="portfolio-page-button" onClick={() => setPage('contact')}>
+                Get In Touch
+            </button>
         </div>
     )
 }
