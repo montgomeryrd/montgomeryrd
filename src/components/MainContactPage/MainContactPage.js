@@ -1,9 +1,9 @@
 import Logo from '../Logo/Logo';
 
-function MainContactPage({ page, setPage }) {
+function MainContactPage({ page, setPage, toggle, setToggle }) {
     return (
         <div>
-            <Logo page={page} setPage={setPage} />
+            <Logo setPage={setPage} setToggle={setToggle} />
             <h1>Get in touch</h1>
             <a id="linkedin-link" href="https://linkedin.com/in/montgomeryrd" target="_blank" rel="noopener noreferrer" alt="linkedin montgomeryrd">
 
