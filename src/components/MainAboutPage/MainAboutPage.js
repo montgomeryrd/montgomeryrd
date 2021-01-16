@@ -30,7 +30,7 @@ function MainAboutPage({ setPage, setToggle }) {
                 <main className="about-main">
                     <h4 id="passion" className="background-name">passions</h4>
                     <section id="passion-section" className="summaries">
-                        When asked about my passions, I used to say "art". I like to draw, to paint with acrylics and play guitar, but the answer always felt inadequate. I didn't consider how I could be misunderstanding my passions. I also like to build PCs, play with puzzles, and have an interest in woodworking. When I became a more proficient coder, I realized it wasn't the hobbies I felt passionate about, but the act of them. I felt passion in creating something new, in making something functional. I felt passion in overcoming issues and progressing my skills, in producing something aesthetic, all aspects I've discovered in building websites and web applications.
+                    I used to refer to "Art" as my passion because I like to draw, to paint with acrylics and play guitar. I didn't really consider how I was misunderstanding my passion. After all, I've enjoyed building PCs, putting together puzzles, even making pizza. As I became a more proficient coder, I realized it wasn't the hobbies that defined my passions, but the act of my hobbies. I have passion in creating, making something new, aesthetic and functional, and I enjoy learning and progressing my skills, all aspects I've discovered in building websites and web applications. 
                     </section>
                     <h4 id="skills" className="background-name">skills</h4>
                     <section id="skills-section" className="summaries">
