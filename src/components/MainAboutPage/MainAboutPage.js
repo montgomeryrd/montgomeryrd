@@ -28,9 +28,9 @@ function MainAboutPage({ setPage, setToggle }) {
             </aside>
             <div className="about-main-container">
                 <main className="about-main">
-                    <h4 id="passion" className="background-name">passions</h4>
+                    <h4 id="passion" className="background-name">passion</h4>
                     <section id="passion-section" className="summaries">
-                    I used to refer to "Art" as my passion because I like to draw, to paint with acrylics and play guitar. I didn't really consider how I was misunderstanding my passion. After all, I've enjoyed building PCs, putting together puzzles, even making pizza. As I became a more proficient coder, I realized it wasn't the hobbies that defined my passions, but the act of my hobbies. I have passion in creating, making something new, aesthetic and functional, and I enjoy learning and progressing my skills, all aspects I've discovered in building websites and web applications. 
+                    I used to refer to "Art" as my passion because I like to draw, to paint with acrylics and play guitar. I didn't really consider how I was misunderstanding my passions. I enjoyed more than art, such as building PCs, putting together puzzles, even making pizza. As I became a more proficient coder, I realized it wasn't the hobbies that defined my passions, but the act of my hobbies. I have passion in creating, making something new, I enjoy design aesthetics and functionality, and I enjoy learning and progressing my skills,  all aspects I've discovered in building websites and web applications. 
                     </section>
                     <h4 id="skills" className="background-name">skills</h4>
                     <section id="skills-section" className="summaries">
