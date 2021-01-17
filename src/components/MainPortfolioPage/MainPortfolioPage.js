@@ -45,7 +45,7 @@ const MainPortfolioPage = ({ page, setPage, toggle, setToggle }) => {
                 </div> 
             </main>
             <button id="portfolio-page-button" onClick={() => setPage('contact')}>
-                Get In Touch
+                Contact
             </button>
         </div>
     )
