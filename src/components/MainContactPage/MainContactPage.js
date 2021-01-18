@@ -19,7 +19,7 @@ function MainContactPage({ page, setPage, toggle, setToggle }) {
                                     name="firstname"
                                     id="firstname"
                                     required
-                                    className="for-element"
+                                    className="form-element"
                                     placeholder="Maddox"
                                 />
                             </div>
