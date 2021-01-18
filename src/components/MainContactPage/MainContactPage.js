@@ -1,4 +1,5 @@
 import Logo from '../Logo/Logo';
+import './styles.css';
 
 function MainContactPage({ page, setPage, toggle, setToggle }) {
     return (
@@ -7,8 +8,8 @@ function MainContactPage({ page, setPage, toggle, setToggle }) {
             <main>
                 <section className="contact-page">
                     <div className="contact-container">
-                        <h1>Get in Touch</h1>
-                        <p>Please enter your contact information and I'll try to respond in timely fashion</p>
+                        <h1>Get in touch</h1>
+                        <p>Please enter your contact information and I will try and respond in a timely fashion</p>
 
                         <form>
                             <div className="form-group">
@@ -18,7 +19,7 @@ function MainContactPage({ page, setPage, toggle, setToggle }) {
                                     name="firstname"
                                     id="firstname"
                                     required
-                                    className="for-element"
+                                    className="form-element"
                                     placeholder="Maddox"
                                 />
                             </div>
