@@ -6,8 +6,8 @@ function MainContactPage({ page, setPage, toggle, setToggle }) {
         <div>
             <Logo setPage={setPage} setToggle={setToggle} />
             <main>
-                <section className="contact-page">
-                    <div className="contact-container">
+                <section className="contact">
+                    <div className="container">
                         <h1>Get in touch</h1>
                         <p>Please enter your contact information and I will try and respond in a timely fashion</p>
 
@@ -20,7 +20,7 @@ function MainContactPage({ page, setPage, toggle, setToggle }) {
                                     id="firstname"
                                     required
                                     className="form-element"
-                                    placeholder="Maddox"
+                                    placeholder=""
                                 />
                             </div>
                             <div className="form-group">
@@ -31,7 +31,7 @@ function MainContactPage({ page, setPage, toggle, setToggle }) {
                                     id="lastname" 
                                     required 
                                     className="form-element" 
-                                    placeholder="Montgomery" 
+                                    placeholder="" 
                                 />
                             </div>
                             <div class="form-group">
@@ -42,7 +42,7 @@ function MainContactPage({ page, setPage, toggle, setToggle }) {
                                     id="email" 
                                     required 
                                     className="form-element" 
-                                    placeholder="john.doe@example.com" />
+                                    placeholder="" />
                             </div>
                             <div class="form-group">
                                 <label for="company">Company</label>
@@ -51,7 +51,7 @@ function MainContactPage({ page, setPage, toggle, setToggle }) {
                                     name="company" 
                                     id="company" 
                                     className="form-element" 
-                                    placeholder="john.doe.affiliates" />
+                                    placeholder="" />
                             </div>
                             <div class="form-group full">
                                 <label for="message">What are you looking for?</label>
@@ -59,7 +59,7 @@ function MainContactPage({ page, setPage, toggle, setToggle }) {
                                     name="message" 
                                     id="message" 
                                     className="form-element" 
-                                    placeholder="I want to hire you..."></textarea>
+                                    placeholder=""></textarea>
                             </div>
                             <div class="submit-group">
                                 <input type="submit" value="SEND MESSAGE" />
