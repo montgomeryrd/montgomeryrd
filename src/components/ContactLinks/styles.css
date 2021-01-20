@@ -17,6 +17,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    transition: .4s;
 }
 .github-banner {
     position: absolute;
@@ -113,7 +114,7 @@
     margin-left: 23px;
     z-index: 100;
     height: 21px;
-    width: 92px;
+    width: 93px;
     background-color: #474747;
 }
 .contact-links-container img {
@@ -124,10 +125,4 @@
 .github-banner:hover, .linkedin-banner:hover, .twitter-banner:hover, .codewars-banner:hover {
     margin-top: 40px;   
     transition: .7s ease-in-out;
-}
-@media(max-width: 600px) {
-    .contact-links-container {
-        /* position: absolute; */
-        transform: scale(.78);
-    }
 }

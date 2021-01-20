@@ -1,28 +1,20 @@
-
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import Preview from './Preview/Preview';
+import MainContactPage from '../MainContactPage/MainContactPage';
 
 import tessioPreview from '../../assets/previews/tessio-preview.png';
 import kirksPreview from '../../assets/previews/kirk-preview.png';
 import './styles.css';
 
-const MainPortfolioPage = ({ page, setPage, toggle, setToggle }) => {
+const MainPortfolioPage = ({ setPage }) => {
     
-    function reset(name) {
-        setToggle(false);
-        setPage(name);
-    }
-
     return (
-        <div className={page}>
-            <Logo setPage={setPage} setToggle={setToggle} />
-            <nav className={toggle ? "portfolio-nav-open" : "portfolio-nav-close"}>
-                <span id="portfolio-about" onClick={() => reset('about')}>about</span>
-                <span id="portfolio-contact" onClick={() => reset('contact')}>contact</span>
-            </nav>
-            <main className="main-portfolio-container">
-                <h1 id="portfolio-head">recent projects</h1>
-                <div className="project-container">
+        <div className='portfolio-page-container'>
+            <Logo setPage={setPage} />
+            <main className="portfolio-page">
+                <h1 id="portfolio-page-title">recent projects</h1>
+                <div className="preview-container">
                     <Preview 
                         section={"section-1"} 
                         project={"tessio"} 
@@ -44,9 +36,16 @@ const MainPortfolioPage = ({ page, setPage, toggle, setToggle }) => {
                     <Preview section={"section-6"} project={'tessio'} website={'http://montgomeryrd.github.io/tessio/'} img={tessioPreview} text={'Made with React, a mock restaurant website using a parallax effect'} /> */}
                 </div> 
             </main>
-            <button id="portfolio-page-button" onClick={() => setPage('contact')}>
-                Contact
-            </button>
+            <Router>
+                <NavLink to="/contact" style={{textDecoration: 'none'}}>
+                    <button id="portfolio-page-button" onClick={() => setPage('contact')}>
+                        Contact
+                    </button>
+                </NavLink>
+                <Route path='/contact' render={props => (
+                    <MainContactPage props={props}/>
+                )} />
+            </Router>
         </div>
     )
 }
