@@ -6,27 +6,34 @@ import MainContactPage from './components/MainContactPage/MainContactPage';
 import './styles.css';
 
 function App() {
-	const [toggle, setToggle] = useState(false);
 	const [page, setPage] = useState('front');
 
 	function current(page) {
         switch (page) {
             case 'front':
-                return <MainFrontPage page={page} setPage={setPage} toggle={toggle} setToggle={setToggle} />;
+                return <MainFrontPage setPage={setPage} />;
             case 'about':
-                return <MainAboutPage page={page} setPage={setPage} toggle={toggle} setToggle={setToggle} />;
+                return <MainAboutPage setPage={setPage} />;
             case 'portfolio':
-                return <MainPortfolioPage page={page} setPage={setPage} toggle={toggle} setToggle={setToggle} />;
+                return <MainPortfolioPage setPage={setPage} />;
             case 'contact':
-                return <MainContactPage page={page} setPage={setPage} toggle={toggle} setToggle={setToggle} />;
+                return <MainContactPage setPage={setPage} />;
             default:
                 break;
-        }
-    }
+		}
+	}
 
 	return (
 		<div className="App">
-			{current(page)}
+			<div className="desktop-App">
+				{current(page)}
+			</div>
+			<div className="mobile-App">
+				<MainFrontPage />
+				<MainAboutPage />
+				<MainPortfolioPage />
+				<MainContactPage />
+			</div>
 		</div>
 	);
 }

@@ -1,3 +1,58 @@
+.contact-page-nav ul {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right: 50px;
+    color:#fff;
+}
+.contact-page-nav ul li {
+    cursor: pointer;
+    padding: 10px;
+}
+.contact-me-links {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 800px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#in-link, #t-link {
+    position: relative;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+}
+#in-link {
+    background: #1F618D;
+    border-radius: 20%;
+}
+#t-link {
+    background: #0076C6;
+    border-radius: 50%;
+}
+#in-link-logo {
+    position: absolute;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 4.8em;
+    margin: 30px 0 0 10px;
+}
+#t-link-logo {
+    position: absolute;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 4.8em;
+    margin: 30px 0 0 27px;
+}
+/* form */
 .contact {
     min-height:100vh;
     padding-top:100px;

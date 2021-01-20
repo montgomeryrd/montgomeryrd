@@ -3,7 +3,7 @@
     z-index: 30;
     animation-delay: 2.5s;
 }
-.about-container {
+.about-page-container {
     position: absolute;
     left: 0;
     right: 0;
@@ -14,7 +14,7 @@
 @keyframes appear {
     100% { opacity: 1; }
 }
-#me {
+#selfie-colored {
     position: absolute;
     opacity: 0;
     animation: appear 1s forwards;
@@ -30,7 +30,7 @@
     -ms-user-select: none;
     user-select: none;
 }
-#selfie {
+#selfie-black-and-white {
     position: absolute;
     cursor: pointer;
     top: 120px;
@@ -44,7 +44,7 @@
     -ms-user-select: none;
     user-select: none;
 }
-.fractured {
+.selfie-fractured {
     position: absolute;
     left: -3000px;
     transition: 1s;
@@ -80,11 +80,11 @@
     animation: moveinleft .8s forwards;
     animation-delay: 1s;
 }
-.about-main-container {
+.about-page {
     position: relative;
     margin-top: -30px;
 }
-.background-name {
+.about-page-background-name {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 9em;
     color: #46464631;
@@ -189,4 +189,23 @@
     border: 7px solid #0091f1;
     color: #fff;
     transition: .7s;
+}
+@media(max-width: 800px) {
+    .about-page-container {
+        display: none;
+    }
+    /* #me {
+        transform: scale(.3);
+        top: -243px;
+        left: -225px;
+    }
+    #selfie {
+        top: 85px;
+        transform: scale(.3);
+    }
+    #logo {
+        font-size: 2em;
+        top: 20px;
+        margin-left: -30px;
+    } */
 }

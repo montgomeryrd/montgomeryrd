@@ -1,23 +1,21 @@
-.front {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 1600px;
+.front-page-container {
+    position: relative;
+    width: 100vw;
     height: 100vh;
 }
-@media(max-width: 1600px) {
-    .front {
-        width: 100vw;
-    }
+.front-page {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100vh;
 }
-.hi {
+.front-page-title {
     position: absolute;
-    top: 28%;
-    left: 22%;
+    top: 350px;
+    left: 50px;
     font-family: 'Raleway', sans-serif;
     color: #0091f1;
+    transition: 1s;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -25,10 +23,10 @@
     -ms-user-select: none;
     user-select: none;
 }
-.name {
+.front-page-name {
     position: absolute;
-    top: 35%;
-    left: 25%;
+    top: 420px;
+    left: 120px;
     font-size: 4em;
     color: #fff;
     -webkit-touch-callout: none;
@@ -38,7 +36,7 @@
     -ms-user-select: none;
     user-select: none;
 }
-.highlight:hover, .main-fade-1:hover {
+.front-page-letters:hover, .main-fade-1:hover {
     color: #0091f1;
     border: 1px solid #0091f1;
     text-shadow: 0px 15px 20px rgba(0, 28, 121, 0.4);
@@ -46,7 +44,7 @@
     transition: 350ms;
 }
 @keyframes pull-up {
-    100% { top: 50%; opacity: 1; }
+    100% { top: 20px; opacity: 1; }
 }
 #l-1 {
     position: absolute;
@@ -54,6 +52,7 @@
     animation-delay: 1.2s;
     top: 1000px;
     opacity: 0;
+    transition: .1s;
 }
 #l-2 {
     position: absolute;
@@ -62,6 +61,7 @@
     top: 1300px;
     opacity: 0;
     left: 50px;
+    transition: .2s;
 }
 #l-3 {
     position: absolute;
@@ -70,6 +70,7 @@
     top: 1100px;
     opacity: 0;
     left: 66px;
+    transition: .3s;
 }
 #l-4 {
     position: absolute;
@@ -78,6 +79,7 @@
     top: 2000px;
     opacity: 0;
     left: 103px;
+    transition: .4s;
 }
 #l-5 {
     position: absolute;
@@ -86,6 +88,7 @@
     top: 1700px;
     opacity: 0;
     left: 145px;
+    transition: .5s;
 }
 #l-6 {
     position: absolute;
@@ -94,6 +97,7 @@
     top: 1200px;
     opacity: 0;
     left: 183px;
+    transition: .6s;
 }
 #l-7 {
     position: absolute;
@@ -102,6 +106,7 @@
     top: 1500px;
     opacity: 0;
     left: 210px;
+    transition: .7s;
 } 
 #l-8 {
     position: absolute;
@@ -118,6 +123,7 @@
     top: 1900px;
     opacity: 0;
     left: 280px;
+    transition: .9s;
 }
 #l-10 {
     position: absolute;
@@ -126,6 +132,7 @@
     top: 1300px;
     opacity: 0;
     left: 353px;
+    transition: 1s;
 }
 #l-11 {
     position: absolute;
@@ -136,6 +143,7 @@
     top: 1200px;
     opacity: 0;
     left: 397px;
+    transition: 1.1s;
 }
 #l-12 {
     position: absolute;
@@ -144,6 +152,7 @@
     top: 1700px;
     opacity: 0;
     left: 442px;
+    transition: 1.2s;
 }
 #l-13 {
     position: absolute;
@@ -153,6 +162,7 @@
     opacity: 0;
     margin-top: 20px;
     left: 473px;
+    transition: 1.3s;
 }
 #l-14 {
     position: absolute;
@@ -161,6 +171,7 @@
     top: 1900px;
     opacity: 0;
     left: 515px;
+    transition: 1.4s;
 }
 #l-15 {
     position: absolute;
@@ -169,6 +180,7 @@
     top: 1900px;
     opacity: 0;
     left: 560px;
+    transition: 1.5s;
 }
 #l-16 {
     position: absolute;
@@ -177,6 +189,7 @@
     top: 1700px;
     opacity: 0;
     left: 627px;
+    transition: 1.6s;
 }
 #l-17 {
     position: absolute;
@@ -185,6 +198,7 @@
     top: 1500px;
     opacity: 0;
     left: 670px;
+    transition: 1.7s;
 }
 #l-18 {
     position: absolute;
@@ -193,14 +207,15 @@
     top: 1300px;
     opacity: 0;
     left: 703px;
+    transition: 1.8s;
 }
-.main {
+.front-page-main {
     position: absolute;
     font-family: 'Raleway', sans-serif;
     color: #fff;
     font-size: 1.5em;   
-    top: 48%;
-    left: 25%;
+    top: 600px;
+    left: 100px;
     width: 900px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -208,6 +223,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    transition: 1.5s;
 }
 @keyframes fade-in {
     100% { opacity: 1; }
@@ -227,10 +243,10 @@
     animation: fade-in 1s forwards;
     animation-delay: 7s;
 }
-#main-front-page-button {
+#front-page-button {
     position: absolute;
-    top: 65%;
-    left: 60%;
+    top: 800px;
+    left: 550px;
     font-size: 3em;
     padding: 10px 20px;
     opacity: 0;
@@ -251,36 +267,162 @@
 @keyframes lets-go {
     100% { color : #0091f1; }
 }
-#main-front-page-button:hover {
+#front-page-button:hover {
     background: #001624;
     box-shadow: 0px 15px 20px rgba(0, 28, 121, 0.4);
     border: 7px solid #0091f1;
     transition: .7s;
 }
-#main-front-page-button:hover #b-1 {
+#front-page-button:hover #b-1 {
     animation: lets-go .4s forwards;
 }
-#main-front-page-button:hover #b-2 {
+#front-page-button:hover #b-2 {
     animation: lets-go .6s forwards;
 }
-#main-front-page-button:hover #b-3 {
+#front-page-button:hover #b-3 {
     animation: lets-go .8s forwards;
 }
-#main-front-page-button:hover #b-4 {
+#front-page-button:hover #b-4 {
     animation: lets-go 1s forwards;
 }
-#main-front-page-button:hover #b-5 {
+#front-page-button:hover #b-5 {
     animation: lets-go 1.2s forwards;
 }
-#main-front-page-button:hover #b-6 {
+#front-page-button:hover #b-6 {
     animation: lets-go 1.4s forwards;
 }
-#main-front-page-button:hover #b-7 {
+#front-page-button:hover #b-7 {
     animation: lets-go 1.6s forwards;
 }
-#main-front-page-button:hover #b-8 {
+#front-page-button:hover #b-8 {
     animation: lets-go 1.8s forwards;
 }
-#main-front-page-button:hover #b-9 {
+#front-page-button:hover #b-9 {
     animation: lets-go 2s forwards;
+}
+@media(max-width: 1200px) {
+    .front-page {
+        transform: scale(.8);
+        width: 100vw;
+    }
+}
+/* mobile */
+@media(max-width: 800px) {
+    .front-page-container {
+        display: none;
+    }
+    /* .contact-links-container {
+        transform: scale(.4);
+        transition: .4s;
+        margin: 0 auto;
+    }
+    .front-page {
+        top: -60px;
+        width: 500px;
+    }
+    .front-page-title {
+        margin-top: -90px;
+        margin-left: -40px;
+        font-size: 1.4em;
+        transition: .35s;
+    }
+    .front-page-letters {
+        font-size: .5em;
+        margin-top: -180px;
+    }
+    @keyframes pull-up {
+        100% { top: 20px; opacity: 1; }
+    }
+    #l-1 {
+        margin-left: -70px;
+        transition: .1s;
+    }
+    #l-2 {
+        margin-left: -93px;
+        transition: .2s;
+    }
+    #l-3 {
+        margin-left: -98px;
+        transition: .3s;
+    }
+    #l-4 {
+        margin-left: -116px;
+        transition: .4s;
+    }
+    #l-5 {
+        margin-left: -135px;
+        transition: .5s;
+    }
+    #l-6 {
+        margin-left: -152px;
+        transition: .6s;
+    }
+    #l-7 {
+        margin-left: -164px;
+        transition: .7s;
+    }
+    #l-9 {
+        margin-top: -130px;
+        margin-left: -320px;
+        transition: .9s;
+    }
+    #l-10 {
+        margin-top: -130px;
+        margin-left: -354px;
+        transition: 1s;
+    }
+    #l-11 {
+        margin-top: -130px;
+        margin-left: -375px;
+        transition: 1.1s;
+    }
+    #l-12 {
+        margin-top: -130px;
+        margin-left: -395px;
+        transition: 1.2s;
+    }
+    #l-13 {
+        margin-top: -130px;
+        margin-left: -410px;
+        transition: 1.3s;
+    }
+    #l-14 {
+        margin-top: -130px;
+        margin-left: -430px;
+        transition: 1.4s;
+    }
+    #l-15 {
+        margin-top: -130px;
+        margin-left: -452px;
+        transition: 1.5s;
+    }
+    #l-16 {
+        margin-top: -130px;
+        margin-left: -486px;
+        transition: 1.6s;
+    }
+    #l-17 {
+        margin-top: -130px;
+        margin-left: -507px;
+        transition: 1.7s;
+    }
+    #l-18 {
+        margin-top: -130px;
+        margin-left: -524px;
+        transition: 1.8s;
+    }
+    .front-page-main {
+        text-align: center;
+        font-size: .9em;
+        top: 450px;
+        left: 30px;
+        width: 80vw;
+        line-height: 20px;
+        transition: 1.5s;
+    }
+    #front-page-button {
+        top: 590px;
+        left: 90px;
+        transform: scale(.6);
+    } */
 }
