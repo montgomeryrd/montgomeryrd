@@ -9,7 +9,7 @@
     position: absolute;
     display: flex;
     flex-direction: row;
-    left: 20px;
+    right: 700px;
     z-index: 100;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -22,35 +22,35 @@
 .github-banner {
     position: absolute;
     -webkit-animation: drop-banners 350ms forwards;
-    -webkit-animation-delay: 9.4s;
+    -webkit-animation-delay: 4s;
     animation: drop-banners 350ms forwards;
-    animation-delay: 9.4s;
+    animation-delay: 4s;
     top: -500px;
 }
 .linkedin-banner {
     position: absolute;
     -webkit-animation: drop-banners 350ms forwards;
-    -webkit-animation-delay: 9.2s;
+    -webkit-animation-delay: 4.2s;
     animation: drop-banners 350ms forwards;
-    animation-delay: 9.2s;
+    animation-delay: 4.2s;
     top: -500px;
     left: 150px;
 }
 .twitter-banner {
     position: absolute;
     -webkit-animation: drop-banners 350ms forwards;
-    -webkit-animation-delay: 9s;
+    -webkit-animation-delay: 4.4s;
     animation: drop-banners 350ms forwards;
-    animation-delay: 9s;
+    animation-delay: 4.4s;
     top: -500px;
     left: 300px;
 }
 .codewars-banner {
     position: absolute;
     -webkit-animation: drop-banners 350ms forwards;
-    -webkit-animation-delay: 8.8s;
+    -webkit-animation-delay: 4.6s;
     animation: drop-banners 350ms forwards;
-    animation-delay: 8.8s;
+    animation-delay: 4.6s;
     top: -500px;
     left: 450px;
 }
@@ -61,26 +61,26 @@
 #github {
     background-color: #343434;
     border-left: 2px solid #494949;
-    height: 180px;
+    height: 280px;
     z-index: 10;
 }
 #linkedin {
     background-color: #1F618D;
     border-left: 2px solid #256fa0;
-    height: 150px;
+    height: 260px;
     z-index: 10;
 }
 #twitter {
     position: relative;
     background-color: #0076C6;
     border-left: 2px solid #0091f1;
-    height: 120px;
+    height: 280px;
 }
 #codewars {
     position: relative;
     background-color: #474747;
     border-left: 2px solid #646464;
-    height: 100px;
+    height: 260px;
 }
 .banner-tip {
     position: absolute;
@@ -110,11 +110,11 @@
 }
 #hide-name {
     position: absolute;
-    margin-top: -2px;
-    margin-left: 23px;
+    margin-top: -21px;
+    margin-left: 20px;
     z-index: 100;
-    height: 21px;
-    width: 93px;
+    height: 25px;
+    width: 100px;
     background-color: #474747;
 }
 .contact-links-container img {

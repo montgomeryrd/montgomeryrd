@@ -3,8 +3,7 @@ import ContactLinks from '../ContactLinks/ContactLinks';
 import MainAboutPage from '../MainAboutPage/MainAboutPage';
 import './styles.css';
 
-function MainFrontPage({ setPage }) {
-
+function MainFrontPage() {
     return (
         <div className="front-page-container">
             <ContactLinks />
@@ -18,7 +17,7 @@ function MainFrontPage({ setPage }) {
                     <span id="l-5" className="front-page-letters">a</span>
                     <span id="l-6" className="front-page-letters">r</span>
                     <span id="l-7" className="front-page-letters">d</span>
-                    <span id="l-8"> </span>
+
                     <span id="l-9" className="front-page-letters">M</span>
                     <span id="l-10" className="front-page-letters">o</span>
                     <span id="l-11" className="front-page-letters">n</span>
@@ -32,18 +31,24 @@ function MainFrontPage({ setPage }) {
                 </h1>
                 <section className="front-page-main">
                     <span>
-                        <span id="w-1">I am a web developer</span>
-                        <span id="w-2"> living on the Kitsap Penninsula</span>
-                        <span id="w-3"> in Washington State.</span>
-                        <span id="w-1"> I enjoy building functional</span>
-                        <span id="w-2"> web applications using</span>
-                        <span id="w-2"> interactive, adaptive</span>
-                        <span id="w-3"> and responsive design.</span>
+                        <span id="w-1">I am a</span>
+                        <span id="w-2"> web developer</span>
+                        <span id="w-3"> living on </span>
+                        <span id="w-4">the Kitsap</span>
+                        <span id="w-5"> Penninsula</span>
+                        <span id="w-6"> in Washington </span>
+                        <span id="w-3">State. I </span>
+                        <span id="w-2">enjoy building </span>
+                        <span id="w-3">functional web </span>
+                        <span id="w-4">applications using</span>
+                        <span id="w-5"> interactive</span>
+                        <span id="w-6">, adaptive and </span>
+                        <span id="w-1">responsive design.</span>
                     </span>
                 </section>
                 <Router>
                     <NavLink to="/about" style={{ textDecoration: 'none' }}>
-                        <button id="front-page-button" onClick={() => setPage('about')}>
+                        <button id="front-page-button">
                             <span id="b-1">L</span>
                             <span id="b-2">e</span>
                             <span id="b-3">t</span>

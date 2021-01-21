@@ -1,4 +1,4 @@
-#logo {
+/* #logo {
     left: -3000px;
     z-index: 30;
     animation-delay: 2.5s;
@@ -194,18 +194,4 @@
     .about-page-container {
         display: none;
     }
-    /* #me {
-        transform: scale(.3);
-        top: -243px;
-        left: -225px;
-    }
-    #selfie {
-        top: 85px;
-        transform: scale(.3);
-    }
-    #logo {
-        font-size: 2em;
-        top: 20px;
-        margin-left: -30px;
-    } */
-}
+} */
