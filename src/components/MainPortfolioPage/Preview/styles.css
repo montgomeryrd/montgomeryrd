@@ -1,4 +1,4 @@
-@keyframes row-1 {
+/* @keyframes row-1 {
     100% { bottom: 0; }
 }
 @keyframes fade-in {
@@ -109,7 +109,7 @@
     background-color: #1F618D;
     color: #fff;
 }
-/* about and contact nav */
+
 @keyframes fall-in {
     0% {transform: rotate(15deg);}
     95% {transform: rotate(-5deg);}
@@ -158,4 +158,4 @@
 #portfolio-about:hover, #portfolio-contact:hover {
     color: #32adff;
     transition: .5s;
-}
+} */
