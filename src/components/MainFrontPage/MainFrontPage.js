@@ -4,6 +4,7 @@ import MainAboutPage from '../MainAboutPage/MainAboutPage';
 import './styles.css';
 
 function MainFrontPage() {
+    
     return (
         <div className="front-page-container">
             <ContactLinks />
