@@ -1,7 +1,4 @@
 .front-page-container {
-    position: relative;
-    background-color: #001624;
-    width: 100vw;
     height: 100vh;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -222,7 +219,7 @@
     padding: 10px 20px;
     opacity: 0;
     animation: turn-on 1s forwards;
-    animation-delay: 6s;
+    animation-delay: 5s;
     background: #fff;
     color: #001624;
     border: 5px solid #0091f1;
@@ -273,14 +270,14 @@
 } */
 /* mobile */
 @media(max-width: 800px) {
-    .front-page-container {
-        display: none;
-    }
-    /* .contact-links-container {
-        transform: scale(.4);
+    
+    .contact-links-container {
+        
+        
+        transform: scale(.3);
         transition: .4s;
-        margin: 0 auto;
     }
+    /*
     .front-page {
         top: -60px;
         width: 500px;

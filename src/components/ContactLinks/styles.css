@@ -7,8 +7,7 @@
 
 .contact-links-container {
     position: absolute;
-    display: flex;
-    flex-direction: row;
+    width: 600px;
     right: 700px;
     z-index: 100;
     -webkit-touch-callout: none;
