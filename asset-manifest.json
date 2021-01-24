@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/montgomeryrd/static/css/main.6140cb94.chunk.css",
+    "main.css": "/montgomeryrd/static/css/main.cb4e1c92.chunk.css",
     "main.js": "/montgomeryrd/static/js/main.6feb5cc3.chunk.js",
     "main.js.map": "/montgomeryrd/static/js/main.6feb5cc3.chunk.js.map",
     "runtime-main.js": "/montgomeryrd/static/js/runtime-main.5389fa01.js",
@@ -10,7 +10,7 @@
     "static/js/3.9a379dd9.chunk.js": "/montgomeryrd/static/js/3.9a379dd9.chunk.js",
     "static/js/3.9a379dd9.chunk.js.map": "/montgomeryrd/static/js/3.9a379dd9.chunk.js.map",
     "index.html": "/montgomeryrd/index.html",
-    "static/css/main.6140cb94.chunk.css.map": "/montgomeryrd/static/css/main.6140cb94.chunk.css.map",
+    "static/css/main.cb4e1c92.chunk.css.map": "/montgomeryrd/static/css/main.cb4e1c92.chunk.css.map",
     "static/js/2.1aa28b46.chunk.js.LICENSE.txt": "/montgomeryrd/static/js/2.1aa28b46.chunk.js.LICENSE.txt",
     "static/media/codewars-logo.bf7ea540.png": "/montgomeryrd/static/media/codewars-logo.bf7ea540.png",
     "static/media/github-logo.987334e9.png": "/montgomeryrd/static/media/github-logo.987334e9.png",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.5389fa01.js",
     "static/js/2.1aa28b46.chunk.js",
-    "static/css/main.6140cb94.chunk.css",
+    "static/css/main.cb4e1c92.chunk.css",
     "static/js/main.6feb5cc3.chunk.js"
   ]
 }
