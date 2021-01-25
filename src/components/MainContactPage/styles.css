@@ -1,26 +1,68 @@
-/* .contact-page-nav ul {
+#logo {
+    animation-delay: 1s;
+}
+@keyframes expand {
+    100% { transform: scale(1); }
+}
+.contact-page-container {
+    transform: scale(0);
+    animation: expand 1s forwards;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@keyframes from-right {
+    100% { right: 50px; opacity: 1; }
+}
+.contact-page-nav ul {
     position: absolute;
     display: flex;
     flex-direction: row;
-    right: 50px;
-    color:#fff;
+    opacity: 0;
+    top: 50px;
+    right: -5000px;
+    animation: from-right 2s forwards;
 }
 .contact-page-nav ul li {
     cursor: pointer;
-    padding: 10px;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#008be7;
+    padding: 30px;
+    transition: .5s;
+}
+.contact-page-nav ul li:hover {
+    color: #1F618D;
+    transition: .5s;
+}
+@keyframes from-below {
+    100% { top: 800px; opacity: 1; }
 }
 .contact-me-links {
     position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    top: 800px;
+    top: 8000px;
+    opacity: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
+    animation: from-below 1.5s forwards;
+}
+.link-logos {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
 }
 #in-link, #t-link {
-    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 4.8em;
+    color: #fff;
     padding: 10px;
     width: 100px;
     height: 100px;
@@ -29,29 +71,13 @@
 #in-link {
     background: #1F618D;
     border-radius: 20%;
+    text-align: center;
 }
 #t-link {
     background: #0076C6;
     border-radius: 50%;
+    text-align: center;
 }
-#in-link-logo {
-    position: absolute;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 4.8em;
-    margin: 30px 0 0 10px;
-}
-#t-link-logo {
-    position: absolute;
-    color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 4.8em;
-    margin: 30px 0 0 27px;
-} */
 /* form */
 .contact {
     min-height:100vh;
