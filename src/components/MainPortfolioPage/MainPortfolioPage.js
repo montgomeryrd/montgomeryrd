@@ -7,10 +7,10 @@ import tessioPreview from '../../assets/previews/tessio-preview.png';
 import kirksPreview from '../../assets/previews/kirk-preview.png';
 import './styles.css';
 
-const MainPortfolioPage = ({ setPage }) => {
+const MainPortfolioPage = ({ page, setPage }) => {
     
     return (
-        <div className='portfolio-page-container'>
+        <div className={page !== 'portfolio' ? "hide-div" : 'portfolio-page-container'}>
             <Logo setPage={setPage} />
             <main className="portfolio-page">
                 <h1 id="portfolio-page-title">recent projects</h1>

@@ -13,10 +13,10 @@ import me7 from '../../assets/me/grey7.png';
 
 import './styles.css';
 
-function MainAboutPage({ setPage }) {
+function MainAboutPage({ page, setPage }) {
 
     return (
-        <div className="about-page-container">
+        <div className={page !== 'about' ? "hide-div" : "about-page-container"}>
             <Logo setPage={setPage} />
                 <img id="selfie-colored" src={me} width="700px" alt="Colorized Selfie" />
                 <div id="selfie-black-and-white">
@@ -35,13 +35,13 @@ function MainAboutPage({ setPage }) {
                     <h4 id="growth" className="about-page-background-name">growth</h4>
                 </div>
                 <section id="passion-section" className="summaries">
-                    I used to refer to "Art" as my passion because I like to draw, to paint with acrylics and play guitar. I didn't really consider how I was misunderstanding my passions. I enjoyed more than art, such as building PCs, putting together puzzles, even making pizza. As I became a more proficient coder, I realized it wasn't the hobbies that defined my passions, but the act of my hobbies. I have passion in creating, making something new, I enjoy design aesthetics and functionality, and I enjoy learning and progressing my skills,  all aspects I've discovered in building websites and web applications. 
+                    In my free time, I enjoy drawing, painting with acrylics, playing guitar, building PCs, working on puzzles, making pizza. Coding helped me process and better understand my hobbies. As I became a more proficient coder, I realized it wasn't the hobbies that defined my passion, but the act of my hobbies. I have passion in creating, in design, aesthetics, building functionality, and I enjoy learning and progressing my skills, all aspects I've discovered in building websites and web applications. 
                 </section>
                 <section id="skills-section" className="summaries">
                     I'm looking to become a junior developer while expanding my skills in full stack javascript. I have a firm knowledge of HTML, CSS, JavaScript, and have experience working with various frameworks and libraries. I feel most proficient with React.
                 </section>
                 <section id="growth-section" className="summaries">
-                    I believe your best investment is in yourself. Your second best investment is in the people around you. Your third best is in the environment.
+                    I believe your best investment is in yourself. Your second best investment is in the people around you.
                 </section>
                 <Router>
                     <NavLink to="/work" style={{textDecoration: 'none'}}>

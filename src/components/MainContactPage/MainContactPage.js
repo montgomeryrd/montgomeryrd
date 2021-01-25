@@ -4,9 +4,9 @@ import MainPortfolioPage from '../MainPortfolioPage/MainPortfolioPage';
 import Logo from '../Logo/Logo';
 import './styles.css';
 
-function MainContactPage({ setPage }) {
+function MainContactPage({ page, setPage }) {
     return (
-        <div className="contact-page-container">
+        <div className={page !== 'contact' ? "hide-div" : "contact-page-container"}>
             <Logo setPage={setPage} />
             <Router>
                 <nav className="contact-page-nav">
@@ -15,7 +15,7 @@ function MainContactPage({ setPage }) {
                             <li onClick={() => setPage('about')}>about</li>
                         </NavLink>
                         <NavLink to="/portfolio" style={{textDecoration: 'none'}}>
-                            <li onClick={() => setPage('portfolio')}>works</li>
+                            <li onClick={() => setPage('portfolio')}>projects</li>
                         </NavLink>
                     </ul>
                     <Route path='/about' render={props => (
@@ -90,16 +90,16 @@ function MainContactPage({ setPage }) {
                 </section>
             </main>
             <nav className="contact-me-links">
-                <div id="in-link">
-                    <a id="in-link-logo" href="https://linkedin.com/in/montgomeryrd" target="_blank" rel="noopener noreferrer" alt="linkedin montgomeryrd">
-                        in
+                    <a className="link-logos" href="https://linkedin.com/in/montgomeryrd" target="_blank" rel="noopener noreferrer" alt="linkedin montgomeryrd">
+                        <div id="in-link">
+                            in
+                        </div>
                     </a>
-                </div>
-                <div id="t-link">
-                    <a id="t-link-logo" href="https://twitter.com/richard04755318" target="_blank" rel="noopener noreferrer" alt="twitter richard.montgomery.dev">
-                        t
+                    <a className="link-logos" href="https://twitter.com/richard04755318" target="_blank" rel="noopener noreferrer" alt="twitter richard.montgomery.dev">
+                        <div id="t-link">
+                            t
+                        </div>
                     </a>
-                </div>
             </nav>
         </div>
     )

@@ -5,5 +5,17 @@
 }
 html {
 	background-color: #001624;
-	position: fixed;
+	overflow-x: hidden; 
+    overflow-y: hidden;
+}
+.hide-div, #arrow-down {
+	display: none;
+}
+@media(max-width: 800px) {
+	html {
+		overflow-y: visible;
+	}
+	.hide-div, #arrow-down {
+		display: flex;
+	}
 }

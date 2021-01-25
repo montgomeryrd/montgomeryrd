@@ -1,4 +1,5 @@
 .front-page-container {
+    width: 100vw;
     height: 100vh;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -115,9 +116,6 @@
     transition: .2s;
 }
 #l-11 {
-    position: absolute;
-    color: #0091f1;
-    border: 1px solid #0091f1;
     animation-delay: 1.8s;
     top: 1200px;
     left: 597px;
@@ -132,7 +130,6 @@
 #l-13 {
     animation-delay: 2s;
     top: 1600px;
-    margin-top: 20px;
     left: 690px;
     transition: .2s;
 }
@@ -262,129 +259,183 @@
 #front-page-button:hover #b-9 {
     animation: lets-go 2s forwards;
 }
-/* @media(max-width: 1200px) {
-    .front-page {
-        transform: scale(.8);
-        width: 100vw;
-    }
-} */
-/* mobile */
+
 @media(max-width: 800px) {
-    
     .contact-links-container {
-        
-        
-        transform: scale(.3);
-        transition: .4s;
+        transform: scale(.4);
+        left: -10px;
     }
-    /*
+    .front-page-container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
     .front-page {
-        top: -60px;
-        width: 500px;
+        top: 200px;
+        left: -50px;
+        right: 80px;
     }
     .front-page-title {
-        margin-top: -90px;
-        margin-left: -40px;
-        font-size: 1.4em;
-        transition: .35s;
+        width: 100%;
+        font-size: 1.5em;
     }
-    .front-page-letters {
-        font-size: .5em;
-        margin-top: -180px;
+    .front-page-name {
+        font-size: 3em;
+        transition: 350ms;
     }
-    @keyframes pull-up {
-        100% { top: 20px; opacity: 1; }
+    @keyframes pull-up-mobile-first-name {
+        100% { top: 110px; opacity: 1; }
+    }
+    #l-1, #l-2, #l-3, #l-4, #l-5, #l-6, #l-7, #l-8 {
+        position: absolute;
+        animation: pull-up-mobile-first-name .4s forwards;
+        opacity: 0;
+    }
+    @keyframes pull-up-mobile-last-name {
+        100% { top: 170px; opacity: 1; }
+    }
+    #l-9, #l-10, #l-11, #l-12, #l-13, #l-14, #l-15, #l-16, #l-17, #l-18 {
+        position: absolute;
+        animation: pull-up-mobile-last-name .4s forwards;
+        opacity: 0;
     }
     #l-1 {
-        margin-left: -70px;
-        transition: .1s;
+        animation-delay: .8s;
+        top: 1000px;
+        left: 95px;
+        transition: .2s;
     }
     #l-2 {
-        margin-left: -93px;
+        animation-delay: .9s;
+        top: 1300px;
+        left: 127px;
         transition: .2s;
     }
     #l-3 {
-        margin-left: -98px;
-        transition: .3s;
+        animation-delay: 1s;
+        top: 1100px;
+        left: 140px;
+        transition: .2s;
     }
     #l-4 {
-        margin-left: -116px;
-        transition: .4s;
+        animation-delay: 1.1s;
+        top: 2000px;
+        left: 165px;
+        transition: .2s;
     }
     #l-5 {
-        margin-left: -135px;
-        transition: .5s;
+        animation-delay: 1.2s;
+        top: 1700px;
+        left: 195px;
+        transition: .2s;
     }
     #l-6 {
-        margin-left: -152px;
-        transition: .6s;
+        animation-delay: 1.3s;
+        top: 1200px;
+        left: 220px;
+        transition: .2s;
     }
     #l-7 {
-        margin-left: -164px;
-        transition: .7s;
-    }
+        animation-delay: 1.4s;
+        top: 1500px;
+        left: 240px;
+        transition: .2s;
+    } 
     #l-9 {
-        margin-top: -130px;
-        margin-left: -320px;
-        transition: .9s;
+        animation-delay: 1.6s;
+        top: 1900px;
+        left: 95px;
+        transition: .2s;
     }
     #l-10 {
-        margin-top: -130px;
-        margin-left: -354px;
-        transition: 1s;
+        animation-delay: 1.7s;
+        top: 1300px;
+        left: 140px;
+        transition: .2s;
     }
     #l-11 {
-        margin-top: -130px;
-        margin-left: -375px;
-        transition: 1.1s;
+        position: absolute;
+        color: #0091f1;
+        border: 1px solid #0091f1;
+        animation-delay: 1.8s;
+        top: 1200px;
+        left: 170px;
+        transition: .2s;
     }
     #l-12 {
-        margin-top: -130px;
-        margin-left: -395px;
-        transition: 1.2s;
+        animation-delay: 1.9s;
+        top: 1700px;
+        left: 202px;
+        transition: .2s;
     }
     #l-13 {
-        margin-top: -130px;
-        margin-left: -410px;
-        transition: 1.3s;
+        animation-delay: 2s;
+        top: 1600px;
+        left: 220px;
+        transition: .2s;
     }
     #l-14 {
-        margin-top: -130px;
-        margin-left: -430px;
-        transition: 1.4s;
+        animation-delay: 2.1s;
+        top: 1900px;
+        left: 245px;
+        transition: .2s;
     }
     #l-15 {
-        margin-top: -130px;
-        margin-left: -452px;
-        transition: 1.5s;
+        animation-delay: 2.2s;
+        top: 1900px;
+        left: 270px;
+        transition: .2s;
     }
     #l-16 {
-        margin-top: -130px;
-        margin-left: -486px;
-        transition: 1.6s;
+        animation-delay: 2.3s;
+        top: 1700px;
+        left: 310px;
+        transition: .2s;
     }
     #l-17 {
-        margin-top: -130px;
-        margin-left: -507px;
-        transition: 1.7s;
+        animation-delay: 2.4s;
+        top: 1500px;
+        left: 335px;
+        transition: .2s;
     }
     #l-18 {
-        margin-top: -130px;
-        margin-left: -524px;
-        transition: 1.8s;
+        animation-delay: 2.5s;
+        top: 1300px;
+        left: 355px;
+        transition: .2s;
     }
     .front-page-main {
-        text-align: center;
-        font-size: .9em;
-        top: 450px;
-        left: 30px;
-        width: 80vw;
-        line-height: 20px;
-        transition: 1.5s;
+        margin-top: -10px;
+        font-size: 1em;
     }
     #front-page-button {
-        top: 590px;
-        left: 90px;
-        transform: scale(.6);
-    } */
+        display: none;
+    }      
+    #arrow-down-container {
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        right: 20px;
+        top: 85%;
+    }
+    @keyframes bounce {
+        50% { margin-top: 4px; }
+        100% { margin-top: 0px; }
+    }
+    #arrow-down {
+        margin-left: -10px;
+        height: 20px;
+        width: 20px;
+        transform: rotate(45deg);
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+        animation: bounce 1s infinite;
+    }
 }

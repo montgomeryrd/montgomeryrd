@@ -3,10 +3,9 @@ import ContactLinks from '../ContactLinks/ContactLinks';
 import MainAboutPage from '../MainAboutPage/MainAboutPage';
 import './styles.css';
 
-function MainFrontPage() {
-    
+function MainFrontPage({ page, setPage }) {
     return (
-        <div className="front-page-container">
+        <div className={page !== 'front' ? "hide-div" : "front-page-container"}>
             <ContactLinks />
             <main className="front-page">
                 <h1 className="front-page-title">Hi, my name is</h1>
@@ -49,7 +48,7 @@ function MainFrontPage() {
                 </section>
                 <Router>
                     <NavLink to="/about" style={{ textDecoration: 'none' }}>
-                        <button id="front-page-button">
+                        <button id="front-page-button" onClick={() => setPage('about')}>
                             <span id="b-1">L</span>
                             <span id="b-2">e</span>
                             <span id="b-3">t</span>
@@ -59,13 +58,16 @@ function MainFrontPage() {
                             <span id="b-7">G</span>
                             <span id="b-8">o</span>
                             <span id="b-9">!</span>
-                        </button>
+                        </button>    
                     </NavLink>
                     <Route path='/about' render={props => (
                         <MainAboutPage props={props} />
                     )} />
                 </Router>
             </main>
+            <div id="arrow-down-container">
+                <div id="arrow-down"></div>
+            </div>    
         </div>
     );
 }

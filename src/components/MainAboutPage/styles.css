@@ -1,7 +1,7 @@
-/* #logo {
+#logo {
     left: -3000px;
     z-index: 30;
-    animation-delay: 2.5s;
+    animation-delay: 1.2s;
 }
 .about-page-container {
     position: absolute;
@@ -10,6 +10,12 @@
     margin: 0 auto;
     width: 1600px;
     height: 100vh;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 @keyframes appear {
     100% { opacity: 1; }
@@ -19,9 +25,9 @@
     opacity: 0;
     animation: appear 1s forwards;
     animation-delay: 3.3s;
-    top: 120px;
+    top: 130px;
     left: 20px;
-    z-index: 10;
+    z-index: 100;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -33,7 +39,7 @@
 #selfie-black-and-white {
     position: absolute;
     cursor: pointer;
-    top: 120px;
+    top: 130px;
     left: 20px;
     display: flex;
     flex-direction: column;
@@ -47,47 +53,50 @@
 .selfie-fractured {
     position: absolute;
     left: -3000px;
+    opacity: 0;
     transition: 1s;
 }
-@keyframes moveinleft {
-    100% { left: 0; }
+@keyframes move-in-left {
+    100% { left: 0; opacity: 1; }
 }
 #me1 {
-    animation: moveinleft .7s forwards;
+    animation: move-in-left .7s forwards;
     animation-delay: 1.95s;
 }
 #me2 {
-    animation: moveinleft .2s forwards;
+    animation: move-in-left .2s forwards;
     animation-delay: 1.6s;
 }
 #me3 {
-    animation: moveinleft .4s forwards;
+    animation: move-in-left .4s forwards;
     animation-delay: .7s;
 }
 #me4 {
-    animation: moveinleft .5s forwards;
+    animation: move-in-left .5s forwards;
     animation-delay: 1.2s;
 }
 #me5 {
-    animation: moveinleft .3s forwards;
+    animation: move-in-left .3s forwards;
     animation-delay: 1.8s;
 }
 #me6 {
-    animation: moveinleft .1s forwards;
+    animation: move-in-left .1s forwards;
     animation-delay: 1.5s;
 }
 #me7 {
-    animation: moveinleft .8s forwards;
+    animation: move-in-left .8s forwards;
     animation-delay: 1s;
 }
 .about-page {
     position: relative;
-    margin-top: -30px;
+    width: 100%;
 }
 .about-page-background-name {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 9em;
     color: #46464631;
+    margin-top: 200px;
+    left: 770px;
     opacity: 0;
     animation: appear 2s forwards;
     animation-delay: 1s;
@@ -101,9 +110,11 @@
 .summaries {
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    color: #777777;
+    font-size: 1.6em;
+    width: 750px;
+    text-align: center;
     left: 3000px;
+    opacity: 0;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -111,65 +122,48 @@
     -ms-user-select: none;
     user-select: none;
 }
-@keyframes moveinright1 {
-    30% { left: 810px; color: #777777; }
-    100% { left: 810px; color: #fff; }
+@keyframes move-in-right {
+    30% { left: 810px; opacity: 1; color: #777777; }
+    100% { left: 810px; opacity: 1; color: #fff; }
 }
 #passion {
     position: absolute;
     top: -90px;
-    left: 770px;
-    opacity: 0;
     animation: appear 4s forwards;
-}
-#passion-section {
-    width: 770px;
-    top: 180px;
-    animation: moveinright1 6s forwards;
-    animation-delay: 1.8s;
-}
-@keyframes moveinright2 {
-    30% { left: 990px; color: #777777; }
-    100% { left: 990px; color: #fff; }
 }
 #skills {
     position: absolute;
-    top: 360px;
-    left: 890px;
-    opacity: 0;
+    top: 230px;
     animation: appear 5s forwards;
-}
-#skills-section {
-    width: 500px;
-    top: 620px;
-    animation: moveinright2 6s forwards;
-    animation-delay: 2.6s;
-}
-@keyframes moveinright3 {
-    30% { left: 770px; color: #777777; }
-    100% { left: 770px; color: #fff; }
 }
 #growth {
     position: absolute;
-    top: 630px;
-    left: 890px;
-    opacity: 0;
+    top: 500px;
     animation: appear 6s forwards;
 }
+#passion-section {
+    top: 200px;
+    animation: move-in-right 4s forwards;
+    animation-delay: 1.8s;
+}
+#skills-section {
+    top: 540px;
+    animation: move-in-right 4s forwards;
+    animation-delay: 2.6s;
+}
 #growth-section {
-    width: 500px;
-    top: 920px;
-    animation: moveinright3 6s forwards;
+    top: 800px;
+    animation: move-in-right 4s forwards;
     animation-delay: 2.2s;
 }
 #about-page-button {
     position: absolute;
-    top: 1000px;
-    left: 1400px;
+    top: 950px;
+    left: 1350px;
     font-size: 3em;
     padding: 10px 20px;
     opacity: 0;
-    animation: fade-in 1s forwards;
+    animation: appear 1s forwards;
     animation-delay: 5s;
     border: 5px solid #0091f1;
     background: #fff;
@@ -194,4 +188,204 @@
     .about-page-container {
         display: none;
     }
-} */
+/*     
+    #logo {
+        left: -3000px;
+        z-index: 30;
+        animation-delay: 2.5s;
+    }
+    .about-page-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 1600px;
+        height: 100vh;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    @keyframes appear {
+        100% { opacity: 1; }
+    }
+    #selfie-colored {
+        position: absolute;
+        opacity: 0;
+        animation: appear 1s forwards;
+        animation-delay: 3.3s;
+        top: 120px;
+        left: 20px;
+        z-index: 100;
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    #selfie-black-and-white {
+        position: absolute;
+        cursor: pointer;
+        top: 120px;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .selfie-fractured {
+        position: absolute;
+        left: -3000px;
+        opacity: 0;
+        transition: 1s;
+    }
+    @keyframes moveinleft {
+        100% { left: 0; opacity: 1; }
+    }
+    #me1 {
+        animation: moveinleft .7s forwards;
+        animation-delay: 1.95s;
+    }
+    #me2 {
+        animation: moveinleft .2s forwards;
+        animation-delay: 1.6s;
+    }
+    #me3 {
+        animation: moveinleft .4s forwards;
+        animation-delay: .7s;
+    }
+    #me4 {
+        animation: moveinleft .5s forwards;
+        animation-delay: 1.2s;
+    }
+    #me5 {
+        animation: moveinleft .3s forwards;
+        animation-delay: 1.8s;
+    }
+    #me6 {
+        animation: moveinleft .1s forwards;
+        animation-delay: 1.5s;
+    }
+    #me7 {
+        animation: moveinleft .8s forwards;
+        animation-delay: 1s;
+    }
+    .about-page {
+        position: relative;
+        width: 100%;
+    }
+    .about-page-background-name {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 9em;
+        color: #46464631;
+        margin-top: 200px;
+        opacity: 0;
+        animation: appear 2s forwards;
+        animation-delay: 1s;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .summaries {
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.6em;
+        left: 3000px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    @keyframes move-in-right-1 {
+        30% { left: 810px; color: #777777; }
+        100% { left: 810px; color: #fff; }
+    }
+    #passion {
+        position: absolute;
+        top: -90px;
+        left: 770px;
+        opacity: 0;
+        animation: appear 4s forwards;
+    }
+    #passion-section {
+        width: 770px;
+        top: 200px;
+        animation: move-in-right-1 6s forwards;
+        animation-delay: 1.8s;
+    }
+    @keyframes move-in-right-2 {
+        30% { left: 990px; color: #777777; }
+        100% { left: 990px; color: #fff; }
+    }
+    #skills {
+        position: absolute;
+        top: 260px;
+        left: 890px;
+        opacity: 0;
+        animation: appear 5s forwards;
+    }
+    #skills-section {
+        width: 500px;
+        top: 580px;
+        animation: move-in-right-2 6s forwards;
+        animation-delay: 2.6s;
+    }
+    @keyframes move-in-right-3 {
+        30% { left: 770px; color: #777777; }
+        100% { left: 770px; color: #fff; }
+    }
+    #growth {
+        position: absolute;
+        top: 630px;
+        left: 890px;
+        opacity: 0;
+        animation: appear 6s forwards;
+    }
+    #growth-section {
+        width: 500px;
+        top: 920px;
+        animation: move-in-right-3 6s forwards;
+        animation-delay: 2.2s;
+    }
+    #about-page-button {
+        position: absolute;
+        top: 1000px;
+        left: 1400px;
+        font-size: 3em;
+        padding: 10px 20px;
+        opacity: 0;
+        animation: fade-in 1s forwards;
+        animation-delay: 5s;
+        border: 5px solid #0091f1;
+        background: #fff;
+        color: #001624;
+        transition: .7s;
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    #about-page-button:hover {
+        background: #001624;
+        box-shadow: 0px 15px 20px rgba(0, 28, 121, 0.4);
+        border: 7px solid #0091f1;
+        color: #fff;
+        transition: .7s;
+    } */
+}
