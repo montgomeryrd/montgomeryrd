@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/montgomeryrd/static/css/main.1a5dbc65.chunk.css",
-    "main.js": "/montgomeryrd/static/js/main.de3d522e.chunk.js",
-    "main.js.map": "/montgomeryrd/static/js/main.de3d522e.chunk.js.map",
+    "main.css": "/montgomeryrd/static/css/main.e134950a.chunk.css",
+    "main.js": "/montgomeryrd/static/js/main.855562c7.chunk.js",
+    "main.js.map": "/montgomeryrd/static/js/main.855562c7.chunk.js.map",
     "runtime-main.js": "/montgomeryrd/static/js/runtime-main.5389fa01.js",
     "runtime-main.js.map": "/montgomeryrd/static/js/runtime-main.5389fa01.js.map",
-    "static/js/2.1aa28b46.chunk.js": "/montgomeryrd/static/js/2.1aa28b46.chunk.js",
-    "static/js/2.1aa28b46.chunk.js.map": "/montgomeryrd/static/js/2.1aa28b46.chunk.js.map",
+    "static/js/2.36fb5cfb.chunk.js": "/montgomeryrd/static/js/2.36fb5cfb.chunk.js",
+    "static/js/2.36fb5cfb.chunk.js.map": "/montgomeryrd/static/js/2.36fb5cfb.chunk.js.map",
     "static/js/3.9a379dd9.chunk.js": "/montgomeryrd/static/js/3.9a379dd9.chunk.js",
     "static/js/3.9a379dd9.chunk.js.map": "/montgomeryrd/static/js/3.9a379dd9.chunk.js.map",
     "index.html": "/montgomeryrd/index.html",
-    "static/css/main.1a5dbc65.chunk.css.map": "/montgomeryrd/static/css/main.1a5dbc65.chunk.css.map",
-    "static/js/2.1aa28b46.chunk.js.LICENSE.txt": "/montgomeryrd/static/js/2.1aa28b46.chunk.js.LICENSE.txt",
+    "static/css/main.e134950a.chunk.css.map": "/montgomeryrd/static/css/main.e134950a.chunk.css.map",
+    "static/js/2.36fb5cfb.chunk.js.LICENSE.txt": "/montgomeryrd/static/js/2.36fb5cfb.chunk.js.LICENSE.txt",
     "static/media/codewars-logo.bf7ea540.png": "/montgomeryrd/static/media/codewars-logo.bf7ea540.png",
     "static/media/github-logo.987334e9.png": "/montgomeryrd/static/media/github-logo.987334e9.png",
     "static/media/grey1.b61d72a5.png": "/montgomeryrd/static/media/grey1.b61d72a5.png",
@@ -23,12 +23,13 @@
     "static/media/grey7.587be6dd.png": "/montgomeryrd/static/media/grey7.587be6dd.png",
     "static/media/kirk-preview.4ba59992.png": "/montgomeryrd/static/media/kirk-preview.4ba59992.png",
     "static/media/me.20fb2ad8.png": "/montgomeryrd/static/media/me.20fb2ad8.png",
+    "static/media/styles.css": "/montgomeryrd/static/media/me.6d3c4b87.jpg",
     "static/media/tessio-preview.77d8acae.png": "/montgomeryrd/static/media/tessio-preview.77d8acae.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5389fa01.js",
-    "static/js/2.1aa28b46.chunk.js",
-    "static/css/main.1a5dbc65.chunk.css",
-    "static/js/main.de3d522e.chunk.js"
+    "static/js/2.36fb5cfb.chunk.js",
+    "static/css/main.e134950a.chunk.css",
+    "static/js/main.855562c7.chunk.js"
   ]
 }
