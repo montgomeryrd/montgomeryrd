@@ -1,4 +1,7 @@
-#logo {
+.contact-page-container {
+    display: none;
+}
+/* #logo {
     animation-delay: 1s;
 }
 @keyframes expand {
@@ -78,7 +81,7 @@
     border-radius: 50%;
     text-align: center;
 }
-/* form */
+
 .contact {
     min-height:100vh;
     padding-top:100px;
@@ -194,4 +197,4 @@
 }
 .submit-group input[type="submit"]:hover {
     background-color:#001624;
-}
+} */

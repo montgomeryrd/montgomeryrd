@@ -10,7 +10,7 @@ import './styles.css';
 const MainPortfolioPage = ({ page, setPage }) => {
     
     return (
-        <div className={page !== 'portfolio' ? "hide-div" : 'portfolio-page-container'}>
+        <div className={page !== 'portfolio' ? 'hide-div' : 'portfolio-page-container'}>
             <Logo setPage={setPage} />
             <main className="portfolio-page">
                 <h1 id="portfolio-page-title">recent projects</h1>

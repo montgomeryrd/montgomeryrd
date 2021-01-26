@@ -1,4 +1,7 @@
 .portfolio-page {
+    display: none;
+}
+/* .portfolio-page {
     position: absolute;
     width: 100vw;
     text-align: center;
@@ -40,7 +43,7 @@
     transition: .7s;
 }
 @media(max-width: 800px) {
-    .portfolio-page-container {
+    .mobile-styles {
         display: none;
     }
-}
+} */
