@@ -6,9 +6,7 @@ import MainContactPage from './components/MainContactPage/MainContactPage';
 import './styles.css';
 
 function App() {
-
 	const [page, setPage] = useState('front');
-
 	return (
 		<div className="App">
 			<MainFrontPage page={page} setPage={setPage} />

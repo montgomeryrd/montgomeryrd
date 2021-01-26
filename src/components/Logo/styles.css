@@ -24,3 +24,8 @@
 #second-letter {
     color: #32adff;
 }
+@media(max-width: 800px) {
+    #logo {
+        display: none;
+    }
+}

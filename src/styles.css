@@ -18,4 +18,8 @@ html {
 	.hide-div, #arrow-down {
 		display: flex;
 	}
+	::-webkit-scrollbar {
+		width: 0px;
+		background: transparent; /* make scrollbar transparent */
+	}
 }
