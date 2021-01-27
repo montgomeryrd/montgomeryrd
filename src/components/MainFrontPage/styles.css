@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     top: 300px;
+    transition: 1s;
 }
 .front-page-title {
     width: 100%;
@@ -265,6 +266,67 @@
         transform: scale(.4);
         left: -10px;
     }
+    .hamburger {
+        position: absolute;
+        margin: 20px 0 0 20px;
+        display: block; 
+        width: 35px; 
+        cursor: pointer;
+        transition: 1s;
+        z-index: 100;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: none;
+        outline: none;
+        border: none;
+    }
+    .hamburger .bar, .hamburger:after, .hamburger:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color:#FFF;
+        margin: 8px 0px;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+    .hamburger-is-active {
+        position: absolute;
+    }
+    .hamburger-is-active:before {
+        -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+        transform: rotate(-45deg) translate(-6px, 6px);
+        transition: .4s;
+    }
+    .hamburger-is-active:after {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+        transition: .4s;
+    }
+    .hamburger-is-active .bar { 
+        opacity: 0;
+        transition: .4s;
+    }
+    .mobile-nav-is-active {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        transition: 1s;
+        padding: 120px 10px 10px 10px;
+    }
+    .mobile-nav-is-active a {
+        text-decoration: none;
+        width: 95vw;
+        background:#003e64;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 2mm;
+    }
     .front-page-container {
         position: relative;
         width: 100vw;
@@ -361,8 +423,6 @@
     }
     #l-11 {
         position: absolute;
-        color: #0091f1;
-        border: 1px solid #0091f1;
         animation-delay: 1.8s;
         top: 1200px;
         left: 170px;
@@ -371,19 +431,19 @@
     #l-12 {
         animation-delay: 1.9s;
         top: 1700px;
-        left: 202px;
+        left: 198px;
         transition: .2s;
     }
     #l-13 {
         animation-delay: 2s;
         top: 1600px;
-        left: 220px;
+        left: 218px;
         transition: .2s;
     }
     #l-14 {
         animation-delay: 2.1s;
         top: 1900px;
-        left: 245px;
+        left: 243px;
         transition: .2s;
     }
     #l-15 {
@@ -420,9 +480,8 @@
     #arrow-down-container {
         position: absolute;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         width: 100%;
-        right: 20px;
         top: 85%;
     }
     @keyframes bounce {
@@ -430,7 +489,6 @@
         100% { margin-top: 0px; }
     }
     #arrow-down {
-        margin-left: -10px;
         height: 20px;
         width: 20px;
         transform: rotate(45deg);
