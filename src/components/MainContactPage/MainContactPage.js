@@ -34,7 +34,7 @@ function MainContactPage({ page, setPage }) {
 
                         <form>
                             <div className="form-group">
-                                <label for="firstname">First Name</label>
+                                <label htmlFor="firstname">First Name</label>
                                 <input
                                     type="text"
                                     name="firstname"
@@ -45,7 +45,7 @@ function MainContactPage({ page, setPage }) {
                                 />
                             </div>
                             <div className="form-group">
-                                <label for="lastname">Last Name</label>
+                                <label htmlFor="lastname">Last Name</label>
                                 <input 
                                     type="text" 
                                     name="lastname" 
@@ -55,8 +55,8 @@ function MainContactPage({ page, setPage }) {
                                     placeholder="" 
                                 />
                             </div>
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
+                            <div className="form-group">
+                                <label htmlFor="email">Email Address</label>
                                 <input 
                                     type="email" 
                                     name="email" 
@@ -65,8 +65,8 @@ function MainContactPage({ page, setPage }) {
                                     className="form-element" 
                                     placeholder="" />
                             </div>
-                            <div class="form-group">
-                                <label for="company">Company</label>
+                            <div className="form-group">
+                                <label htmlFor="company">Company</label>
                                 <input 
                                     type="text" 
                                     name="company" 
@@ -74,15 +74,15 @@ function MainContactPage({ page, setPage }) {
                                     className="form-element" 
                                     placeholder="" />
                             </div>
-                            <div class="form-group full">
-                                <label for="message">What are you looking for?</label>
+                            <div className="form-group full">
+                                <label htmlFor="message">What are you looking for?</label>
                                 <textarea 
                                     name="message" 
                                     id="message" 
                                     className="form-element" 
                                     placeholder=""></textarea>
                             </div>
-                            <div class="submit-group">
+                            <div className="submit-group">
                                 <input type="submit" value="SEND MESSAGE" />
                             </div>
                         </form>

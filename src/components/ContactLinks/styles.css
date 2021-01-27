@@ -18,6 +18,9 @@
     user-select: none;
     transition: .4s;
 }
+.contact-links-container a img {
+    width: 100px;
+}
 .github-banner {
     position: absolute;
     -webkit-animation: drop-banners 350ms forwards;
@@ -124,4 +127,72 @@
 .github-banner:hover, .linkedin-banner:hover, .twitter-banner:hover, .codewars-banner:hover {
     margin-top: 40px;   
     transition: .7s ease-in-out;
+}
+@media(max-width: 800px) {
+    .contact-links-container {
+        width: 200px;
+        right: 20px;
+        transition: .4s;
+    }
+    .contact-links-container a img {
+        width: 40px;
+    }
+    .linkedin-banner {
+        left: 55px;
+    }
+    .twitter-banner {
+        left: 110px;
+    }
+    .codewars-banner {
+        left: 165px;
+    }
+    .banner {
+        padding: 25px;
+        margin-right: 3px;
+    }
+    #github, #twitter {
+        height: 150px;
+    }
+    #linkedin, #codewars {
+        height: 160px;
+    }
+    .banner-tip {
+        position: absolute;
+        width: 37px;
+        height: 37px;
+        transform: rotate(45deg);
+    }
+    #github-color {
+        margin: -20px 0 0 8px;
+        background-color: #343434;
+        border-bottom: 2px solid #494949;
+    }
+    #linkedin-color {
+        margin: -20px 0 0 8px;
+        background-color: #1F618D;
+        border-bottom: 2px solid #256fa0;
+    }
+    #twitter-color {
+        margin: -20px 0 0 8px;
+        background-color: #0076C6;
+        border-bottom: 2px solid #0091f1;
+    }
+    #codewars-color {
+        margin: -20px 0 0 8px;
+        background-color: #474747;
+        border-bottom: 2px solid #646464;
+    }
+    #hide-name {
+        position: absolute;
+        margin-top: -13px;
+        margin-left: 8px;
+        z-index: 100;
+        height: 18px;
+        width: 38px;
+        background-color: #474747;
+    }
+    .contact-links-container img {
+        margin: 110px 0 0 7px;
+        z-index: 10;
+    } 
 }

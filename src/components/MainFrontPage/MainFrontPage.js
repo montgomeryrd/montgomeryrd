@@ -1,13 +1,24 @@
+import { useState } from 'react';
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import ContactLinks from '../ContactLinks/ContactLinks';
 import MainAboutPage from '../MainAboutPage/MainAboutPage';
 import './styles.css';
 
 function MainFrontPage({ page, setPage }) {
+    const [toggleBurger, setToggleBurger] = useState(false);
+
     return (
         <div className={page !== 'front' ? "hide-div" : "front-page-container"}>
+            <div className={toggleBurger ? "hamburger hamburger-is-active" : "hamburger"} onClick={() => setToggleBurger(!toggleBurger)}>
+				<div className="bar"></div>
+			</div>
+            <nav className="mobile-nav-is-active" style={{display: toggleBurger ? "flex" : "none"}}>
+                <a href="#section-1" onClick={() => setToggleBurger(!toggleBurger)}>learn about me</a>
+                <a href=".portfolio-page">view some projects</a>
+                <a href=".contact-page">get in touch</a>
+            </nav>
             <ContactLinks />
-            <main className="front-page">
+            <main className="front-page" style={{opacity: toggleBurger ? .2 : 1}}>
                 <h1 className="front-page-title">Hi, my name is</h1>
                 <h1 className="front-page-name">
                     <span id="l-1" className="front-page-letters">R</span>
