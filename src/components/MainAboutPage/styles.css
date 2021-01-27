@@ -188,58 +188,79 @@
     .hide-div {
         display: flex;
     }
-    .section {
-        position: absolute;
-        background: #343434;
-        color: rgb(223, 223, 223);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 50px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1em;
-    }
-    .about-page-container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-    }
-    .about-page-mobile-container {
+    .about-page-mobile-view {
         position: relative;
         display: flex;
         flex-direction: row;
-        min-height: 50vh;
+        height: 70vh;
         width: 100vw;
-        margin-top: 20px;
+        background: #343434;
+    }
+    #section-1 {
+        background: #343434;
+        color: rgb(223, 223, 223);
+        text-align: center;
+        padding-top: 25px;
+        width: 100vw;
+        height: 10vh;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: .9em;
     }
     .about-page-menu {
         width: 30vw;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         background: #fff;
-        margin: 50px 0 -50px 0;
     }
     #about-page-menu-name {
         color: rgb(56, 56, 56);
         font-weight: 600;
-        background:rgb(223, 223, 223);
+        border-bottom: 2px solid #f3f3f3;
+        margin-left: -5px;
     }
     .about-page-menu li {
+        display: flex;
+        flex-direction: row;
         font-family: Arial, Helvetica, sans-serif;
         list-style: none;
+        font-size: .8em;
         color: #838383;
         padding: 15px;
         cursor: pointer;
     }
     #fire {
         color: rgb(255, 94, 0);
+        padding-right: 5px;
     }
     #archery {
-        color: rgb(26, 23, 184);
+        color: black;
+        padding-right: 5px;
     }
     #octopus {
         color: teal;
+        padding-right: 5px;
+    }
+    #education {
+        color: #4900FF;
+        padding-right: 5px;
+    }
+    #resume {
+        color: gray;
+        padding-right: 5px;
+    }
+    @keyframes slide {
+        0% { left: -6px; }
+        100% { left: 0; }
+    }
+    .about-page-selected {
+        position: absolute;
+        margin-top: -14px;
+        left: -6px;
+        width: 6px;
+        height: 50px;
+        border-radius: 2mm;
+        animation: slide 1s forwards;
     }
     #selfie-colored, .selfie-fractured {
         display: none;
@@ -247,8 +268,9 @@
     #selfie-black-and-white {
         position: relative;
         min-width: 70vw;
-        top: 50px;
+        height: 70vh;
         left: 0;
+        top: 0;
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
@@ -262,24 +284,18 @@
         -ms-user-select: none;
         user-select: none;
     }
-    .about-page-button {
-        position: absolute;
-        height: 80px;
-        width: 100%;
-        z-index: 20;
-        bottom: 0px;
-        color: #fff;
-        font-family: 'Raleway', sans-serif;
-        font-size: 2em;
-        background: linear-gradient(45deg, rgba(18, 0, 179), rgba(0, 0, 61));
-        border: none;
-        border-bottom-left-radius: 2mm;
-        border-bottom-right-radius: 2mm;
-        transition: 1s;        
+    .icons {
+        position: relative;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: #343434;
     }
-    #passion-section {
-        position: absolute;
-        z-index: 2000;
-        color: #fff;
+    .icons img {
+        top: 0;
+        width: 10vw;
+        margin: 15px;
     }
 }

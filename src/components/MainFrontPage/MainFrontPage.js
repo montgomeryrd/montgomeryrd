@@ -13,7 +13,7 @@ function MainFrontPage({ page, setPage }) {
 				<div className="bar"></div>
 			</div>
             <nav className="mobile-nav-is-active" style={{display: toggleBurger ? "flex" : "none"}}>
-                <a href="#section-1">learn about me</a>
+                <a href="#section-1" onClick={() => setToggleBurger(!toggleBurger)}>learn about me</a>
                 <a href=".portfolio-page">view some projects</a>
                 <a href=".contact-page">get in touch</a>
             </nav>
