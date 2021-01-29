@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/montgomeryrd/static/css/main.7770d01d.chunk.css",
-    "main.js": "/montgomeryrd/static/js/main.b36aedc7.chunk.js",
-    "main.js.map": "/montgomeryrd/static/js/main.b36aedc7.chunk.js.map",
+    "main.css": "/montgomeryrd/static/css/main.26c2153b.chunk.css",
+    "main.js": "/montgomeryrd/static/js/main.a0885345.chunk.js",
+    "main.js.map": "/montgomeryrd/static/js/main.a0885345.chunk.js.map",
     "runtime-main.js": "/montgomeryrd/static/js/runtime-main.5389fa01.js",
     "runtime-main.js.map": "/montgomeryrd/static/js/runtime-main.5389fa01.js.map",
     "static/js/2.36fb5cfb.chunk.js": "/montgomeryrd/static/js/2.36fb5cfb.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.9a379dd9.chunk.js": "/montgomeryrd/static/js/3.9a379dd9.chunk.js",
     "static/js/3.9a379dd9.chunk.js.map": "/montgomeryrd/static/js/3.9a379dd9.chunk.js.map",
     "index.html": "/montgomeryrd/index.html",
-    "static/css/main.7770d01d.chunk.css.map": "/montgomeryrd/static/css/main.7770d01d.chunk.css.map",
+    "static/css/main.26c2153b.chunk.css.map": "/montgomeryrd/static/css/main.26c2153b.chunk.css.map",
     "static/js/2.36fb5cfb.chunk.js.LICENSE.txt": "/montgomeryrd/static/js/2.36fb5cfb.chunk.js.LICENSE.txt",
     "static/media/codewars-logo.bf7ea540.png": "/montgomeryrd/static/media/codewars-logo.bf7ea540.png",
     "static/media/github-logo.987334e9.png": "/montgomeryrd/static/media/github-logo.987334e9.png",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.5389fa01.js",
     "static/js/2.36fb5cfb.chunk.js",
-    "static/css/main.7770d01d.chunk.css",
-    "static/js/main.b36aedc7.chunk.js"
+    "static/css/main.26c2153b.chunk.css",
+    "static/js/main.a0885345.chunk.js"
   ]
 }
