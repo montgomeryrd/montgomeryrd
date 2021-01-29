@@ -18,7 +18,7 @@ import './styles.css';
 function MainAboutPage({ page, setPage }) {
     const [about, setAbout] = useState("");
 
-    const shelf = libraries.map((item, index) => {
+    const icons = libraries.map((item, index) => {
         return <img key={index} src={item} alt={item}></img>;
     });
 
@@ -32,20 +32,15 @@ function MainAboutPage({ page, setPage }) {
                 <div className="about-page-mobile-view">
                     <ul className="hide-div about-page-menu">
                         <li id="about-page-menu-name" onClick={() => setAbout("")}>Richard Montgomery</li>
-                        <li onClick={() => setAbout('passion')} style={{background: about === 'passion' ? "#f3f3f3" : "#fff"}}>
-                            <div className="about-page-selected" style={{background: about === 'passion' ? "rgb(255, 94, 0)" : "#fff"}}></div>
+                        <li onClick={() => setAbout('about')} style={{background: about === 'about' ? "#f3f3f3" : "#fff"}}>
+                            <div className="about-page-selected" style={{background: about === 'about' ? "rgb(255, 94, 0)" : "#fff"}}></div>
                             <span id="fire">🔥</span>
-                            passion
+                            about
                         </li>
                         <li onClick={() => setAbout('skills')} style={{background: about === 'skills' ? "#f3f3f3" : "#fff"}}>
                             <div className="about-page-selected" style={{background: about === 'skills' ? "black" : "#fff"}}></div>
                             <span id="archery">🎯</span>
                             skills
-                        </li>
-                        <li onClick={() => setAbout('growth')} style={{background: about === 'growth' ? "#f3f3f3" : "#fff"}}>
-                            <div className="about-page-selected" style={{background: about === 'growth' ? "teal" : "#fff"}}></div>
-                            <span id="octopus">🐙</span>
-                            growth
                         </li>
                         <li onClick={() => setAbout('education')} style={{background: about === 'education' ? "#f3f3f3" : "#fff"}}>
                             <div className="about-page-selected" style={{background: about === 'education' ? "#4900FF" : "#fff"}}></div>
@@ -69,10 +64,21 @@ function MainAboutPage({ page, setPage }) {
                         <img id="me5" className="selfie-fractured" src={me5} width="700px" alt="Selfie" />
                         <img id="me6" className="selfie-fractured" src={me6} width="700px" alt="Selfie" />
                         <img id="me7" className="selfie-fractured" src={me7} width="700px" alt="Selfie" />
+                        <aside className="stats">
+                            <section id="about-section" style={{display: about === "about" ? "flex" : "none"}} className="summaries">
+                                I have a passion for creation and design. I've always pursued some form of it in hobbies, whether it was drawing, acrylic painting, playing guitar; I've even found it in building PCs, putting together puzzles, and making pizza. Needless to say, I've discovered it in web development. Learning HTML/CSS/JavaScript has given me the tools to create meaningful applications with thoughtful UI as I continue to develop myself as a full-stack developer.
+                            </section>
+                            <section id="skills-section" className={about === "skills" ? "skills-show summaries" : "summaries"}>
+                                I have a firm knowledge of HTML/CSS/JavaScript, feel comfortable in the MERN stack, and have an active Github.
+                            </section>
+                            <section id="education-section" className={about === "education" ? "education-show summaries" : "summaries"}>
+                            I started with Khan Academy and attended CodeFellows in Seattle completing the Full Stack JavaScript program. I pursued more learning through Codecademy, have worked on my problem solving earning a 3kyu on Codewars, and am continuing to pursue opportunities to learn.
+                            </section>
+                        </aside>
                     </figure>
                 </div>
                 <section className="hide-div icons">
-                    {shelf}
+                    {icons}
                 </section>
                 <main className="about-page">
                     <div className="about-page-background">
@@ -80,13 +86,13 @@ function MainAboutPage({ page, setPage }) {
                         <h4 id="skills" className="about-page-background-name">skills</h4>
                         <h4 id="growth" className="about-page-background-name">growth</h4>
                     </div>
-                    <section id="passion-section" className={about === 'passion' ? "passion-show summaries" : "summaries"}>
+                    <section id="passion-section" style={{display: about === "passion" ? "flex" : "none"}} className="summaries">
                         In my free time, I enjoy drawing, painting with acrylics, playing guitar, building PCs, working on puzzles, making pizza. Coding helped me process and better understand my hobbies. As I became a more proficient coder, I realized it wasn't the hobbies that defined my passion, but the act of my hobbies. I have passion in creating, in design, aesthetics, building functionality, and I enjoy learning and progressing my skills, all aspects I've discovered in building websites and web applications. 
                     </section>
-                    <section id="skills-section" className={about === 'skills' ? "skills-show summaries" : "summaries"}>
+                    <section id="skills-section" className={about === "skills" ? "skills-show summaries" : "summaries"}>
                         I have a firm knowledge of HTML, CSS, JavaScript, and have experience working with various frameworks and libraries. I feel most proficient with React (MERN). I'm looking to become a junior developer while expanding my skills in full stack javascript.
                     </section>
-                    <section id="growth-section" className={about === 'growth' ? "growth-show summaries" : "summaries"}>
+                    <section id="growth-section" className={about === "growth" ? "growth-show summaries" : "summaries"}>
                         I believe your best investment is in yourself. Your second best investment is in the people around you.
                     </section>
                     <Router>
