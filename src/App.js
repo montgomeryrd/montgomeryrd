@@ -1,20 +1,29 @@
-import { useState } from 'react';
-import MainFrontPage from './components/MainFrontPage/MainFrontPage';
-import MainAboutPage from './components/MainAboutPage/MainAboutPage';
-import MainPortfolioPage from './components/MainPortfolioPage/MainPortfolioPage';
-import MainContactPage from './components/MainContactPage/MainContactPage';
-import './styles.css';
+import { Container } from 'react-bootstrap';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Header from './components/Header';
+import HomeScreen from './screens/HomeScreen';
+import AboutScreen from './screens/AboutScreen';
+import WorksScreen from './screens/WorksScreen';
+import ContactScreen from './screens/ContactScreen';
+import Footer from './components/Footer';
 
 function App() {
-	const [page, setPage] = useState('front');
-	return (
-		<div className="App">
-			<MainFrontPage page={page} setPage={setPage} />
-			<MainAboutPage page={page} setPage={setPage} />
-			<MainPortfolioPage page={page} setPage={setPage} />
-			<MainContactPage page={page} setPage={setPage} />
-		</div>
-	);
+  return (
+    <div className="pimg1">
+      <Router>
+        <Header />
+        <main className="py-3">
+          <Container>
+            <Route path="/" component={HomeScreen} exact />
+            <Route path="/about" component={AboutScreen} />
+            <Route path="/works" component={WorksScreen} />
+            <Route path="/contact" component={ContactScreen} />
+          </Container>
+        </main>
+        <Footer />
+      </Router>
+    </div>
+  );
 }
 
 export default App;
