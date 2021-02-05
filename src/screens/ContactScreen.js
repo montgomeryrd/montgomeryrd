@@ -2,8 +2,8 @@ import React from 'react'
 
 const ContactScreen = () => {
     return (
-        <div>
-            <h1>CONTACT</h1>
+        <div className="contact-container">
+            <p className="lead intro">How to Contact Me</p>
         </div>
     )
 }

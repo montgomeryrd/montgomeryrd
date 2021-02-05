@@ -2,8 +2,8 @@ import React from 'react'
 
 const AboutScreen = () => {
     return (
-        <div>
-            <h1>ABOUT</h1>
+        <div className="about-container">
+            <p className="lead intro">My background</p>
         </div>
     )
 }
