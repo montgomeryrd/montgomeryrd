@@ -1,38 +1,22 @@
 {
   "files": {
-    "main.css": "/montgomeryrd/static/css/main.f17304a0.chunk.css",
-    "main.js": "/montgomeryrd/static/js/main.c96661af.chunk.js",
-    "main.js.map": "/montgomeryrd/static/js/main.c96661af.chunk.js.map",
-    "runtime-main.js": "/montgomeryrd/static/js/runtime-main.5389fa01.js",
-    "runtime-main.js.map": "/montgomeryrd/static/js/runtime-main.5389fa01.js.map",
-    "static/js/2.36fb5cfb.chunk.js": "/montgomeryrd/static/js/2.36fb5cfb.chunk.js",
-    "static/js/2.36fb5cfb.chunk.js.map": "/montgomeryrd/static/js/2.36fb5cfb.chunk.js.map",
-    "static/js/3.9a379dd9.chunk.js": "/montgomeryrd/static/js/3.9a379dd9.chunk.js",
-    "static/js/3.9a379dd9.chunk.js.map": "/montgomeryrd/static/js/3.9a379dd9.chunk.js.map",
+    "main.css": "/montgomeryrd/static/css/main.aa06b747.chunk.css",
+    "main.js": "/montgomeryrd/static/js/main.cd7468f8.chunk.js",
+    "main.js.map": "/montgomeryrd/static/js/main.cd7468f8.chunk.js.map",
+    "runtime-main.js": "/montgomeryrd/static/js/runtime-main.768d7def.js",
+    "runtime-main.js.map": "/montgomeryrd/static/js/runtime-main.768d7def.js.map",
+    "static/js/2.44cdf0d4.chunk.js": "/montgomeryrd/static/js/2.44cdf0d4.chunk.js",
+    "static/js/2.44cdf0d4.chunk.js.map": "/montgomeryrd/static/js/2.44cdf0d4.chunk.js.map",
+    "static/js/3.fbaa41ab.chunk.js": "/montgomeryrd/static/js/3.fbaa41ab.chunk.js",
+    "static/js/3.fbaa41ab.chunk.js.map": "/montgomeryrd/static/js/3.fbaa41ab.chunk.js.map",
     "index.html": "/montgomeryrd/index.html",
-    "static/css/main.f17304a0.chunk.css.map": "/montgomeryrd/static/css/main.f17304a0.chunk.css.map",
-    "static/js/2.36fb5cfb.chunk.js.LICENSE.txt": "/montgomeryrd/static/js/2.36fb5cfb.chunk.js.LICENSE.txt",
-    "static/media/codewars-logo.bf7ea540.png": "/montgomeryrd/static/media/codewars-logo.bf7ea540.png",
-    "static/media/github-logo.987334e9.png": "/montgomeryrd/static/media/github-logo.987334e9.png",
-    "static/media/grey1.b61d72a5.png": "/montgomeryrd/static/media/grey1.b61d72a5.png",
-    "static/media/grey2.31fe25b1.png": "/montgomeryrd/static/media/grey2.31fe25b1.png",
-    "static/media/grey3.8963459a.png": "/montgomeryrd/static/media/grey3.8963459a.png",
-    "static/media/grey4.9bc38b74.png": "/montgomeryrd/static/media/grey4.9bc38b74.png",
-    "static/media/grey5.9b04a004.png": "/montgomeryrd/static/media/grey5.9b04a004.png",
-    "static/media/grey6.330c8302.png": "/montgomeryrd/static/media/grey6.330c8302.png",
-    "static/media/grey7.587be6dd.png": "/montgomeryrd/static/media/grey7.587be6dd.png",
-    "static/media/kirk-preview.4ba59992.png": "/montgomeryrd/static/media/kirk-preview.4ba59992.png",
-    "static/media/me.20fb2ad8.png": "/montgomeryrd/static/media/me.20fb2ad8.png",
-    "static/media/styles.css": "/montgomeryrd/static/media/me.6d3c4b87.jpg",
-    "static/media/mongodb.41634622.png": "/montgomeryrd/static/media/mongodb.41634622.png",
-    "static/media/react.6ab7e2e9.png": "/montgomeryrd/static/media/react.6ab7e2e9.png",
-    "static/media/sass.3fc39440.png": "/montgomeryrd/static/media/sass.3fc39440.png",
-    "static/media/tessio-preview.77d8acae.png": "/montgomeryrd/static/media/tessio-preview.77d8acae.png"
+    "static/css/main.aa06b747.chunk.css.map": "/montgomeryrd/static/css/main.aa06b747.chunk.css.map",
+    "static/js/2.44cdf0d4.chunk.js.LICENSE.txt": "/montgomeryrd/static/js/2.44cdf0d4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.5389fa01.js",
-    "static/js/2.36fb5cfb.chunk.js",
-    "static/css/main.f17304a0.chunk.css",
-    "static/js/main.c96661af.chunk.js"
+    "static/js/runtime-main.768d7def.js",
+    "static/js/2.44cdf0d4.chunk.js",
+    "static/css/main.aa06b747.chunk.css",
+    "static/js/main.cd7468f8.chunk.js"
   ]
 }
