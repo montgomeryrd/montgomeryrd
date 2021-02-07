@@ -40,9 +40,9 @@ const Header = () => {
                                             </Nav.Link>
                                         </LinkContainer>
 
-                                        <LinkContainer to="/contact">
+                                        <LinkContainer to="/skills">
                                             <Nav.Link className="nav-hamburger-item">
-                                            <span className="nav-item">Get in Touch</span>
+                                            <span className="nav-item">Skills/Education</span>
                                             </Nav.Link>
                                         </LinkContainer>
                                     </Nav>
@@ -64,9 +64,9 @@ const Header = () => {
                                 </Nav.Link>
                             </LinkContainer>
 
-                            <LinkContainer to="/contact">
+                            <LinkContainer to="/skills">
                                 <Nav.Link className="nav-item">
-                                <span className="nav-item">Contact</span>
+                                <span className="nav-item">Skills/Education</span>
                                 </Nav.Link>
                             </LinkContainer>
                         </Nav>

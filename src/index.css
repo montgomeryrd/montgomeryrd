@@ -18,7 +18,7 @@ main {
     min-height: 80vh;
 }
 
-/* Header Container */
+/* Header */
 .monty {
     font-family: 'Nanum Brush Script', cursive;
     font-size: 2rem;
@@ -57,19 +57,20 @@ main {
 .nav-item:hover {
     color: #f0ad4e;
 }
+.menu-wrap {
+    display: none;
+}
 
 /* Home Screen */
 .home-container {
-    position: absolute;
     background: transparent;
-    top: 25vh;
     max-width: 800px;
 }
-.home-container .intro {
+.home-container .home-intro {
     color: #32adff;
     font-size: 2.5rem;
 }
-.home-container .my-name {
+.home-container .home-name {
     font-size: 5rem;
     margin-left: -5px;
 }
@@ -77,12 +78,24 @@ main {
     font-size: 1.2rem;
     margin-left: 2px;
 }
-.home-container .btn {
+.home-container .home-button {
     margin-top: 3vh;
     margin-left: -15px;
     font-size: 2rem;
 }
 
+/* About Screen */
+
+/* Works Screen */
+
+/* Skills and Education Screen */
+.skills-and-education-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    list-style: none;
+    margin-left: -45px;
+}
 /* Footer */
 .copyright {
     text-align: right;
@@ -98,10 +111,6 @@ main {
     cursor: pointer;
 }
 
-/* Hamburger Menu Taken From Brad Traversy */
-.hamburger-menu {
-    display: flex;
-}
 @media(max-width: 800px) {
     /* Home Screen */
     main {
@@ -111,10 +120,10 @@ main {
         top: 15vh;
         max-width: 90vw;
     }
-    .home-container .intro {
+    .home-container .home-intro {
         font-size: 1.2rem;
     }
-    .home-container .my-name {
+    .home-container .home-name {
         font-size: 2.6rem;
         margin-left: -2px;
     }
@@ -122,11 +131,16 @@ main {
         font-size: .8rem;
         margin-top: -20px;
     }
-    .home-container .btn {
-        font-size: 1.2rem;
+    .home-container .home-button {
+        font-size: 1.6rem;
     }
+    /* Hamburger Menu Taken From Brad Traversy */
     /* MENU STYLES */
+    .hamburger-menu {
+        display: flex;
+    }
     .menu-wrap {
+        display: block;
         position: fixed;
         top: 0;
         right: 0;
@@ -273,5 +287,56 @@ main {
         font-size: 1.5rem;
         color: #fff;
         margin: 15px;
+    }
+    /* About Screen */
+    .about-container {
+        background: transparent;
+    }
+    .about-container .about-title {
+        font-size: 2.6rem;
+    }
+    .about-container .about-body {
+        margin-top: -35px;
+    }
+    .about-container .about-button {
+        position: absolute;
+        top: 70vh;
+        left: 35px;
+        font-size: 1.6rem;
+    }
+    /* Works Screen */
+    .works-container .card-spacer {
+        margin: 10px;
+    }
+    .works-container .work-button {
+        margin-left: -15px;    
+        font-size: 1.6rem;
+    }
+    /* Skills and Education Screen */
+    .skills-and-education-container ul {
+        justify-content: center;
+    }
+    .skills-and-education-container ul li {
+        margin: 0 auto;
+    }
+    .skills-and-education-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin-top: -20px;
+    }
+    .skills-and-education-card h5 {
+        font-size: 1rem;
+        color: #32adff;
+    }
+    .sae-course, .sae-website {
+        font-size: .8rem;
+    }
+    .sae-course {
+        margin-top: -5px;
+    }
+    .skills-and-education-card .sae-website {
+        margin-top: -15px;
     }
 }

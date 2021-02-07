@@ -4,7 +4,7 @@ import Header from './components/Header';
 import HomeScreen from './screens/HomeScreen';
 import AboutScreen from './screens/AboutScreen';
 import WorksScreen from './screens/WorksScreen';
-import ContactScreen from './screens/ContactScreen';
+import SkillsAndEducationScreen from './screens/SkillsAndEducationScreen';
 import Footer from './components/Footer';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 					<Route path="/" component={HomeScreen} exact />
 					<Route path="/about" component={AboutScreen} />
 					<Route path="/works" component={WorksScreen} />
-					<Route path="/contact" component={ContactScreen} />
+					<Route path="/skills" component={SkillsAndEducationScreen} />
 				</Container>
 			</main>
 			<Footer />
