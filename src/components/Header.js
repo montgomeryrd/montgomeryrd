@@ -6,7 +6,7 @@ const Header = () => {
         <header>
             <Navbar expand="lg" collapseOnSelect>
                 <Container>
-                    <LinkContainer to="/">
+                    <LinkContainer to="/montgomeryrd">
                         <Navbar.Brand>
                             <span className="monty">
                                 <span className="r">r</span>
@@ -28,21 +28,27 @@ const Header = () => {
                             <div>
                                 <div>
                                     <Nav className="ml-auto">
+                                        <LinkContainer to="/montgomeryrd">
+                                            <Nav.Link className="nav-hamburger-link-spaces">
+                                                <span className="nav-hamburger-link">Home</span>
+                                            </Nav.Link>
+                                        </LinkContainer>
+
                                         <LinkContainer to="/about">
-                                            <Nav.Link>
-                                                <span className="nav-hamburger-item">About Me</span>
+                                            <Nav.Link className="nav-hamburger-link-spaces">
+                                                <span className="nav-hamburger-link">About Me</span>
                                             </Nav.Link>
                                         </LinkContainer>
 
                                         <LinkContainer to="/works">
-                                            <Nav.Link className="nav-hamburger-item">
-                                            <span className="nav-item">My Apps</span>
+                                            <Nav.Link className="nav-hamburger-link-spaces">
+                                                <span className="nav-hamburger-link">My Apps</span>
                                             </Nav.Link>
                                         </LinkContainer>
 
                                         <LinkContainer to="/skills">
-                                            <Nav.Link className="nav-hamburger-item">
-                                            <span className="nav-item">Skills/Education</span>
+                                            <Nav.Link className="nav-hamburger-link-spaces">
+                                                <span className="nav-hamburger-link">Skills/Education</span>
                                             </Nav.Link>
                                         </LinkContainer>
                                     </Nav>
@@ -52,21 +58,27 @@ const Header = () => {
                     </div>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
+                            <LinkContainer to="/montgomeryrd">
+                                <Nav.Link>
+                                    <span className="nav-link">Home</span>
+                                </Nav.Link>
+                            </LinkContainer>
+
                             <LinkContainer to="/about">
                                 <Nav.Link>
-                                    <span className="nav-item">About</span>
+                                    <span className="nav-link">About</span>
                                 </Nav.Link>
                             </LinkContainer>
 
                             <LinkContainer to="/works">
-                                <Nav.Link className="nav-item">
-                                <span className="nav-item">Works</span>
+                                <Nav.Link>
+                                    <span className="nav-link">Works</span>
                                 </Nav.Link>
                             </LinkContainer>
 
                             <LinkContainer to="/skills">
-                                <Nav.Link className="nav-item">
-                                <span className="nav-item">Skills/Education</span>
+                                <Nav.Link>
+                                    <span className="nav-link">Skills/Education</span>
                                 </Nav.Link>
                             </LinkContainer>
                         </Nav>
