@@ -1,19 +1,25 @@
 import React from 'react';
-import { Button, Jumbotron } from 'react-bootstrap';
+import { Jumbotron, Nav } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 const HomeScreen = () => {
     return (
-        <Jumbotron className="home-container" style={{background: "transparent"}}>
-            <h2 style={{color: "#32adff"}}>Hi, my name is</h2>
-            <h1 className="py-3" style={{fontSize: "4rem"}}>Richard Montgomery</h1>
-            <p className="py-3" style={{fontSize: "1.2rem"}}>
+        <Jumbotron className="home-container">
+            <p className="lead home-intro">Hi, my name is</p>          
+            <h1 className="display-3 home-name">Richard Montgomery</h1>
+            <hr className="my-4"></hr>
+            <p className="home-body">
                 I am a web developer living on the Kitsap Peninsula in Washington State.
                 I enjoy building functional web applications using interactive, adaptive
                 and responsive design.
             </p>
-            <p>
-                <Button className="home-btn mt-5 px-4" style={{fontSize: "2rem"}} variant="secondary">Let's Go</Button>
-            </p>
+            <Nav>
+                <LinkContainer to="/about">
+                    <Nav.Link>
+                        <button type="button" className="btn btn-primary home-button">explore</button>
+                    </Nav.Link>
+                </LinkContainer>
+            </Nav>
         </Jumbotron>
     )
 }

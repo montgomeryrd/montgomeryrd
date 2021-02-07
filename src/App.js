@@ -4,26 +4,24 @@ import Header from './components/Header';
 import HomeScreen from './screens/HomeScreen';
 import AboutScreen from './screens/AboutScreen';
 import WorksScreen from './screens/WorksScreen';
-import ContactScreen from './screens/ContactScreen';
+import SkillsAndEducationScreen from './screens/SkillsAndEducationScreen';
 import Footer from './components/Footer';
 
 function App() {
-  return (
-    <div className="pimg1">
-      <Router>
-        <Header />
-        <main className="py-3">
-          <Container>
-            <Route path="/" component={HomeScreen} exact />
-            <Route path="/about" component={AboutScreen} />
-            <Route path="/works" component={WorksScreen} />
-            <Route path="/contact" component={ContactScreen} />
-          </Container>
-        </main>
-        <Footer />
-      </Router>
-    </div>
-  );
+	return (
+		<Router>
+			<Header />
+			<main className="py-3">
+				<Container>
+					<Route path="/" component={HomeScreen} exact />
+					<Route path="/about" component={AboutScreen} />
+					<Route path="/works" component={WorksScreen} />
+					<Route path="/skills" component={SkillsAndEducationScreen} />
+				</Container>
+			</main>
+			<Footer />
+		</Router>
+	);
 }
 
 export default App;

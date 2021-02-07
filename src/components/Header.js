@@ -1,10 +1,7 @@
-import { useState } from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 
 const Header = () => {
-    const [isActive, setIsActive] = useState(false);
-
     return (
         <header>
             <Navbar expand="lg" collapseOnSelect>
@@ -22,29 +19,56 @@ const Header = () => {
                             </span>
                         </Navbar.Brand>
                     </LinkContainer>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <div className="menu-wrap">
+                        <input type="checkbox" className="toggler"/>
+                        <div className="hamburger">
+                            <div></div>
+                        </div>
+                        <div className="menu">
+                            <div>
+                                <div>
+                                    <Nav className="ml-auto">
+                                        <LinkContainer to="/about">
+                                            <Nav.Link>
+                                                <span className="nav-hamburger-item">About Me</span>
+                                            </Nav.Link>
+                                        </LinkContainer>
+
+                                        <LinkContainer to="/works">
+                                            <Nav.Link className="nav-hamburger-item">
+                                            <span className="nav-item">My Apps</span>
+                                            </Nav.Link>
+                                        </LinkContainer>
+
+                                        <LinkContainer to="/skills">
+                                            <Nav.Link className="nav-hamburger-item">
+                                            <span className="nav-item">Skills/Education</span>
+                                            </Nav.Link>
+                                        </LinkContainer>
+                                    </Nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
-                                <LinkContainer to="/about">
-                                    <Nav.Link>
-                                        <span className="nav-item">About</span>
-                                    </Nav.Link>
-                                </LinkContainer>
+                            <LinkContainer to="/about">
+                                <Nav.Link>
+                                    <span className="nav-item">About</span>
+                                </Nav.Link>
+                            </LinkContainer>
 
-                                <LinkContainer to="/works">
-                                    <Nav.Link className="nav-item">
-                                    <span className="nav-item">Works</span>
-                                    </Nav.Link>
-                                </LinkContainer>
+                            <LinkContainer to="/works">
+                                <Nav.Link className="nav-item">
+                                <span className="nav-item">Works</span>
+                                </Nav.Link>
+                            </LinkContainer>
 
-                                <LinkContainer to="/contact">
-                                    <Nav.Link className="nav-item">
-                                    <span className="nav-item">Contact</span>
-                                    </Nav.Link>
-                                </LinkContainer>
-                            <div className={isActive ? "is-active hamburger" : "hamburger"} onClick={() => setIsActive(!isActive)}>
-                                <div className="bar"></div>
-                            </div>
+                            <LinkContainer to="/skills">
+                                <Nav.Link className="nav-item">
+                                <span className="nav-item">Skills/Education</span>
+                                </Nav.Link>
+                            </LinkContainer>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
