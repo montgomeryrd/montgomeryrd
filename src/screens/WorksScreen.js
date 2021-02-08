@@ -1,13 +1,14 @@
-import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Col, Nav, Row } from 'react-bootstrap';
+
 import Card from '../components/Card';
 import tessio from '../assets/tessio-preview.png';
 import kirk from '../assets/kirk-preview.png';
 
 const WorksScreen = () => {
+
     return (
-        <div className="works-container">
+        <div className="works-container page">
             <p className="lead intro">Sample Works</p>
             <Row>
                 <Col lg={4}>
