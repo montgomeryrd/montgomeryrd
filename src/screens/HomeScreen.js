@@ -4,7 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 const HomeScreen = () => {
     return (
-        <Jumbotron className="home-container">
+        <Jumbotron className="home-container page">
             <p className="lead home-intro">Hi, my name is</p>          
             <h1 className="display-3 home-name">Richard Montgomery</h1>
             <hr className="my-4"></hr>

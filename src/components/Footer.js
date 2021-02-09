@@ -1,4 +1,4 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 const Footer = () => {
     const copyEmailAddress = () => {
@@ -19,15 +19,15 @@ const Footer = () => {
                     </p>
                     <p>
                         <a className="ml-3 p-3" href="https://github.com/montgomeryrd" target="_blank" rel="noreferrer">
-                            <i class="fab fa-github-alt"></i>
+                            <i className="fab fa-github-alt"></i>
                         </a>
                     
                         <a className="p-3" href="https://www.linkedin.com/in/montgomeryrd/" target="_blank" rel="noreferrer">
-                            <i class="fab fa-linkedin-in"></i>
+                            <i className="fab fa-linkedin-in"></i>
                         </a>
                 
                         <a className="p-3" href="https://twitter.com/richard04755318" target="_blank" rel="noreferrer">
-                            <i class="fab fa-twitter"></i>
+                            <i className="fab fa-twitter"></i>
                         </a>
                     </p>
                 </Row>

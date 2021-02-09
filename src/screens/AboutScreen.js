@@ -4,12 +4,10 @@ import { Jumbotron, Nav } from 'react-bootstrap';
 
 const AboutScreen = () => {
     return (
-        <Jumbotron className="about-container">
-            <h1 className="display-3 about-title">At a glimpse</h1>
-            <hr className="my-4"></hr>
-            <p className="about-body">
-                a short video
-            </p>
+        <Jumbotron className="about-container page">
+            <h1 className="display-3 about-title pb-2">At a glimpse</h1>
+            <span className="pr-3 play-video"> play video</span>
+            <i className="fas fa-play play-video-btn"></i>
             <Nav>
                 <LinkContainer to="/works">
                     <Nav.Link>

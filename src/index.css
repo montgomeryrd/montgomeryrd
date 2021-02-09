@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import "react-alice-carousel/lib/alice-carousel.css";
+
 /* CORE STYLES */
 :root {
     --overlay-color: rgba(24, 39, 51 , 0.85);
@@ -13,9 +15,11 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    width: 100%;
+    height: 100%;
 }
 main {
-    min-height: 80vh;
+    min-height: 75vh;
 }
 
 /* Header */
@@ -92,7 +96,7 @@ main {
 .skills-and-education-container ul {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     list-style: none;
     margin-left: -45px;
 }
@@ -111,30 +115,7 @@ main {
     cursor: pointer;
 }
 
-@media(max-width: 800px) {
-    /* Home Screen */
-    main {
-        min-height: 76vh;
-    }
-    .home-container {
-        top: 15vh;
-        max-width: 90vw;
-    }
-    .home-container .home-intro {
-        font-size: 1.2rem;
-    }
-    .home-container .home-name {
-        font-size: 2.6rem;
-        margin-left: -2px;
-    }
-    .home-container .home-body {
-        font-size: .8rem;
-        margin-top: -20px;
-    }
-    .home-container .home-button {
-        font-size: 1.6rem;
-    }
-
+@media(max-width: 600px) {
     /* Hamburger Menu Taken From Brad Traversy */
     .nav-hamburger-link-spaces {
         margin: 15px;
@@ -286,6 +267,37 @@ main {
         text-decoration: none;
         transition: color 0.4s ease;
     }
+
+    /* ----------------------------------------------------------- */
+    /* ----------------------------------------------------------- */
+    /* ----------------------------------------------------------- */
+    /* ----------------------------------------------------------- */
+    /* ----------------------------------------------------------- */
+    
+    main {
+        min-height: 80vh;
+    }
+
+    /* Home Screen */
+    .home-container {
+        top: 15vh;
+        max-width: 90vw;
+    }
+    .home-container .home-intro {
+        font-size: 1.2rem;
+    }
+    .home-container .home-name {
+        font-size: 2.6rem;
+        margin-left: -2px;
+    }
+    .home-container .home-body {
+        font-size: .8rem;
+        margin-top: -20px;
+    }
+    .home-container .home-button {
+        font-size: 1.6rem;
+    }
+    
     /* About Screen */
     .about-container {
         background: transparent;
@@ -293,47 +305,56 @@ main {
     .about-container .about-title {
         font-size: 2.6rem;
     }
-    .about-container .about-body {
-        margin-top: -35px;
-    }
     .about-container .about-button {
         position: absolute;
-        top: 70vh;
+        top: 80vh;
         left: 35px;
         font-size: 1.6rem;
     }
+    .play-video-btn:hover {
+        color: #32adff;
+    }
     /* Works Screen */
-    .works-container .card-spacer {
-        margin: 10px;
+    .alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
+        font-weight: 900;
+        color: #32adff;
     }
     .works-container .work-button {
         margin-left: -15px;    
         font-size: 1.6rem;
     }
     /* Skills and Education Screen */
-    .skills-and-education-container ul {
-        justify-content: center;
-    }
     .skills-and-education-container ul li {
         margin: 0 auto;
     }
     .skills-and-education-card {
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        padding: 0 0 30px 0;
         margin: auto;
     }
     .skills-and-education-card h5 {
         font-size: 1rem;
         color: #32adff;
+        margin-left: 2px;
     }
     .sae-course, .sae-website {
         font-size: .8rem;
     }
-    .sae-course {
-        margin-top: -5px;
+    .sea-course li {
+        list-style: none;
     }
     .skills-and-education-card .sae-website {
-        margin-top: -15px;
+        width: 70px;
+        margin-top: -10px;
+        margin-left: 4px;
+    }
+}
+@media(max-width: 400px) {
+    main {
+        min-height: 75vh;
+    }
+    .about-container .about-button {
+        top: 75vh;
     }
 }
