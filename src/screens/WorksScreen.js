@@ -5,33 +5,43 @@ import Card from '../components/Card';
 import tessio from '../assets/tessio-preview.png';
 import kirk from '../assets/kirk-preview.png';
 
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
+
 const WorksScreen = () => {
+
+    const items = [
+        <Col lg={4}>
+            <Card
+                image={tessio}
+                title="Tessio"
+                subtitle="Made with React"
+                text="A updated mock website for a local pizza / whiskey / beer restaurant in Silverdale, Washington that uses a parallax effect on desktop, and scroll on mobile."
+                link="https://montgomeryrd.github.io/tessio/"
+            />
+        </Col>, 
+        <Col lg={4}>
+            <Card
+                image={kirk}
+                title="Kirk's App"
+                subtitle="Made with React"
+                text="Basic to-do style app made for a prev employer. A shopping list is copied from a text message and pasted into a textarea to create a modifiable list. Uses localStorage, and designed mobile first."
+                link="https://montgomeryrd.github.io/tessio-app/"
+            />
+        </Col>
+    ];
 
     return (
         <div className="works-container page">
             <p className="lead intro">Sample Works</p>
             <Row>
-                <Col lg={4}>
-                    <Card
-                        image={tessio}
-                        title="Tessio"
-                        subtitle="Made with React"
-                        text="Mock website for a local pizza / whiskey / beer restaurant in Silverdale, WA with a parallax effect on desktop, scroll on mobile."
-                        link="https://montgomeryrd.github.io/tessio/"
-                    />
-                </Col>
-                <div className="card-spacer"></div>
-                <Col lg={4}>
-                    <Card
-                        image={kirk}
-                        title="Kirk's App"
-                        subtitle="Made with React"
-                        text="Basic to-do style app made for a previous employer. A shopping list is copied from a text message and pasted into a textarea field to create a list of removable items that can be updated. Kirk's App uses localStorage and is designed mobile first."
-                        link="https://montgomeryrd.github.io/tessio-app/"
-                    />
-                </Col>
+                <AliceCarousel
+                    // disableButtonsControls 
+                    disableDotsControls 
+                    mouseTracking 
+                    items={items} 
+                />
             </Row>
-            <div className="card-spacer"></div>
             <Nav>
                 <LinkContainer to="/skills">
                     <Nav.Link>

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import "react-alice-carousel/lib/alice-carousel.css";
+
 /* CORE STYLES */
 :root {
     --overlay-color: rgba(24, 39, 51 , 0.85);
@@ -305,7 +307,7 @@ main {
     }
     .about-container .about-button {
         position: absolute;
-        top: 75vh;
+        top: 80vh;
         left: 35px;
         font-size: 1.6rem;
     }
@@ -313,8 +315,9 @@ main {
         color: #32adff;
     }
     /* Works Screen */
-    .works-container .card-spacer {
-        margin: 10px;
+    .alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
+        font-weight: 900;
+        color: #32adff;
     }
     .works-container .work-button {
         margin-left: -15px;    
@@ -333,6 +336,7 @@ main {
     .skills-and-education-card h5 {
         font-size: 1rem;
         color: #32adff;
+        margin-left: 2px;
     }
     .sae-course, .sae-website {
         font-size: .8rem;
@@ -341,11 +345,16 @@ main {
         list-style: none;
     }
     .skills-and-education-card .sae-website {
+        width: 70px;
         margin-top: -10px;
+        margin-left: 4px;
     }
 }
 @media(max-width: 400px) {
     main {
         min-height: 75vh;
+    }
+    .about-container .about-button {
+        top: 75vh;
     }
 }
