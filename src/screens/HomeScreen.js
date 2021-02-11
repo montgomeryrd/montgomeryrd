@@ -4,11 +4,11 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 const HomeScreen = () => {
     return (
-        <Jumbotron className="home-container page">
-            <p className="lead home-intro">Hi, my name is</p>          
-            <h1 className="display-3 home-name">Richard Montgomery</h1>
-            <hr className="my-4"></hr>
-            <p className="home-body">
+        <Jumbotron id="home-container">
+            <div className="overlay"></div>
+            <p className="lead home-title">Hi, my name is</p>          
+            <h1 className="display-3 home-subtitle">Richard Montgomery</h1>
+            <p className="mt-4 home-body">
                 I am a web developer living on the Kitsap Peninsula in Washington State.
                 I enjoy building functional web applications using interactive, adaptive
                 and responsive design.
@@ -20,6 +20,9 @@ const HomeScreen = () => {
                     </Nav.Link>
                 </LinkContainer>
             </Nav>
+            <div className="mobile mobile-footer">
+                <i class="fas fa-caret-down"></i>
+            </div>
         </Jumbotron>
     )
 }

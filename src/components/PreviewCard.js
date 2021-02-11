@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = ({ image, title, subtitle, text, link }) => {
+const PreviewCard = ({ image, title, subtitle, text, link }) => {
     return (
         <div className="card">
             <img src={image} alt={title} />
@@ -14,4 +14,4 @@ const Card = ({ image, title, subtitle, text, link }) => {
     )
 }
 
-export default Card;
+export default PreviewCard;

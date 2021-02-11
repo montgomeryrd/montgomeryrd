@@ -1,360 +1,409 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 @import "react-alice-carousel/lib/alice-carousel.css";
 
-/* CORE STYLES */
+/* Core Styles */
 :root {
     --overlay-color: rgba(24, 39, 51 , 0.85);
     --menu-speed: 0.75s;
+    --background-color: #001624;
+    --twitter-blue: #0099ff;
+    --compliment-orange: #e08f1e;
+    --off-white: #fff;
+    --title: 'Yusei Magic', sans-serif;
 }
 
-body {
-    background: #001624;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+html, body {
+    background: var(--background-color);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    width: 100%;
-    height: 100%;
-}
-main {
-    min-height: 75vh;
 }
 
-/* Header */
+/* Mobile First, 360 x 640 */
+.desktop {
+    display: none;
+}
+.mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Header Styles */
 .monty {
     font-family: 'Nanum Brush Script', cursive;
     font-size: 2rem;
-    color: #fff;
+    color: var(--off-white);
 }
+
 .r {
-    color: #32adff;
+    color: var(--twitter-blue);
 }
+
 .monty:hover .r {
-    color: #f0ad4e;
+    color: var(--compliment-orange);
     transition: 1.1s;
 }
+
 .monty:hover .m {
-    color: #f0ad4e;
+    color: var(--compliment-orange);
     transition: .1s;
 }
+
 .monty:hover .o {
-    color: #f0ad4e;
+    color: var(--compliment-orange);
     transition: .3s;
 }
+
 .monty:hover .n {
-    color: #f0ad4e;
+    color: var(--compliment-orange);
     transition: .5s;
 }
+
 .monty:hover .t {
-    color: #f0ad4e;
+    color: var(--compliment-orange);
     transition: .7s;
 }
+
 .monty:hover .y {
-    color: #f0ad4e;
+    color: var(--compliment-orange);
     transition: .9s;
 }
-.nav-link {
-    color: #fff;
+
+/* Brad Traversy Hamburger Menu */
+/* .nav-link {
+    color: var(--off-white);
 }
+
 .nav-link:hover {
-    color: #f0ad4e;
+    color: var(--compliment-orange);
 }
+
 .menu-wrap {
     display: none;
 }
+*/
 
-/* Home Screen */
-.home-container {
+.hamburger-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hamburger-link {
+    color: var(--off-white);
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.hamburger-menu {
+    display: flex;
+}
+
+.menu-wrap {
+    display: flex;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.menu-wrap .toggler:checked {
+    position: fixed;
+}
+
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-wrap .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 30px;
+    height: 2px;
+    background: var(--off-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 30px;
+    height: 2px;
+    background: inherit;
+}
+
+.menu-wrap .hamburger > div::after {
+    top: 10px;
+}
+
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+    position: fixed;
+    width: 30px;
+}
+
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition:  opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-wrap .menu > div {
+    background: var(--overlay-color);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color: var(--off-white);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+/* Home Screen Styles */
+#home-container {
+    position: relative;
     background: transparent;
-    max-width: 800px;
+    height: 90vh;
 }
-.home-container .home-intro {
-    color: #32adff;
-    font-size: 2.5rem;
+
+#home-container .home-title {
+    color: var(--twitter-blue);
+    font-size: 1.6rem;
+    margin-top: 10vh;
 }
-.home-container .home-name {
-    font-size: 5rem;
-    margin-left: -5px;
+
+#home-container .home-subtitle {
+    font-weight: 900;
+    font-size: 3rem;
+    margin-left: -3px;
 }
-.home-container .home-body {
-    font-size: 1.2rem;
-    margin-left: 2px;
+
+#home-container .home-body {
+    font-size: .9rem;
 }
-.home-container .home-button {
-    margin-top: 3vh;
-    margin-left: -15px;
+
+#home-container .home-button {
+    display: none;
+}
+
+@keyframes indicator {
+    20% { margin-top: 10px; color: var(--compliment-orange); }
+    50% { margin-top: 0; }
+}
+
+.mobile-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    animation: indicator 1s infinite;
+}
+
+/* About Screen Styles */
+#about-container {
+    position: relative;
+    background:rgba(61, 98, 128, 0.85);
+    height: 100vh;
+}
+
+#about-container .about-title {
+    font-size: 2.6rem;
+}
+
+#about-container .about-button {
+    display: none;
+}
+
+/* Works Screen Styles */
+#works-container {
+    height: 100vh;
+}
+
+.alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
     font-size: 2rem;
+    color: var(--compliment-orange);
 }
 
-/* About Screen */
+#works-container .work-button {
+    display: none;
+}
 
-/* Works Screen */
-
-/* Skills and Education Screen */
-.skills-and-education-container ul {
+/* Skills and Education Screen Styles */
+#skills-and-education-container .skills-list {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     list-style: none;
-    margin-left: -45px;
 }
-/* Footer */
+
+#skills-and-education-container .education-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 30px 0;
+    margin: auto;
+}
+
+#skills-and-education-container .education-card .education-title {
+    font-size: 1rem;
+    color: var(--twitter-blue);
+    margin-left: 2px;
+}
+
+#skills-and-education-container .education-card .education-course, .education-link {
+    font-size: .8rem;
+}
+
+#skills-and-education-container .education-card .education-course li {
+    list-style: none;
+}
+
+#skills-and-education-container .education-card .education-link {
+    width: 70px;
+    margin-top: -10px;
+    margin-left: 4px;
+}
+
+/* Mobile Footer Styles */
 .copyright {
     text-align: right;
     cursor: pointer;
 }
+
 .footer-items {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 #email {
     cursor: pointer;
 }
 
-@media(max-width: 600px) {
-    /* Hamburger Menu Taken From Brad Traversy */
-    .nav-hamburger-link-spaces {
-        margin: 15px;
-    }
-    .nav-hamburger-link {
-        color: #fff;
-        font-size: 1.5rem;
-    }
-    .hamburger-menu {
-        display: flex;
-    }
-    .menu-wrap {
-        display: flex;
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 1;
-    }
-    
-    .menu-wrap .toggler {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 2;
-        cursor: pointer;
-        width: 50px;
-        height: 50px;
-        opacity: 0;
-    }
-    
-    .menu-wrap .hamburger {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        width: 60px;
-        height: 60px;
-        padding: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    /* Hamburger Line */
-    .menu-wrap .hamburger > div {
-        position: relative;
-        flex: none;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.4s ease;
-    }
-    
-    /* Hamburger Lines - Top & Bottom */
-    .menu-wrap .hamburger > div::before,
-    .menu-wrap .hamburger > div::after {
-        content: '';
-        position: absolute;
-        z-index: 1;
-        top: -10px;
-        width: 100%;
-        height: 2px;
-        background: inherit;
-    }
-    
-    /* Moves Line Down */
-    .menu-wrap .hamburger > div::after {
-        top: 10px;
-    }
-    
-    /* Toggler Animation */
-    .menu-wrap .toggler:checked + .hamburger > div {
-        transform: rotate(135deg);
-    }
-    
-    /* Turns Lines Into X */
-    .menu-wrap .toggler:checked + .hamburger > div:before,
-    .menu-wrap .toggler:checked + .hamburger > div:after {
-        top: 0;
-        transform: rotate(90deg);
-    }
-    
-    /* Rotate On Hover When Checked */
-    .menu-wrap .toggler:checked:hover + .hamburger > div {
-        transform: rotate(225deg);
-    }
-    
-    /* Show Menu */
-    .menu-wrap .toggler:checked ~ .menu {
-        visibility: visible;
-    }
-    
-    .menu-wrap .toggler:checked ~ .menu > div {
-        transform: scale(1);
-        transition-duration: var(--menu-speed);
-    }
-    
-    .menu-wrap .toggler:checked ~ .menu > div > div {
-        opacity: 1;
-        transition:  opacity 0.4s ease 0.4s;
-    }
-    
-    .menu-wrap .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        visibility: hidden;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .menu-wrap .menu > div {
-        background: var(--overlay-color);
-        border-radius: 50%;
-        width: 200vw;
-        height: 200vw;
-        display: flex;
-        flex: none;
-        align-items: center;
-        justify-content: center;
-        transform: scale(0);
-        transition: all 0.4s ease;
-    }
-    
-    .menu-wrap .menu > div > div {
-        text-align: center;
-        max-width: 90vw;
-        max-height: 100vh;
-        opacity: 0;
-        transition: opacity 0.4s ease;
-    }
-    
-    .menu-wrap .menu > div > div > ul > li {
-        list-style: none;
-        color: #fff;
-        font-size: 1.5rem;
-        padding: 1rem;
-    }
-    
-    .menu-wrap .menu > div > div > ul > li > a {
-        color: inherit;
-        text-decoration: none;
-        transition: color 0.4s ease;
-    }
-
-    /* ----------------------------------------------------------- */
-    /* ----------------------------------------------------------- */
-    /* ----------------------------------------------------------- */
-    /* ----------------------------------------------------------- */
-    /* ----------------------------------------------------------- */
-    
-    main {
-        min-height: 80vh;
-    }
-
-    /* Home Screen */
-    .home-container {
-        top: 15vh;
-        max-width: 90vw;
-    }
-    .home-container .home-intro {
-        font-size: 1.2rem;
-    }
-    .home-container .home-name {
-        font-size: 2.6rem;
-        margin-left: -2px;
-    }
-    .home-container .home-body {
-        font-size: .8rem;
-        margin-top: -20px;
-    }
-    .home-container .home-button {
-        font-size: 1.6rem;
-    }
-    
-    /* About Screen */
-    .about-container {
-        background: transparent;
-    }
-    .about-container .about-title {
-        font-size: 2.6rem;
-    }
-    .about-container .about-button {
-        position: absolute;
-        top: 80vh;
-        left: 35px;
-        font-size: 1.6rem;
-    }
-    .play-video-btn:hover {
-        color: #32adff;
-    }
-    /* Works Screen */
-    .alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
-        font-weight: 900;
-        color: #32adff;
-    }
-    .works-container .work-button {
-        margin-left: -15px;    
-        font-size: 1.6rem;
-    }
-    /* Skills and Education Screen */
-    .skills-and-education-container ul li {
-        margin: 0 auto;
-    }
-    .skills-and-education-card {
-        display: flex;
-        flex-direction: column;
-        padding: 0 0 30px 0;
-        margin: auto;
-    }
-    .skills-and-education-card h5 {
-        font-size: 1rem;
-        color: #32adff;
-        margin-left: 2px;
-    }
-    .sae-course, .sae-website {
-        font-size: .8rem;
-    }
-    .sea-course li {
-        list-style: none;
-    }
-    .skills-and-education-card .sae-website {
-        width: 70px;
-        margin-top: -10px;
-        margin-left: 4px;
-    }
+#copied-box {
+    position: absolute;
+    margin-top: -5px;
+    display: none;
 }
-@media(max-width: 400px) {
-    main {
-        min-height: 75vh;
-    }
-    .about-container .about-button {
-        top: 75vh;
+
+#copied-speech-bubble {
+    position: absolute;
+    background: rgba(65, 82, 95, 0.85);
+    margin-top: -45px;
+    padding: 3px 6px;
+}
+
+#copied-speech-bubble-triangle {
+    position: absolute;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 15px solid rgba(65, 82, 95, 0.85);
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+#copied {
+    color: var(--off-white);
+}
+
+#email:hover #copied-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 90px;
+}
+
+@media(min-width: 400px) {
+    .mobile-footer {
+        height: 60vh;   
     }
 }

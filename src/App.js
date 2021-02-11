@@ -15,15 +15,24 @@ function App() {
 		<Router>
 			<ScrollToTop />
 			<Header />
-			<main className="py-3">
-				<Container className="desktop">
+			<main className="desktop">
+				<Container>
 					<Route exact path="/montgomeryrd" component={HomeScreen} />
 					<Route exact path="/about" component={AboutScreen} />
 					<Route exact path="/works" component={WorksScreen} />
 					<Route exact path="/skills" component={SkillsAndEducationScreen} />
 				</Container>
+				<Footer />
 			</main>
-			<Footer />
+			<main className="mobile">
+				<Container>
+					<HomeScreen />
+					<AboutScreen />
+					<WorksScreen />
+					<SkillsAndEducationScreen />
+					<Footer />
+				</Container>
+			</main>
 		</Router>
 	);
 }

@@ -2,6 +2,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 
 const Header = () => {
+
     return (
         <header>
             <Navbar expand="lg" collapseOnSelect>
@@ -25,34 +26,13 @@ const Header = () => {
                             <div></div>
                         </div>
                         <div className="menu">
-                            <div>
-                                <div>
-                                    <Nav className="ml-auto">
-                                        <LinkContainer to="/montgomeryrd">
-                                            <Nav.Link className="nav-hamburger-link-spaces">
-                                                <span className="nav-hamburger-link">Home</span>
-                                            </Nav.Link>
-                                        </LinkContainer>
-
-                                        <LinkContainer to="/about">
-                                            <Nav.Link className="nav-hamburger-link-spaces">
-                                                <span className="nav-hamburger-link">About Me</span>
-                                            </Nav.Link>
-                                        </LinkContainer>
-
-                                        <LinkContainer to="/works">
-                                            <Nav.Link className="nav-hamburger-link-spaces">
-                                                <span className="nav-hamburger-link">My Apps</span>
-                                            </Nav.Link>
-                                        </LinkContainer>
-
-                                        <LinkContainer to="/skills">
-                                            <Nav.Link className="nav-hamburger-link-spaces">
-                                                <span className="nav-hamburger-link">Skills/Education</span>
-                                            </Nav.Link>
-                                        </LinkContainer>
-                                    </Nav>
-                                </div>
+                            <div className="ml-auto">
+                                <nav className="hamburger-links">
+                                    <a className="hamburger-link" href="#home-container">Home</a>
+                                    <a className="hamburger-link" href="#about-container">About Me</a>
+                                    <a className="hamburger-link" href="#works-container">My Works</a>
+                                    <a className="hamburger-link" href="#skills-and-education-container">Education</a>
+                                </nav>                                
                             </div>
                         </div>
                     </div>

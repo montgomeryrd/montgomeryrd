@@ -2,7 +2,12 @@ import React from 'react';
 import EducationCard from '../components/EducationCard';
 
 const SkillsAndEducationScreen = () => {
-    const modules = [
+    const codeFellowsCourses = [
+        "Code 201: Foundations of Software Development",
+        "Code 301: Intermediate Software Development",
+        "Code 401: Advanced Software Development in Full-Stack JavaScript"
+    ]
+    const codecademyModules = [
         "Learn Git Course",
         "Learn the Command Line Course",
         "Build a Website with HTML, CSS, and Github Pages Skill Path",
@@ -25,27 +30,34 @@ const SkillsAndEducationScreen = () => {
         "Learn Color Design Course",
         "Learn Sass Course"
     ]
-    const codecademy = modules.map((course, index) => <li className="ml-2" key={index}>{course}</li>);
+
+    const codefellows = codeFellowsCourses.map((course, index) => <li className="ml-2" key={index}>{course}</li>);
+    const codecademy = codecademyModules.map((course, index) => <li className="ml-2" key={index}>{course}</li>);
 
     return (
-        <div className="skills-and-education-container page">
-            <p className="lead home-intro">Skills and Education</p>          
-            <ul style={{listStyle: "none"}}>
-                <li className="px-2"><i className="fab fa-github"></i></li>
-                <li className="px-2"><i className="fab fa-html5"></i></li>
-                <li className="px-2"><i className="fab fa-css3"></i></li>
-                <li className="px-2"><i className="fab fa-js"></i></li>
-                <li className="px-2"><i className="fab fa-node"></i></li>
-                <li className="px-2"><i className="fab fa-react"></i></li>
-                <li className="px-2"><i className="fab fa-mdb"></i></li>
-                <li className="px-2"><i className="fab fa-sass"></i></li>
-                <li className="px-2"><i className="fas fa-database"></i></li>
+        <div id="skills-and-education-container">
+            <p className="lead skills-title">Skills and Education</p>          
+            <ul className="skills-list" style={{listStyle: "none"}}>
+                <li><i className="fab fa-github"></i></li>
+                <li><i className="fab fa-html5"></i></li>
+                <li><i className="fab fa-css3"></i></li>
+                <li><i className="fab fa-js"></i></li>
+                <li><i className="fab fa-node"></i></li>
+                <li><i className="fab fa-react"></i></li>
+                <li><i className="fas fa-database"></i></li>
+                <li><i className="fab fa-mdb"></i></li>
+                <li><i className="fab fa-sass"></i></li>
             </ul>
-            <section className="education py-3">
+            <section className="py-3 education-list">
                 <EducationCard
                     course="Code Fellows of Seattle"
-                    program={<li className="ml-2">Full Stack JavaScript</li>}
+                    program={codefellows}
                     website="https://www.codefellows.org/"
+                />
+                <EducationCard
+                    course="Codecademy"
+                    program={codecademy}
+                    website="https://www.codecademy.com/"
                 />
                 <EducationCard
                     course="Udemy"
@@ -56,11 +68,6 @@ const SkillsAndEducationScreen = () => {
                     course="Codewars"
                     program={<li className="ml-2">Code Challenges - 3kyu Member</li>}
                     website="https://www.codewars.com/"
-                />
-                <EducationCard
-                    course="Codecademy"
-                    program={codecademy}
-                    website="https://www.codecademy.com/"
                 />
             </section>
         </div>
