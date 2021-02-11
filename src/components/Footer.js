@@ -2,7 +2,7 @@ import { Container, Row } from 'react-bootstrap';
 
 const Footer = () => {
     const copyEmailAddress = () => {
-        const emailAddress = document.getElementById("email");
+        const emailAddress = document.getElementById("text");
         const textArea = document.createElement("textarea");
         textArea.value = emailAddress.textContent;
         document.body.appendChild(textArea);
@@ -10,12 +10,21 @@ const Footer = () => {
         document.execCommand("Copy");
         textArea.remove();
     }
+
     return (
         <footer>
             <Container>
                 <Row className="footer-items">
                     <p>
-                        <span id="email" className="ml-3" onClick={() => copyEmailAddress()}>montgomery_rd@yahoo.com</span>
+                        <div id="email" className="ml-3">
+                            <div id="copied-box">
+                                <div id="copied-speech-bubble">
+                                    <div id="copied-speech-bubble-triangle"></div>
+                                    <span id="copied">copied</span>
+                                </div>
+                            </div>
+                            <span id="text" onClick={() => copyEmailAddress()}>montgomery_rd@yahoo.com</span>
+                        </div>
                     </p>
                     <p>
                         <a className="ml-3 p-3" href="https://github.com/montgomeryrd" target="_blank" rel="noreferrer">
