@@ -36,40 +36,42 @@ const SkillsAndEducationScreen = () => {
 
     return (
         <div id="skills-and-education-container">
-            <p className="lead skills-title">Skills and Education</p>          
-            <ul className="skills-list" style={{listStyle: "none"}}>
-                <li><i className="fab fa-github"></i></li>
-                <li><i className="fab fa-html5"></i></li>
-                <li><i className="fab fa-css3"></i></li>
-                <li><i className="fab fa-js"></i></li>
-                <li><i className="fab fa-node"></i></li>
-                <li><i className="fab fa-react"></i></li>
-                <li><i className="fas fa-database"></i></li>
-                <li><i className="fab fa-mdb"></i></li>
-                <li><i className="fab fa-sass"></i></li>
-            </ul>
-            <section className="py-3 education-list">
-                <EducationCard
-                    course="Code Fellows of Seattle"
-                    program={codefellows}
-                    website="https://www.codefellows.org/"
-                />
-                <EducationCard
-                    course="Codecademy"
-                    program={codecademy}
-                    website="https://www.codecademy.com/"
-                />
-                <EducationCard
-                    course="Udemy"
-                    program={<li className="ml-2">MERN eCommerce From Scratch</li>}
-                    website="https://www.udemy.com/course/mern-ecommerce/"
-                />
-                <EducationCard
-                    course="Codewars"
-                    program={<li className="ml-2">Code Challenges - 3kyu Member</li>}
-                    website="https://www.codewars.com/"
-                />
-            </section>
+            <main>
+                <h1 className="pt-4 lead skills-title">Skills and Education</h1>          
+                <ul className="mt-3 skills-list" style={{listStyle: "none"}}>
+                    <li><i className="fab fa-github"></i></li>
+                    <li><i className="fab fa-html5"></i></li>
+                    <li><i className="fab fa-css3"></i></li>
+                    <li><i className="fab fa-js"></i></li>
+                    <li><i className="fab fa-node"></i></li>
+                    <li><i className="fab fa-react"></i></li>
+                    <li><i className="fas fa-database"></i></li>
+                    <li><i className="fab fa-mdb"></i></li>
+                    <li><i className="fab fa-sass"></i></li>
+                </ul>
+                <section className="mt-3 education-list">
+                    <EducationCard
+                        course="Code Fellows of Seattle"
+                        program={codefellows}
+                        website="https://www.codefellows.org/"
+                    />
+                    <EducationCard
+                        course="Codecademy"
+                        program={codecademy}
+                        website="https://www.codecademy.com/"
+                    />
+                    <EducationCard
+                        course="Udemy"
+                        program={<li className="ml-2">MERN eCommerce From Scratch</li>}
+                        website="https://www.udemy.com/course/mern-ecommerce/"
+                    />
+                    <EducationCard
+                        course="Codewars"
+                        program={<li className="ml-2">Code Challenges - 3kyu Member</li>}
+                        website="https://www.codewars.com/"
+                    />
+                </section>
+            </main>
         </div>
     )
 }

@@ -33,21 +33,23 @@ const WorksScreen = () => {
 
     return (
         <div id="works-container">
-            <p className="lead works-title">Sample Works</p>
-            <Row>
-                <AliceCarousel
-                    disableDotsControls
-                    mouseTracking 
-                    items={items} 
-                />
-            </Row>
-            <Nav>
-                <LinkContainer to="/skills">
-                    <Nav.Link>
-                        <button type="button" className="btn btn-outline-primary work-button">continue</button>
-                    </Nav.Link>
-                </LinkContainer>
-            </Nav>
+            <main>
+                <p className="pt-4 lead works-title">Sample Works</p>
+                <Row>
+                    <AliceCarousel
+                        disableDotsControls
+                        mouseTracking 
+                        items={items} 
+                    />
+                </Row>
+                <Nav>
+                    <LinkContainer to="/skills">
+                        <Nav.Link>
+                            <button type="button" className="btn btn-outline-primary work-button">continue</button>
+                        </Nav.Link>
+                    </LinkContainer>
+                </Nav>
+            </main>
         </div>
     )
 }

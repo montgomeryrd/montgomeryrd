@@ -6,7 +6,7 @@
     --overlay-color: rgba(24, 39, 51 , 0.85);
     --menu-speed: 0.75s;
     --background-color: #001624;
-    --twitter-blue: #0099ff;
+    --twitter-blue: #03a9f4;
     --compliment-orange: #e08f1e;
     --off-white: #fff;
     --title: 'Yusei Magic', sans-serif;
@@ -48,7 +48,7 @@ html, body {
 .r {
     color: var(--twitter-blue);
 }
-
+/* 
 .monty:hover .r {
     color: var(--compliment-orange);
     transition: 1.1s;
@@ -77,7 +77,7 @@ html, body {
 .monty:hover .y {
     color: var(--compliment-orange);
     transition: .9s;
-}
+} */
 
 /* Brad Traversy Hamburger Menu */
 /* .nav-link {
@@ -257,7 +257,7 @@ html, body {
 
 #home-container .home-title {
     color: var(--twitter-blue);
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin-top: 10vh;
 }
 
@@ -269,6 +269,7 @@ html, body {
 
 #home-container .home-body {
     font-size: .9rem;
+    margin-bottom: -10px;
 }
 
 #home-container .home-button {
@@ -277,26 +278,38 @@ html, body {
 
 @keyframes indicator {
     20% { margin-top: 10px; color: var(--compliment-orange); }
-    50% { margin-top: 0; }
+    50% { margin-top: 0px; }
 }
 
 .mobile-footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 35vh;
     animation: indicator 1s infinite;
+    height: 60vh;
 }
 
 /* About Screen Styles */
 #about-container {
     position: relative;
-    background:rgba(61, 98, 128, 0.85);
+    left: -15px;
+    width: 100vw;
     height: 100vh;
+    background: url('./assets/bw-background.png');
+    background-size: cover;
+    background-position: left;
 }
-
-#about-container .about-title {
-    font-size: 2.6rem;
+#about-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(2, 133, 255, 0.377);
+    mix-blend-mode: overlay;
+}
+.about-body {
+    color: white;
 }
 
 #about-container .about-button {
@@ -306,6 +319,10 @@ html, body {
 /* Works Screen Styles */
 #works-container {
     height: 100vh;
+}
+
+#work-container .works-title {
+    
 }
 
 .alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
@@ -318,6 +335,9 @@ html, body {
 }
 
 /* Skills and Education Screen Styles */
+#skills-and-education-container { 
+    /* background: rgba(59, 64, 68, 0.459); */
+}
 #skills-and-education-container .skills-list {
     display: flex;
     flex-direction: row;
@@ -402,8 +422,15 @@ html, body {
     margin-left: 90px;
 }
 
-@media(min-width: 400px) {
+@keyframes pulse {
+    0% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+#email:hover {
+    animation: pulse .5s forwards;
+}
+@media(max-width: 400px) {
     .mobile-footer {
-        height: 60vh;   
+        height: 40vh;
     }
 }
