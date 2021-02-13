@@ -15,7 +15,7 @@ const Footer = () => {
         <footer>
             <Container>
                 <Row className="footer-items">
-                    <p>
+                    <section>
                         <div id="email" className="ml-3">
                             <div id="copied-box">
                                 <div id="copied-speech-bubble">
@@ -25,8 +25,8 @@ const Footer = () => {
                             </div>
                             <span id="text" onClick={() => copyEmailAddress()}>montgomery_rd@yahoo.com</span>
                         </div>
-                    </p>
-                    <p>
+                    </section>
+                    <section>
                         <a className="ml-3 p-3" href="https://github.com/montgomeryrd" target="_blank" rel="noreferrer">
                             <i className="fab fa-github-alt"></i>
                         </a>
@@ -38,7 +38,7 @@ const Footer = () => {
                         <a className="p-3" href="https://twitter.com/richard04755318" target="_blank" rel="noreferrer">
                             <i className="fab fa-twitter"></i>
                         </a>
-                    </p>
+                    </section>
                 </Row>
             </Container>
         </footer>
