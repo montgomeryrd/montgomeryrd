@@ -6,7 +6,7 @@ const SkillsAndEducationScreen = () => {
         "Code 201: Foundations of Software Development",
         "Code 301: Intermediate Software Development",
         "Code 401: Advanced Software Development in Full-Stack JavaScript"
-    ]
+    ];
     const codecademyModules = [
         "Learn Git Course",
         "Learn the Command Line Course",
@@ -29,10 +29,15 @@ const SkillsAndEducationScreen = () => {
         "Learn Navigation Design Course",
         "Learn Color Design Course",
         "Learn Sass Course"
-    ]
+    ];
+    const udemyModules = [
+        "MERN eCommerce From Scratch",
+        "MERN Stack Web Development with Ultimate Authentication"
+    ];
 
     const codefellows = codeFellowsCourses.map((course, index) => <li className="ml-2" key={index}>{course}</li>);
     const codecademy = codecademyModules.map((course, index) => <li className="ml-2" key={index}>{course}</li>);
+    const udemy = udemyModules.map((course, index) => <li className="ml-2" key={index}>{course}</li>);
 
     return (
         <div id="skills-and-education-container">
@@ -62,7 +67,7 @@ const SkillsAndEducationScreen = () => {
                     />
                     <EducationCard
                         course="Udemy"
-                        program={<li className="ml-2">MERN eCommerce From Scratch</li>}
+                        program={udemy}
                         website="https://www.udemy.com/course/mern-ecommerce/"
                     />
                     <EducationCard
